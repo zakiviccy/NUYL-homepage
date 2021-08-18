@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 // import PreviewCompatibleImage from "../../components/PreviewCompatibleImage";
 
-const DivisionPageTemplate = ({ data }) => (
+const researchPageTemplate = ({ data }) => (
   <Layout>
     <SeO title="アカデミック・セントラルの各部門" description="アカデミック・セントラルは，東海国立大学機構における教育の共同基盤の企画立案を行う組織です．" />
     <section className="section section--gradient">
@@ -36,7 +36,7 @@ const DivisionPageTemplate = ({ data }) => (
                           </ul>
                         </div>
                         <br />
-                        <Link className="btn" to="/division/Promotion-Planning-Office/">
+                        <Link className="btn" to="/research/Promotion-Planning-Office/">
                           Read more
                         </Link>
                       </div>
@@ -59,7 +59,7 @@ const DivisionPageTemplate = ({ data }) => (
                           </ul>
                         </div>
                         <br />
-                        <Link className="btn" to="/division/Instructional-Design-Team/">
+                        <Link className="btn" to="/research/Instructional-Design-Team/">
                           Read more
                         </Link>
                       </div>
@@ -86,7 +86,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/High-School-University-Articulation/">
+                    <Link className="btn" to="/research/High-School-University-Articulation/">
                       Read more
                     </Link>
                   </div>
@@ -106,7 +106,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/Liberal-Arts/">
+                    <Link className="btn" to="/research/Liberal-Arts/">
                       Read more
                     </Link>
                   </div>
@@ -127,7 +127,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/Data-Science/">
+                    <Link className="btn" to="/research/Data-Science/">
                       Read more
                     </Link>
                   </div>
@@ -148,7 +148,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/Doctoral-Education/">
+                    <Link className="btn" to="/research/Doctoral-Education/">
                       Read more
                     </Link>
                   </div>
@@ -169,7 +169,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/QTA/">
+                    <Link className="btn" to="/research/QTA/">
                       Read more
                     </Link>
                   </div>
@@ -194,7 +194,7 @@ const DivisionPageTemplate = ({ data }) => (
                       </ul>
                     </div>
                     <br />
-                    <Link className="btn" to="/division/Life-Concept/">
+                    <Link className="btn" to="/research/Life-Concept/">
                       Read more
                     </Link>
                   </div>
@@ -208,4 +208,4 @@ const DivisionPageTemplate = ({ data }) => (
   </Layout>
 );
 
-export default DivisionPageTemplate;
+export default researchPageTemplate;

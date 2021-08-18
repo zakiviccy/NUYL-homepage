@@ -10,12 +10,42 @@ const ContactUsPage = () => (
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">お問い合わせ</h2>
-              <h3 className="is-size-4 has-text-weight-bold">名古屋大学</h3>
-              <a href="http://www.nagoya-u.ac.jp/contact-us/index.html">http://www.nagoya-u.ac.jp/contact-us/index.html</a>
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Contact / Access</h2>
+              <h3 className="is-size-4 has-text-weight-bold">Contact:</h3>
+              <p>Takaya YAMAZATO (yamazato AT nagoya-u DOT jp) </p>
+
+              <p>Institute of Liberal Arts and Sciences, Nagoya University</p>
+              <p>
+                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho, Chikusa-ku, Nagoya 464-8063 JAPAN
+              </p>
               <br />
-              <h3 className="is-size-4 has-text-weight-bold">岐阜大学</h3>
-              <a href="https://www.gifu-u.ac.jp/contact/">https://www.gifu-u.ac.jp/contact/</a>
+
+              <h3 className="is-size-4 has-text-weight-bold ">Access:</h3>
+
+              <h4 className="is-size-5 has-text-weight-bold">
+                <i class="fas fa-subway"></i> From Nagoya Station:
+              </h4>
+              <p>Take the Subway Higashiyama Line to Motoyama Sta. (15 minutes), then transfer to the Subway Meijo Line to Nagoya Daigaku Sta. (Higashiyama Campus is just off the subway exit.).</p>
+              <br />
+              <h4 className="is-size-5 has-text-weight-bold">
+                <i class="fas fa-subway"></i> From Centrair (Central Japan International Airport):{" "}
+              </h4>
+              <p>Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
+              <br />
+              <p>
+                See also <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
+              </p>
+              <br />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.329824562581!2d136.96212693731763!3d35.15458571374002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037aa2856e99cd%3A0x40facccda34d6dd6!2z5ZCN5Y-k5bGL5aSn5a2mIOWbvemam-iogOiqnuaWh-WMlueglOeptuenkQ!5e0!3m2!1sja!2sjp!4v1597915686142!5m2!1sja!2sjp&amp;language=en"
+                width="600"
+                height="450"
+                frameborder="0"
+                // style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
           </div>
         </div>

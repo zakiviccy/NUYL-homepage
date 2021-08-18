@@ -36,13 +36,13 @@ const Navbar = class extends React.Component {
     return (
       <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
         <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              {/* <img src={logo} alt="CS-Edit" style={{ width: '88px' }} /> */}
-              <img src={aclogo} alt="Academic Central" style={{ height: "80px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <button
+          {/* <div className="navbar-brand"> */}
+          {/* <Link to="/" className="navbar-item" title="Logo"> */}
+          {/* <img src={logo} alt="CS-Edit" style={{ width: '88px' }} /> */}
+          {/* <img src={aclogo} alt="Academic Central" style={{ height: "80px" }} />
+            </Link> */}
+          {/* Hamburger menu */}
+          {/* <button
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
@@ -53,59 +53,67 @@ const Navbar = class extends React.Component {
               <span />
               <span />
               <span />
-            </button>
-          </div>
+            </button> */}
+          {/* </div> */}
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                <Link to="/division/">
-                  <div className="navbar-item">部門</div>
-                </Link>
+            <div class="navbar-start">
+              <Link className="navbar-item is-active" to="/">
+                Home
+              </Link>
+              <Link className="navbar-item" to="/news/">
+                News and Updates
+              </Link>
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                <div className="navbar-link">
+                  <Link to="/research/">
+                    <div className="navbar-item">Research</div>
+                  </Link>
+                </div>
+                <div className="navbar-dropdown">
+                  <Link to="/open-educational-resources/">
+                    <div className="navbar-item">Open educational resources</div>
+                  </Link>
+                  <Link to="/stochastic-resonance/">
+                    <div className="navbar-item">Stochastic resonance</div>
+                  </Link>
+                  <Link to="/Image-sensor-communications/">
+                    <div className="navbar-item">Image sensor communications</div>
+                  </Link>
+                  <hr className="navbar-divider" />
+                  <div className="navbar-item">Publications</div>
+                </div>
               </div>
-              <div className="navbar-dropdown">
-                <Link to="/division/Promotion-Planning-Office/">
-                  <div className="navbar-item">推進企画室</div>
+              <div className="navbar-start has-text-centered">
+                <Link className="navbar-item" to="/people/">
+                  People
                 </Link>
-                <Link to="/division/Instructional-Design-Team/">
-                  <div className="navbar-item">IDチーム</div>
+                <Link className="navbar-item" to="/awards/">
+                  Awards
                 </Link>
-
-                <hr className="navbar-divider" />
-                <Link to="/division/High-School-University-Articulation/">
-                  <div className="navbar-item">⾼⼤接続部⾨</div>
-                </Link>
-                <Link to="/division/Liberal-Arts/">
-                  <div className="navbar-item">⾼度LA部⾨</div>
-                </Link>
-                <Link to="/division/Data-Science/">
-                  <div className="navbar-item">数理・DS 部⾨</div>
-                </Link>
-                <Link to="/division/Doctoral-Education/">
-                  <div className="navbar-item">博⼠課程部⾨</div>
-                </Link>
-
-                <Link to="/division/QTA/">
-                  <div className="navbar-item">QTAセンター</div>
-                </Link>
-                <Link to="/division/Life-Concept/">
-                  <div className="navbar-item">⼈⽣構想⼒部⾨</div>
+                <Link className="navbar-item" to="/contact/">
+                  Contact/Access
                 </Link>
               </div>
             </div>
-
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/awards/">
-                表彰
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <Link className="navbar-item" to="/ja/">
+                日本語
               </Link>
-              <Link className="navbar-item" to="/news/">
-                ニュース
+              <Link className="navbar-item" to="/">
+                English
               </Link>
-              <Link className="navbar-item" to="/contact/">
-                お問い合わせ
-              </Link>
-              {/* <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link> */}
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-rss-square"></i>
+              </a>
             </div>
           </div>
         </div>
