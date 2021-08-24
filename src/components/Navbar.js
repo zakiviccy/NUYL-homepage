@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import aclogo from "../img/AcademicCentaral.svg";
-// import logo from "../img/ac-logo2.svg";
+import logo from "../img/NUYL-logo.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -38,8 +37,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              {/* <img src={logo} alt="CS-Edit" style={{ width: '88px' }} /> */}
-              <img src={aclogo} alt="Academic Central" style={{ height: "80px" }} />
+              <img src={logo} alt="NUYL" style={{ width: "88px" }} />
             </Link>
             {/* Hamburger menu */}
             <button
@@ -56,14 +54,7 @@ const Navbar = class extends React.Component {
             </button>
           </div>
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            <div class="navbar-start">
-              <Link className="navbar-item is-active" to="/">
-                ホーム
-              </Link>
-              <Link className="navbar-item" to="/news/">
-                ニュース
-              </Link>
-
+            <div className="navbar-start">
               <div className="navbar-item has-dropdown is-hoverable">
                 <div className="navbar-link">
                   <Link to="/research/">
@@ -81,15 +72,32 @@ const Navbar = class extends React.Component {
                     <div className="navbar-item">可視光通信</div>
                   </Link>
                   <hr className="navbar-divider" />
-                  <div className="navbar-item">業績</div>
+                  <Link to="/open-educational-resources/">
+                    <div className="navbar-item">オープン教材</div>
+                  </Link>
                 </div>
               </div>
               <div className="navbar-start has-text-centered">
+                <div className="navbar-item has-dropdown is-hoverable">
+                  <div className="navbar-link">
+                    <Link to="/research/">
+                      <div className="navbar-item">業績／表彰</div>
+                    </Link>
+                  </div>
+                  <div className="navbar-dropdown">
+                    <Link to="/open-educational-resources/">
+                      <div className="navbar-item">業績</div>
+                    </Link>
+                    <Link className="navbar-item" to="/awards/">
+                      表彰
+                    </Link>
+                  </div>
+                </div>
                 <Link className="navbar-item" to="/our-team/">
                   チーム
                 </Link>
-                <Link className="navbar-item" to="/awards/">
-                  表彰
+                <Link className="navbar-item" to="/news/">
+                  ニュース
                 </Link>
                 <Link className="navbar-item" to="/contact/">
                   お問い合わせ／アクセス
@@ -97,23 +105,23 @@ const Navbar = class extends React.Component {
               </div>
             </div>
           </div>
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <Link className="navbar-item" to="/ja/">
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <Link className="navbar-item" to="/">
                 日本語
               </Link>
-              <Link className="navbar-item" to="/">
+              <Link className="navbar-item" to="/en/">
                 English
               </Link>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
+              {/* <a href="#">
+                <i className="fab fa-facebook"></i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
-                <i class="fas fa-rss-square"></i>
-              </a>
+                <i className="fas fa-rss-square"></i>
+              </a> */}
             </div>
           </div>
         </div>

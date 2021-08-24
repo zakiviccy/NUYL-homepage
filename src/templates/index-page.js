@@ -269,6 +269,7 @@ export const pageQuery = graphql`
       id
       frontmatter {
         templateKey
+        lang
         title
         subtitle
         heading

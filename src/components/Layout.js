@@ -10,12 +10,12 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, lang } = useSiteMetadata();
 
   return (
     <div>
       <Helmet>
-        <html lang="ja" />
+        <html lang={lang} />
         <title>{title}</title>
         <meta name="description" content={description} />
         <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>

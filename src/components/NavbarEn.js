@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import aclogo from "../img/AcademicCentaral.svg";
-// import logo from "../img/ac-logo2.svg";
+import logo from "../img/NUYL-logo.svg";
 
-const Navbar = class extends React.Component {
+const NavbarEn = class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,13 +35,12 @@ const Navbar = class extends React.Component {
     return (
       <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
         <div className="container">
-          {/* <div className="navbar-brand"> */}
-          {/* <Link to="/" className="navbar-item" title="Logo"> */}
-          {/* <img src={logo} alt="CS-Edit" style={{ width: '88px' }} /> */}
-          {/* <img src={aclogo} alt="Academic Central" style={{ height: "80px" }} />
-            </Link> */}
+          <div className="navbar-brand">
+          <Link to="/" className="navbar-item" title="Logo">
+          <img src={logo} alt="NUYL" style={{ width: '88px' }} />
+            </Link>
           {/* Hamburger menu */}
-          {/* <button
+          <button
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
@@ -53,17 +51,9 @@ const Navbar = class extends React.Component {
               <span />
               <span />
               <span />
-            </button> */}
-          {/* </div> */}
+            </button>
+          </div>
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            <div class="navbar-start">
-              <Link className="navbar-item is-active" to="/">
-                Home
-              </Link>
-              <Link className="navbar-item" to="/news/">
-                News and Updates
-              </Link>
-
               <div className="navbar-item has-dropdown is-hoverable">
                 <div className="navbar-link">
                   <Link to="/research/">
@@ -91,29 +81,32 @@ const Navbar = class extends React.Component {
                 <Link className="navbar-item" to="/awards/">
                   Awards
                 </Link>
+                <Link className="navbar-item" to="/news/">
+                News and Updates
+              </Link>
                 <Link className="navbar-item" to="/contact/">
                   Contact/Access
                 </Link>
               </div>
             </div>
           </div>
-          <div class="navbar-end">
-            <div class="navbar-item">
+          <div className="navbar-end">
+            <div className="navbar-item">
               <Link className="navbar-item" to="/ja/">
                 日本語
               </Link>
               <Link className="navbar-item" to="/">
                 English
               </Link>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
+              {/* <a href="#">
+                <i className="fab fa-facebook"></i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
-                <i class="fas fa-rss-square"></i>
-              </a>
+                <i className="fas fa-rss-square"></i>
+              </a> */}
             </div>
           </div>
         </div>
@@ -122,4 +115,4 @@ const Navbar = class extends React.Component {
   }
 };
 
-export default Navbar;
+export default NavbarEn;

@@ -1,5 +1,6 @@
 ---
 templateKey: pages
+lang: en
 title: Our team
 description: Our team at Yamazato Lab.
 date: 2021-08-01T07:57:21.383Z

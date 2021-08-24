@@ -130,6 +130,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        lang
         title
         date(formatString: "MMMM DD, YYYY")
         description
