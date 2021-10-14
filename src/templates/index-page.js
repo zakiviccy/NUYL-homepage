@@ -50,19 +50,13 @@ const IndexPageTemplate = ({ data }) => (
                     <article className="columns is-multiline">
                       <div className="column is-12 post-img">
                         <a href="https://www.thers.ac.jp/research/academic-central/" target="_blank" rel="noopener noreferrer">
-                          <StaticImage src="../img/ac1.jpg" alt="アカデミック・セントラル推進企画室" placeholder="blurred" />
+                          <StaticImage src="../img/ac1.jpg" alt="ITS-VLC" placeholder="blurred" />
                         </a>
                       </div>
                       <div className="column is-12 featured-content">
-                        <h3 className="heading post-category">司令塔</h3>
-                        <h1 className="title post-title">アカデミック・セントラル推進企画室</h1>
-                        <div className="content">
-                          <ul>
-                            <li>機構における教育改革に関する施策の企画・立案</li>
-                            <li>アカデミック・セントラルの各部門における事業の企画・立案の支援、各部門との連絡調整</li>
-                            <li>アカデミック・セントラルが実施する教育の広報</li>
-                          </ul>
-                        </div>
+                        <h3 className="heading post-category">Research</h3>
+                        <h1 className="title post-title">可視光通信</h1>
+                        <div className="content px-2">可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です． 私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．</div>
                         <br />
                         <Link className="btn" to="/">
                           Read more
@@ -73,19 +67,14 @@ const IndexPageTemplate = ({ data }) => (
                   <div className="column post is-6">
                     <article className="columns is-multiline">
                       <div className="column is-12 post-img">
-                        <StaticImage src="../img/ac2.jpg" alt="インストラクショナル・デザインチーム" placeholder="blurred" />
+                        <a href="https://vimeo.com/631905450" target="_blank" rel="noopener noreferrer">
+                          <StaticImage src="../img/ac2.jpg" alt="インストラクショナル・デザインチーム" placeholder="blurred" />
+                        </a>
                       </div>
                       <div className="column is-12 featured-content ">
-                        <h3 className="heading post-category">全体企画立案</h3>
-                        <h1 className="title post-title">インストラクショナル・デザインチーム</h1>
-                        <div className="content">
-                          <ul>
-                            <li>機構としての教育の質の保証・向上のための教学 IR・FD・SD 等の実施、講義の公開の推進、機構におけるリベラル・アーツ科目の調整</li>
-                            <li>機構におけるアクティブラーニングの手法（プレゼンテーション、ディスカッション等）、学生の教育への適切な参画方法、デジタル学習教材の活 用方法等、授業における学習デザイン構築の支援、助言、研修の実施</li>
-                            <li>機構におけるポートフォリオの活用などによる学修成果の可視化の推進</li>
-                            <li>その他機構における教育改革の推進</li>
-                          </ul>
-                        </div>
+                        <h3 className="heading post-category">Research</h3>
+                        <h1 className="title post-title">確率共鳴現象の通信への応用</h1>
+                        <div className="content px-2">確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．</div>
                         <br />
                         <Link className="btn" to="/research/Instructional-Design-Team/">
                           Read more
@@ -101,12 +90,13 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/ac3.jpg" alt="⾼⼤接続連携部⾨" placeholder="blurred" />
+                    {/* <StaticImage src="../img/bo01_on.png" alt="⾼⼤接続連携部⾨" placeholder="blurred" /> */}
+                    <iframe src="https://player.vimeo.com/video/631905450" width="500" height="450" allow="autoplay; fullscreen"></iframe>
                   </div>
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">高校・大学接続関連</h3>
                     <h1 className="title post-title">⾼⼤接続連携部⾨</h1>
-                    <div className="content">
+                    <div className="content px-2">
                       <ul>
                         <li>高等学校までの学習指導要領の変更及び入試制度改革の動向を踏まえた、両大学における入学者選抜方法の広報の支援</li>
                         <li>高等学校教育の改革に関する情報を収集し、高大接続の観点から、大学教育において適切に対応できるよう、関係部門や両大学へ情報を提供</li>
@@ -123,12 +113,12 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/ac4.jpg" alt="高度リベラル・アーツ教育共創部門" placeholder="blurred" />
+                    <StaticImage src="../img/bo02_on.png" alt="高度リベラル・アーツ教育共創部門" placeholder="blurred" />
                   </div>
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">教養・共通教育</h3>
                     <h1 className="title post-title">高度リベラル・アーツ教育共創部門</h1>
-                    <div className="content">
+                    <div className="content px-2">
                       <ul>
                         <li>機構としての学部初年次生から大学院生までのシームレスなリベラル・アーツ教育、英語等のコモン・ベーシックス教育の推進</li>
                       </ul>
@@ -143,7 +133,7 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/ac5.jpg" alt="シームレス数理・データ科学教育共創部門" placeholder="blurred" />
+                    <StaticImage src="../img/bo03_on.png" alt="シームレス数理・データ科学教育共創部門" placeholder="blurred" />
                   </div>
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">次世代教育</h3>

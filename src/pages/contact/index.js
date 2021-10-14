@@ -36,7 +36,7 @@ const ContactUsPage = () => (
                 See also <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
               </p>
               <br />
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.329824562581!2d136.96212693731763!3d35.15458571374002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037aa2856e99cd%3A0x40facccda34d6dd6!2z5ZCN5Y-k5bGL5aSn5a2mIOWbvemam-iogOiqnuaWh-WMlueglOeptuenkQ!5e0!3m2!1sja!2sjp!4v1597915686142!5m2!1sja!2sjp&amp;language=en"
                 width="600"
                 height="450"
@@ -45,6 +45,14 @@ const ContactUsPage = () => (
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
+              ></iframe> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.067613051525!2d136.963807252052!3d35.154934480223524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037abb489f342d%3A0x77c72171e4e956e8!2z5ZCN5Y-k5bGL5aSn5a2m5bel5a2m6YOo44O75aSn5a2m6Zmi5bel5a2m56CU56m256eR!5e0!3m2!1sja!2sjp!4v1634217089125!5m2!1sja!2sjp&amp;language=en"
+                width="600"
+                height="450"
+                // style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
               ></iframe>
             </div>
           </div>
