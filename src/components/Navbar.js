@@ -107,21 +107,9 @@ const Navbar = class extends React.Component {
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
-              <Link className="navbar-item" to="/">
-                日本語
-              </Link>
               <Link className="navbar-item" to="/en/">
                 English
               </Link>
-              {/* <a href="#">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i className="fas fa-rss-square"></i>
-              </a> */}
             </div>
           </div>
         </div>
