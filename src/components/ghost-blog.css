@@ -11,39 +11,44 @@ html {
 }
 
 a {
-  color: #3b7adf;
+  color: #f1dae7;
+  font-weight: 700;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #3b7adf;
+  color: white;
 }
 
-/* hr {
-  background: #3b7adf;
-} */
+hr {
+  background: #999a9a;
+}
 
-/* .hero {
-  background: #060606;
-} */
+.hero {
+  background: #251e1c;
+}
 
-/* .title,
+.hero-body {
+  background: black;
+}
+
+.title,
 .subtitle {
-  color: #002c76;
-} */
+  color: white;
+}
 
 .navbar .navbar-item {
-  color: #002c76;
+  color: #e4e2ff;
 }
 
 .navbar .navbar-item.is-active {
-  color: #002c76;
+  color: #bca159;
   font-weight: 700;
 }
 
 .navbar .navbar-item:hover {
   background: transparent;
-  color: white;
+  color: #bca159;
 }
 
 .navbar .navbar-item a {
@@ -67,7 +72,7 @@ a:hover {
 }
 
 .blog-posts .post .post-category {
-  color: #3b7adf;
+  color: #bca159;
 }
 
 .blog-posts .post .post-title {
@@ -79,10 +84,21 @@ a:hover {
   letter-spacing: 0.03rem;
   font-size: 1.2rem;
   font-family: "游ゴシック", "IBM Plex Serif", serif;
-  color: #92a3ab;
+  color: #999a9a;
   font-feature-settings: "palt" 1;
 }
 
-/* .blog-posts .post .featured .featured-image img {
-  height: 380px;
-} */
+.full-width-image {
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background: #bca159;
+  color: white;
+}

@@ -3,7 +3,7 @@ import * as React from "react";
 import { withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import NavbarEN from "../components/NavbarEN";
 // import "./all.sass";
 import "./bulma.min.css";
 import "./ghost-blog.css";
@@ -31,8 +31,8 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
+      <NavbarEN />
+      <div className="hero is-medium">{children}</div>
       <Footer />
     </div>
   );

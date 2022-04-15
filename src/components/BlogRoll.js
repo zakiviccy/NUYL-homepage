@@ -13,25 +13,16 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="column post is-4" key={post.id}>
-              <article className={`blog-list-item tile is-child box notification is-featured`}>
-                {post.frontmatter.featuredimage ? (
-                  <div className="column is-12 featured-content ">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`
-                      }}
-                    />
-                  </div>
-                ) : null}
-                <p className="post-meta">
-                  <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
+              <article className="columns is-multiline">
+                <div className="column is-12 featured-content ">
+                  <h3 className="heading post-category">Category Name</h3>
+                  <Link className="title post-title" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
                   <span className="subtitle is-size-6 is-block">{post.frontmatter.date}</span>
-                </p>
-                <p>
+                </div>
+                <p className="post-excerpt">
                   {post.frontmatter.description}
                   <br />
                   <br />
@@ -50,9 +41,9 @@ class BlogRoll extends React.Component {
 BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export default function BlogRollQuery() {
