@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
             <div className="column post is-4" key={post.id}>
               <article className="columns is-multiline">
                 <div className="column is-12 featured-content ">
-                  <h3 className="heading post-category">Category Name</h3>
+                  <h3 className="heading post-category">News and Updates</h3>
                   <Link className="title post-title" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>

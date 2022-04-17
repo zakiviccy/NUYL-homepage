@@ -1,13 +1,15 @@
 import * as React from "react";
+import ScrollButton from "../components/scrollToTop";
 // import { Link, withPrefix } from "gatsby"
 import { withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import NavbarEN from "../components/NavbarEN";
 // import "./all.sass";
-import "./bulma.min.css";
+// import "./bulma.min.css";
 import "./ghost-blog.css";
 import useSiteMetadata from "./SiteMetadata";
+
 
 const TemplateWrapper = ({ children }) => {
   const { title, description, lang } = useSiteMetadata();
@@ -15,6 +17,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang={lang} />
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -33,6 +36,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <NavbarEN />
       <div className="hero is-medium">{children}</div>
+      <ScrollButton />
       <Footer />
     </div>
   );
