@@ -37,56 +37,57 @@ const NavbarEn = class extends React.Component {
         <div className="hero-head">
           <div className="container">
             <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="container">
-              <div className="navbar-brand">
-                <Link to="/" className="navbar-item" title="Logo">
-                  <img src={logo} alt="NUYL" style={{ width: "88px" }} />
-                </Link>
-                {/* Hamburger menu */}
-                <button
-                  className={`navbar-burger burger-icon ${this.state.navBarActiveClass}`}
-                  data-target="navMenu"
-                  onClick={() => this.toggleHamburger()}
-                  // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md#how-do-i-resolve-this-error
-                  role="menuitem"
-                  tabIndex={0}
-                >
-                  <span />
-                  <span />
-                  <span />
-                </button>
-              </div>
-              <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-              {/* <div id="navbarBasicExample" className="navbar-menu"> */}
-                <div className="navbar-start">
-                  <a className="navbar-item">Home</a>
-                  <a className="navbar-item">News</a>
+              <div className="container">
+                <div className="navbar-brand">
+                  <Link to="/" className="navbar-item" title="Logo">
+                    <img src={logo} alt="NUYL" style={{ width: "88px" }} />
+                  </Link>
+                  {/* Hamburger menu */}
+                  <button
+                    className={`navbar-burger ${this.state.navBarActiveClass}`}
+                    data-target="navMenu"
+                    onClick={() => this.toggleHamburger()}
+                    // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md#how-do-i-resolve-this-error
+                    role="menuitem"
+                    tabIndex={0}
+                  >
+                    <span />
+                    <span />
+                    <span />
+                  </button>
                 </div>
-
-                <div className="navbar-end">
-                  <div className="navbar-item">
-                    <a href="#">
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                    <a href="#team">
-                      <i class="fas fa-user-friends"></i>
-                    </a>
-                    <a href="#contact">
-                    <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#access">
-                    <i class="fas fa-subway"></i> 
-                    </a>
+                <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
+                  {/* <div id="navbarBasicExample" className="navbar-menu"> */}
+                  <div className="navbar-start">
+                    <Link className="navbar-item" to="/en/">
+                      Home
+                    </Link>
+                    <Link className="navbar-item" to="/news/">
+                      News
+                    </Link>
+                  </div>
+                  <div className="navbar-end">
+                    <div className="navbar-item">
+                      <a href="#">
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                      <a href="#team">
+                        <i class="fas fa-user-friends"></i>
+                      </a>
+                      <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <a href="#access">
+                        <i class="fas fa-subway"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
             </nav>
           </div>
         </div>
       </section>
-
-
     );
   }
 };

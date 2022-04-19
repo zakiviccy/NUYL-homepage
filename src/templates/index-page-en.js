@@ -9,14 +9,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-
 const IndexPageTemplateEN = ({ data }) => (
   <Layout>
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../img/NUYL-logo.svg" width="150" alt="NUYL" placeholder="blurred" />
-        <h2 className="subtitle">Nagoya University</h2>
+        <StaticImage src="../../static/img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+        {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
     <section className="blog-posts">
@@ -32,14 +31,12 @@ const IndexPageTemplateEN = ({ data }) => (
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
-                      <h1 className="title post-title">Blog Posts Template</h1>
-                      <p className="post-excerpt">
-                        This template is based off of the official default blog template created by the fine folks over at <a href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog platform, I highly recommend checking them out!
-                      </p>
+                      <h1 className="title post-title">Image sensor communication</h1>
+                      <p className="post-excerpt">We conduct research on image-sensor communication (ISC), one of the visible light communication (VLC) system.</p>
                       <br />
-                      <a href="#" className="button">
+                      <Link className="button" to="/en/Image-sensor-communication/">
                         Read More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -53,18 +50,16 @@ const IndexPageTemplateEN = ({ data }) => (
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
-                      <h1 className="title post-title">Blog Posts Template</h1>
-                      <p className="post-excerpt">
-                        This template is based off of the official default blog template created by the fine folks over at <a href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog platform, I highly recommend checking them out!
-                      </p>
+                      <h1 className="title post-title">Stochastic resonance for communication</h1>
+                      <p className="post-excerpt">Stochastic resonance (SR) is a nonlinear phenomenon in which a system response is enhanced by additional noise.</p>
                       <br />
-                      <a href="#" className="button">
-                        Read More
-                      </a>
+                      <Link className="button" to="/en/Sub-threshold-signal-detection-using-stochastic-resonance/">
+                        Read more
+                      </Link>
                     </div>
                   </div>
                   <div className="column is-7 post-img ">
-                    <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
                   </div>
                 </article>
               </div>
@@ -132,30 +127,36 @@ const IndexPageTemplateEN = ({ data }) => (
             <PageTop />
             <hr />
             <div className="columns is-multiline">
-            <div className="column post is-12">
-              <BlogRoll />
-              <div className="column is-12 has-text-centered">
-                <Link className="button" to="/news">
-                  Read more "News and Updates" →
-                </Link>
+              <div className="column post is-12">
+                <BlogRoll />
+                <div className="column is-12 has-text-centered">
+                  <Link className="button" to="/news">
+                    Read more "News and Updates" →
+                  </Link>
+                </div>
               </div>
             </div>
-            </div>  
             <PageTop />
             <hr />
-            <h2 className="title post-title"><a id="team">Our Team</a></h2>
+            <h2 className="title post-title">
+              <a id="team">Our Team</a>
+            </h2>
             <div className="columns is-multiline">
               <div className="column post is-3">
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Staff</h3>
-                    <h1 className="title post-title"><i class="fas fa-user-tie"></i></h1>
+                    <h1 className="title post-title">
+                      <i class="fas fa-user-tie"></i>
+                    </h1>
                     <p className="post-excerpt">
                       Professor <br />
-                      &nbsp; &nbsp;<Link to="/team/Takaya-Yamazato/">Takaya YAMAZATO</Link><br />
+                      &nbsp; &nbsp;<Link to="/team/Takaya-Yamazato/">Takaya YAMAZATO</Link>
+                      <br />
                       <br />
                       Secretaries <br />
-                      &nbsp; &nbsp;Aiko ISHIKAWA<br />
+                      &nbsp; &nbsp;Aiko ISHIKAWA
+                      <br />
                       &nbsp; &nbsp;Eriko SHIRAISHI
                     </p>
                   </div>
@@ -165,13 +166,17 @@ const IndexPageTemplateEN = ({ data }) => (
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Ph.D. Candidates</h3>
-                    <h1 className="title post-title"><i class="fas fa-user-graduate"></i></h1>
+                    <h1 className="title post-title">
+                      <i class="fas fa-user-graduate"></i>
+                    </h1>
                     <p className="post-excerpt">
                       D3 <br />
-                      &nbsp; &nbsp;Asuka TSUJII<br />
+                      &nbsp; &nbsp;Asuka TSUJII
                       <br />
-                      D1  <br />
-                      &nbsp; &nbsp;Ruiyi HUANG<br />
+                      <br />
+                      D1 <br />
+                      &nbsp; &nbsp;Ruiyi HUANG
+                      <br />
                       &nbsp; &nbsp;Zhengqiang TANG
                     </p>
                   </div>
@@ -181,16 +186,23 @@ const IndexPageTemplateEN = ({ data }) => (
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Master students</h3>
-                    <h1 className="title post-title"><i class="fas fa-user-graduate"></i></h1>
+                    <h1 className="title post-title">
+                      <i class="fas fa-user-graduate"></i>
+                    </h1>
                     <p className="post-excerpt">
                       M2 <br />
-                      &nbsp; &nbsp;Syunki KAMIYA<br />
-                      &nbsp; &nbsp;Masamichi HATTORI<br />
-                      &nbsp; &nbsp;Kento NAKAMURA<br />
+                      &nbsp; &nbsp;Syunki KAMIYA
+                      <br />
+                      &nbsp; &nbsp;Masamichi HATTORI
+                      <br />
+                      &nbsp; &nbsp;Kento NAKAMURA
+                      <br />
                       <br />
                       M1 <br />
-                      &nbsp; &nbsp;Daiki EHARA<br />
-                      &nbsp; &nbsp;Fumiya OJIKA<br />
+                      &nbsp; &nbsp;Daiki EHARA
+                      <br />
+                      &nbsp; &nbsp;Fumiya OJIKA
+                      <br />
                       &nbsp; &nbsp;Jinxing ZHENG
                     </p>
                   </div>
@@ -200,11 +212,15 @@ const IndexPageTemplateEN = ({ data }) => (
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Undergraduate students</h3>
-                    <h1 className="title post-title"><i class="fas fa-user-friends"></i></h1>
+                    <h1 className="title post-title">
+                      <i class="fas fa-user-friends"></i>
+                    </h1>
                     <p className="post-excerpt">
                       B4 <br />
-                      &nbsp; &nbsp;Arata ISOZAKI<br />
-                      &nbsp; &nbsp;Ayumu OTSUKA<br />
+                      &nbsp; &nbsp;Arata ISOZAKI
+                      <br />
+                      &nbsp; &nbsp;Ayumu OTSUKA
+                      <br />
                       &nbsp; &nbsp;Kota FURUKAWA
                     </p>
                   </div>
@@ -214,22 +230,34 @@ const IndexPageTemplateEN = ({ data }) => (
             <PageTop />
             <hr />
             <div className="column post is-12">
+              <h2 className="title post-title">
+                <a id="contact">Contact:</a>
+              </h2>
 
-              <h2 className="title post-title"><a id="contact">Contact:</a></h2>
-              
-              <p className="post-excerpt">YAMAZATO Laboratory,<br />
-              Department of Information and Communication Engineering, <br />
-              School of Engineering, Nagoya University</p>
               <p className="post-excerpt">
-                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho, Chikusa-ku, Nagoya 464-8063 JAPAN<br />
-                <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;Laboratory: +81-52-789-3173<br />
-                <i class="fas fa-phone-square"></i>&nbsp; &nbsp;Secretary: +81-52-789-2743<br />
+                YAMAZATO Laboratory,
+                <br />
+                Department of Information and Communication Engineering, <br />
+                School of Engineering, Nagoya University
+              </p>
+              <p className="post-excerpt">
+                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho, Chikusa-ku, Nagoya 464-8063 JAPAN
+                <br />
+                <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;Laboratory: +81-52-789-3173
+                <br />
+                <i class="fas fa-phone-square"></i>&nbsp; &nbsp;Secretary: +81-52-789-2743
+                <br />
               </p>
               <br />
 
-              <h3 className="title post-title"><a id="access">Access:</a></h3>
-              <p className="post-excerpt">YAMAZATO Laboratory is located at 5th Floor of the North IB Building.<br />
-              See also our <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf">campus map, C3-1</a> , for the location of the North IB Building.</p>
+              <h3 className="title post-title">
+                <a id="access">Access:</a>
+              </h3>
+              <p className="post-excerpt">
+                YAMAZATO Laboratory is located at 5th Floor of the North IB Building.
+                <br />
+                See also our <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf">campus map, C3-1</a> , for the location of the North IB Building.
+              </p>
               <br />
               <h4 className="subtitle post-subtitle">
                 <i class="fas fa-subway"></i> From Nagoya Station:
@@ -241,7 +269,7 @@ const IndexPageTemplateEN = ({ data }) => (
               </h4>
               <p className="post-excerpt">Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
               <br />
-              <p className="post-excerpt">  
+              <p className="post-excerpt">
                 See also <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
               </p>
               <br />
@@ -254,9 +282,8 @@ const IndexPageTemplateEN = ({ data }) => (
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>
-
-          </div>
-          <PageTop />
+            </div>
+            <PageTop />
           </div>
         </div>
       </div>
