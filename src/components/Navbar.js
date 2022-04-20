@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import logo from "../img/NUYL-logo.svg";
+// import "./all.sass";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -33,7 +34,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+      <nav className="navbar is-info" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
@@ -55,7 +56,13 @@ const Navbar = class extends React.Component {
           </div>
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start">
-              <div className="navbar-item has-dropdown is-hoverable">
+              <Link className="navbar-item" to="/news/">
+                ニュース
+              </Link>
+              <Link className="navbar-item" to="/research/">
+                業績／表彰
+              </Link>
+              {/* <div className="navbar-item has-dropdown is-hoverable">
                 <div className="navbar-link">
                   <Link to="/research/">
                     <div className="navbar-item">研究</div>
@@ -76,8 +83,8 @@ const Navbar = class extends React.Component {
                     <div className="navbar-item">オープン教材</div>
                   </Link>
                 </div>
-              </div>
-              <div className="navbar-start has-text-centered">
+              </div> */}
+              {/* <div className="navbar-start has-text-centered">
                 <div className="navbar-item has-dropdown is-hoverable">
                   <div className="navbar-link">
                     <Link to="/research/">
@@ -93,23 +100,24 @@ const Navbar = class extends React.Component {
                     </Link>
                   </div>
                 </div>
-                <Link className="navbar-item" to="/our-team/">
-                  チーム
-                </Link>
                 <Link className="navbar-item" to="/news/">
                   ニュース
                 </Link>
-                <Link className="navbar-item" to="/contact/">
-                  お問い合わせ／アクセス
+              </div> */}
+            </div>
+            <div className="navbar-end">
+              <div className="navbar-item">
+                <Link to="/en/#">EN</Link>
+                <Link to="/#team">
+                  <i class="fas fa-user-friends"></i>
+                </Link>
+                <Link to="/#contact">
+                  <i class="fas fa-envelope"></i>
+                </Link>
+                <Link to="/#access">
+                  <i class="fas fa-subway"></i>
                 </Link>
               </div>
-            </div>
-          </div>
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <Link className="navbar-item" to="/en/">
-                English
-              </Link>
             </div>
           </div>
         </div>

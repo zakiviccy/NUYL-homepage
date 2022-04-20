@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageTop from "../components/PageTop";
+import PageTopEn from "../components/PageTopEn";
 // import PropTypes from 'prop-types'
 import { Link, graphql } from "gatsby";
 import SeO from "../components/seo";
 import Layout from "../components/LayoutEN";
-import BlogRoll from "../components/BlogRoll";
+import BlogRollEn from "../components/BlogRollEn";
 import { StaticImage } from "gatsby-plugin-image";
 
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -42,7 +42,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 </article>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
             <div className="columns featured-post is-multiline">
               <div className="column is-12 post">
@@ -64,7 +64,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 </article>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
             <div className="columns featured-post is-multiline">
               <div className="column is-12 post">
@@ -88,7 +88,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 </article>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
             <div className="columns is-multiline">
               <div className="column post is-6">
@@ -124,11 +124,12 @@ const IndexPageTemplateEN = ({ data }) => (
                 </article>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
+            <h2 className="title post-title">News and Updates</h2>
             <div className="columns is-multiline">
               <div className="column post is-12">
-                <BlogRoll />
+                <BlogRollEn />
                 <div className="column is-12 has-text-centered">
                   <Link className="button" to="/news">
                     Read more "News and Updates" →
@@ -136,7 +137,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 </div>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
             <h2 className="title post-title">
               <a id="team">Our Team</a>
@@ -227,7 +228,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 </article>
               </div>
             </div>
-            <PageTop />
+            <PageTopEn />
             <hr />
             <div className="column post is-12">
               <h2 className="title post-title">
@@ -283,7 +284,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 loading="lazy"
               ></iframe>
             </div>
-            <PageTop />
+            <PageTopEn />
           </div>
         </div>
       </div>

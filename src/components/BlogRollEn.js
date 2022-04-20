@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-class BlogRoll extends React.Component {
+class BlogRollEn extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -16,13 +16,13 @@ class BlogRoll extends React.Component {
               <article className="columns is-multiline">
                 <div className="column is-12 featured-content ">
                   <h3 className="heading post-category">News and Updates</h3>
-                  <Link className="is-size-4" to={post.fields.slug}>
+                  <Link className="title post-title" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
-                  {/* <span> &bull; </span> */}
-                  <span className="is-size-6 is-block">{post.frontmatter.date}</span>
+                  <span> &bull; </span>
+                  <span className="subtitle is-size-6 is-block">{post.frontmatter.date}</span>
                 </div>
-                <p className="is-size-6">
+                <p className="post-excerpt">
                   {post.frontmatter.description}
                   <br />
                   <br />
@@ -38,7 +38,7 @@ class BlogRoll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+BlogRollEn.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -76,7 +76,7 @@ export default function BlogRollQuery() {
           }
         }
       `}
-      render={(data, count) => <BlogRoll data={data} count={count} />}
+      render={(data, count) => <BlogRollEn data={data} count={count} />}
     />
   );
 }

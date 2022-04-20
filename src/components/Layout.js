@@ -1,12 +1,15 @@
 import * as React from "react";
+import ScrollButton from "../components/scrollToTop";
 // import { Link, withPrefix } from "gatsby"
 import { withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-// import "./all.sass";
-import "./bulma.min.css";
+
+import "./all.sass";
+// import "./bulma.min.css";
 import "./ghost-blog.css";
+
 import useSiteMetadata from "./SiteMetadata";
 
 const TemplateWrapper = ({ children }) => {
@@ -33,6 +36,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      <ScrollButton />
       <Footer />
     </div>
   );
