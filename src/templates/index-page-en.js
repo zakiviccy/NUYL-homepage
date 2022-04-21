@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageTopEn from "../components/PageTopEn";
+import PageTopEn from "./src/components/PageTopEn";
 // import PropTypes from 'prop-types'
 import { Link, graphql } from "gatsby";
-import SeO from "../components/seo";
-import Layout from "../components/LayoutEN";
-import BlogRollEn from "../components/BlogRollEn";
+import SeO from "./src/components/seo";
+import Layout from "./src/components/LayoutEN";
+import BlogRollEn from "./src/components/BlogRollEn";
 import { StaticImage } from "gatsby-plugin-image";
 
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -14,7 +14,7 @@ const IndexPageTemplateEN = ({ data }) => (
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../../static/img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+        <StaticImage src="../img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
         {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
@@ -94,16 +94,16 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/ac1.jpg" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage src="../img/Global_Open_Educational_Resources_Logo.svg" alt="ITS-VLC" placeholder="blurred" />
                   </div>
                   <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Category Name</h3>
-                    <h1 className="title post-title">Slightly Longer Blog Post Title</h1>
-                    <p className="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                    <h3 className="heading post-category">Research</h3>
+                    <h1 className="title post-title">Open educational resources (OERs)</h1>
+                    <p className="post-excerpt">Open educational resources (OERs) are teaching, learning, or research materials that are available in the public domain or released with an intellectual property license that allows for free use, adaptation, and distribution. We are currently focusing on developing OERs and their related technologies.</p>
                     <br />
-                    <a href="#" className="button">
+                    <Link to="/en/OER/" className="button">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </article>
               </div>
@@ -139,8 +139,8 @@ const IndexPageTemplateEN = ({ data }) => (
             </div>
             <PageTopEn />
             <hr />
-            <h2 className="title post-title">
-              <a id="team">Our Team</a>
+            <h2 id="team" className="title post-title">
+              <Link to="/en/team/"> Our Team</Link>
             </h2>
             <div className="columns is-multiline">
               <div className="column post is-3">
@@ -175,7 +175,7 @@ const IndexPageTemplateEN = ({ data }) => (
                       &nbsp; &nbsp;Asuka TSUJII
                       <br />
                       <br />
-                      D1 <br />
+                      D2 <br />
                       &nbsp; &nbsp;Ruiyi HUANG
                       <br />
                       &nbsp; &nbsp;Zhengqiang TANG
@@ -231,8 +231,8 @@ const IndexPageTemplateEN = ({ data }) => (
             <PageTopEn />
             <hr />
             <div className="column post is-12">
-              <h2 className="title post-title">
-                <a id="contact">Contact:</a>
+              <h2 id="contact" className="title post-title">
+                Contact:{" "}
               </h2>
 
               <p className="post-excerpt">
@@ -251,8 +251,8 @@ const IndexPageTemplateEN = ({ data }) => (
               </p>
               <br />
 
-              <h3 className="title post-title">
-                <a id="access">Access:</a>
+              <h3 id="access" className="title post-title">
+                Access:{" "}
               </h3>
               <p className="post-excerpt">
                 YAMAZATO Laboratory is located at 5th Floor of the North IB Building.
