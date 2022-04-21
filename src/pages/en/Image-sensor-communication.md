@@ -1,5 +1,6 @@
 ---
 templateKey: pages-en
+lang: en
 title: Image sensor communication
 description: We conduct research on image-sensor communication (ISC), one of the visible light communication (VLC) system.
 date: 2021-04-01T07:57:21.383Z
@@ -7,6 +8,10 @@ tags:
   - Research
   - Visible light communication
   - Image sensor communciation
+---
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/631908435?h=ebe66dc0ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IV21_Nagoya_University_Yamazato"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Visible light communication

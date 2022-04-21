@@ -60,6 +60,9 @@ const Navbar = class extends React.Component {
                 ニュース
               </Link>
               <Link className="navbar-item" to="/research/">
+                研究
+              </Link>
+              <Link className="navbar-item" to="/award/">
                 業績／表彰
               </Link>
               {/* <div className="navbar-item has-dropdown is-hoverable">

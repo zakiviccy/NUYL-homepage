@@ -1,0 +1,47 @@
+---
+templateKey: pages-eng
+lang: en
+title: 2022 team
+description: Our team at Yamazato Lab.
+date: 2021-08-01T07:57:21.383Z
+tags:
+  - Team
+  - 2022
+---
+
+## Professor:
+
+- [Takaya YAMAZATO](/team/Takaya-Yamazato/)
+
+Secretary:
+
+- Aiko ISHIKAWA
+- Eriko SHIRAISHI
+
+Ph.D Candidates
+
+- D3:
+  - Asuka TSUJII
+- D2:
+  - Ruiyi HUANG
+  - Zhengqiang TANG
+
+Graduate Students
+
+- M2:
+
+  - Syunki KAMIYA
+  - Masamichi HATTORI
+  - Kento NAKAMURA
+
+- M1:
+  - Fumiya OJIKA
+  - Jinxing ZHENG
+  - Daiki EHARA
+
+Undergraduate Students
+
+- B4:
+  - Arata ISOZAKI
+  - Ayumu OTSUKA
+  - Kota FURUKAWA

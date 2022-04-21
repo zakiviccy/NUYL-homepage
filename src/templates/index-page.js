@@ -35,7 +35,7 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage src="../../static/img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+          <StaticImage src="../img/logo-j.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -64,7 +64,7 @@ const IndexPageTemplate = ({ data }) => (
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">可視光通信</h1>
                       <div className="content px-2">可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です． 私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．</div>
-                      <Link className="button" to="/">
+                      <Link className="button" to="/research/Visible-light-communications/">
                         Read more
                       </Link>
                     </div>
@@ -77,19 +77,19 @@ const IndexPageTemplate = ({ data }) => (
             <div className="columns featured-post is-multiline">
               <div className="column is-12 post">
                 <article className="columns featured">
-                  <div className="column post is-7">
-                    <div className="column is-12 post-img">
-                      <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
-                    </div>
-                  </div>
                   <div className="column post is-5">
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">確率共鳴現象の通信への応用</h1>
                       <div className="content px-2">確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．</div>
-                      <Link className="button" to="/">
+                      <Link className="button" to="/research/Stochastic-resonance/">
                         Read more
                       </Link>
+                    </div>
+                  </div>
+                  <div className="column post is-7">
+                    <div className="column is-12 post-img">
+                      <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
                     </div>
                   </div>
                 </article>
@@ -110,7 +110,9 @@ const IndexPageTemplate = ({ data }) => (
             </div>
             <PageTop />
             <hr />
-            <h2 id="team">チーム</h2>
+            <h2 id="team">
+              <Link to="/team/">チーム</Link>
+            </h2>
             <div className="columns is-multiline">
               <div className="column post is-3">
                 <article className="columns is-multiline">
@@ -144,7 +146,7 @@ const IndexPageTemplate = ({ data }) => (
                       &nbsp; &nbsp;辻井 明日香
                       <br />
                       <br />
-                      D1 <br />
+                      D2 <br />
                       &nbsp; &nbsp;黄 瑞怡
                       <br />
                       &nbsp; &nbsp;唐 正強
@@ -218,7 +220,7 @@ const IndexPageTemplate = ({ data }) => (
               <br />
               <h2 id="access">アクセス</h2>
               <p className="is-size-5">
-                山里研究室は IB電子情報館 9Fにあります．
+                山里研究室は IB電子情報館 5Fにあります．
                 <br />
                 <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
               </p>

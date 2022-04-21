@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 // import PropTypes from 'prop-types'
 import { kebabCase } from "lodash";
 // import { Helmet } from 'react-helmet'
-import Layout from "../components/LayoutEN";
+import Layout from "../components/LayoutEn";
 import SeO from "../components/seo";
 
 const PagesTemplate = ({ data, location }) => {
@@ -15,22 +15,22 @@ const PagesTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SeO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
-      <section className="blog-posts">
+      <section className="section has-text-white-ter">
         <header>
           <title>{post.frontmatter.title}</title>
           <meta name="description" content={post.frontmatter.description} />
         </header>
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1 post">
-              <h3 className="heading has-text-white-ter">{post.frontmatter.date}</h3>
-              <h1 className="title has-text-white-ter">{post.frontmatter.title}</h1>
-              <p className="has-text-white-ter">{post.frontmatter.description}</p>
+        <div className="container content has-text-white-ter">
+          <div className="columns has-text-white-ter">
+            <div className="column is-10 is-offset-1 has-text-white-ter">
+              {post.frontmatter.date}
+              <h1 className="is-size-2 has-text-weight-bold is-bold-light has-text-white-ter">{post.frontmatter.title}</h1>
+              <p>{post.frontmatter.description}</p>
               <hr />
               <section className="has-text-white-ter" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
-                  <h4 className="subtitle post-subtitle">Tags</h4>
+                  <h4 className="has-text-white-ter">Tags</h4>
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
                       <li key={tag + `tag`}>
@@ -51,7 +51,7 @@ const PagesTemplate = ({ data, location }) => {
 export default PagesTemplate;
 
 export const pageQuery = graphql`
-  query PagesBySlugEn($id: String!) {
+  query PagesBySlugEng($id: String!) {
     site {
       siteMetadata {
         title

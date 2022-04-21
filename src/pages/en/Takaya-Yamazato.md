@@ -1,5 +1,6 @@
 ---
-templateKey: pages
+templateKey: pages-en
+lang: en
 title: Takaya Yamazato
 description: Dr. Takaya Yamazato is a professor at the Institute of Liberal Arts and Sciences, Nagoya University, Japan.
 date: 2021-08-01T07:57:21.383Z
