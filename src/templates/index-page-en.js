@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageTopEn from "./src/components/PageTopEn";
+import PageTopEn from "../components/PageTopEn";
 // import PropTypes from 'prop-types'
 import { Link, graphql } from "gatsby";
-import SeO from "./src/components/seo";
-import Layout from "./src/components/LayoutEN";
-import BlogRollEn from "./src/components/BlogRollEn";
+import SeO from "../components/seo";
+import Layout from "../components/LayoutEN";
+import BlogRollEn from "../components/BlogRollEn";
 import { StaticImage } from "gatsby-plugin-image";
 
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
