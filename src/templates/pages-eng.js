@@ -1,20 +1,23 @@
-import * as React from "react";
-import { Link, graphql } from "gatsby";
+import * as React from 'react'
+import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
-import { kebabCase } from "lodash";
+import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from "../components/LayoutEn";
-import SeO from "../components/seo";
+import Layout from '../components/LayoutEn'
+import SeO from '../components/seo'
 
 const PagesTemplate = ({ data, location }) => {
-  const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
   // const { previous, next } = data
-  const tags = post.frontmatter.tags;
+  const tags = post.frontmatter.tags
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SeO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <SeO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
       <section className="section has-text-white-ter">
         <header>
           <title>{post.frontmatter.title}</title>
@@ -24,10 +27,16 @@ const PagesTemplate = ({ data, location }) => {
           <div className="columns has-text-white-ter">
             <div className="column is-10 is-offset-1 has-text-white-ter">
               {post.frontmatter.date}
-              <h1 className="is-size-2 has-text-weight-bold is-bold-light has-text-white-ter">{post.frontmatter.title}</h1>
+              <h1 className="is-size-2 has-text-weight-bold is-bold-light has-text-white-ter">
+                {post.frontmatter.title}
+              </h1>
               <p>{post.frontmatter.description}</p>
               <hr />
-              <section className="has-text-white-ter" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+              <section
+                className="has-text-white-ter"
+                dangerouslySetInnerHTML={{ __html: post.html }}
+                itemProp="articleBody"
+              />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
                   <h4 className="has-text-white-ter">Tags</h4>
@@ -45,10 +54,10 @@ const PagesTemplate = ({ data, location }) => {
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default PagesTemplate;
+export default PagesTemplate
 
 export const pageQuery = graphql`
   query PagesBySlugEng($id: String!) {
@@ -71,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

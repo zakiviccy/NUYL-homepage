@@ -1,20 +1,28 @@
-import * as React from "react";
-import PageTopEn from "../components/PageTopEn";
+import * as React from 'react'
+import PageTopEn from '../components/PageTopEn'
 // import PropTypes from 'prop-types'
-import { Link, graphql } from "gatsby";
-import SeO from "../components/seo";
-import Layout from "../components/LayoutEN";
-import BlogRollEn from "../components/BlogRollEn";
-import { StaticImage } from "gatsby-plugin-image";
+import { Link, graphql } from 'gatsby'
+import SeO from '../components/seo'
+import Layout from '../components/LayoutEN'
+import BlogRollEn from '../components/BlogRollEn'
+import { StaticImage } from 'gatsby-plugin-image'
 
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 const IndexPageTemplateEN = ({ data }) => (
   <Layout>
-    <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
+    <SeO
+      title={data.markdownRemark.frontmatter.title}
+      description={data.markdownRemark.frontmatter.description}
+    />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+        <StaticImage
+          src="../img/logo.png"
+          width="300"
+          alt="Yamazato Laboratory"
+          placeholder="blurred"
+        />
         {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
@@ -26,15 +34,27 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column is-12 post">
                 <article className="columns featured">
                   <div className="column is-7 post-img ">
-                    <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage
+                      src="../img/ITS-VLC.png"
+                      alt="ITS-VLC"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
-                      <h1 className="title post-title">Image sensor communication</h1>
-                      <p className="post-excerpt">We conduct research on image-sensor communication (ISC), one of the visible light communication (VLC) system.</p>
+                      <h1 className="title post-title">
+                        Image sensor communication
+                      </h1>
+                      <p className="post-excerpt">
+                        We conduct research on image-sensor communication (ISC),
+                        one of the visible light communication (VLC) system.
+                      </p>
                       <br />
-                      <Link className="button" to="/en/Image-sensor-communication/">
+                      <Link
+                        className="button"
+                        to="/en/Image-sensor-communication/"
+                      >
                         Read More
                       </Link>
                     </div>
@@ -50,16 +70,28 @@ const IndexPageTemplateEN = ({ data }) => (
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
-                      <h1 className="title post-title">Stochastic resonance for communication</h1>
-                      <p className="post-excerpt">Stochastic resonance (SR) is a nonlinear phenomenon in which a system response is enhanced by additional noise.</p>
+                      <h1 className="title post-title">
+                        Stochastic resonance for communication
+                      </h1>
+                      <p className="post-excerpt">
+                        Stochastic resonance (SR) is a nonlinear phenomenon in
+                        which a system response is enhanced by additional noise.
+                      </p>
                       <br />
-                      <Link className="button" to="/en/Sub-threshold-signal-detection-using-stochastic-resonance/">
+                      <Link
+                        className="button"
+                        to="/en/Sub-threshold-signal-detection-using-stochastic-resonance/"
+                      >
                         Read more
                       </Link>
                     </div>
                   </div>
                   <div className="column is-7 post-img ">
-                    <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
+                    <StaticImage
+                      src="../img/SR.png"
+                      alt="Stochastic Resonance"
+                      placeholder="blurred"
+                    />
                   </div>
                 </article>
               </div>
@@ -70,14 +102,22 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column is-12 post">
                 <article className="columns featured">
                   <div className="column is-7 post-img ">
-                    <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage
+                      src="../img/ITS-VLC.png"
+                      alt="ITS-VLC"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="title post-title">Blog Posts Template</h1>
                       <p className="post-excerpt">
-                        This template is based off of the official default blog template created by the fine folks over at <a href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog platform, I highly recommend checking them out!
+                        This template is based off of the official default blog
+                        template created by the fine folks over at{' '}
+                        <a href="https://ghost.io">Ghost</a>. If you are looking
+                        for a fully featured blog platform, I highly recommend
+                        checking them out!
                       </p>
                       <br />
                       <a href="#" className="button">
@@ -94,12 +134,25 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/Global_Open_Educational_Resources_Logo.svg" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage
+                      src="../img/Global_Open_Educational_Resources_Logo.svg"
+                      alt="ITS-VLC"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Research</h3>
-                    <h1 className="title post-title">Open educational resources (OERs)</h1>
-                    <p className="post-excerpt">Open educational resources (OERs) are teaching, learning, or research materials that are available in the public domain or released with an intellectual property license that allows for free use, adaptation, and distribution. We are currently focusing on developing OERs and their related technologies.</p>
+                    <h1 className="title post-title">
+                      Open educational resources (OERs)
+                    </h1>
+                    <p className="post-excerpt">
+                      Open educational resources (OERs) are teaching, learning,
+                      or research materials that are available in the public
+                      domain or released with an intellectual property license
+                      that allows for free use, adaptation, and distribution. We
+                      are currently focusing on developing OERs and their
+                      related technologies.
+                    </p>
                     <br />
                     <Link to="/en/OER/" className="button">
                       Read More
@@ -110,12 +163,22 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column post is-6">
                 <article className="columns is-multiline">
                   <div className="column is-12 post-img">
-                    <StaticImage src="../img/Rotary-LED.png" alt="ITS-VLC" placeholder="blurred" />
+                    <StaticImage
+                      src="../img/Rotary-LED.png"
+                      alt="ITS-VLC"
+                      placeholder="blurred"
+                    />
                   </div>
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">Category Name</h3>
-                    <h1 className="title post-title">Slightly Longer Blog Post Title</h1>
-                    <p className="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                    <h1 className="title post-title">
+                      Slightly Longer Blog Post Title
+                    </h1>
+                    <p className="post-excerpt">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Accusamus ratione harum eaque, animi nulla tempore quis,
+                      quam voluptatum.
+                    </p>
                     <br />
                     <a href="#" className="button">
                       Read More
@@ -152,7 +215,8 @@ const IndexPageTemplateEN = ({ data }) => (
                     </h1>
                     <p className="post-excerpt">
                       Professor <br />
-                      &nbsp; &nbsp;<Link to="/team/Takaya-Yamazato/">Takaya YAMAZATO</Link>
+                      &nbsp; &nbsp;
+                      <Link to="/team/Takaya-Yamazato/">Takaya YAMAZATO</Link>
                       <br />
                       <br />
                       Secretaries <br />
@@ -212,7 +276,9 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column post is-3">
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Undergraduate students</h3>
+                    <h3 className="heading post-category">
+                      Undergraduate students
+                    </h3>
                     <h1 className="title post-title">
                       <i class="fas fa-user-friends"></i>
                     </h1>
@@ -232,7 +298,7 @@ const IndexPageTemplateEN = ({ data }) => (
             <hr />
             <div className="column post is-12">
               <h2 id="contact" className="title post-title">
-                Contact:{" "}
+                Contact:{' '}
               </h2>
 
               <p className="post-excerpt">
@@ -242,36 +308,53 @@ const IndexPageTemplateEN = ({ data }) => (
                 School of Engineering, Nagoya University
               </p>
               <p className="post-excerpt">
-                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho, Chikusa-ku, Nagoya 464-8063 JAPAN
+                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho,
+                Chikusa-ku, Nagoya 464-8063 JAPAN
                 <br />
-                <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;Laboratory: +81-52-789-3173
+                <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;Laboratory:
+                +81-52-789-3173
                 <br />
-                <i class="fas fa-phone-square"></i>&nbsp; &nbsp;Secretary: +81-52-789-2743
+                <i class="fas fa-phone-square"></i>&nbsp; &nbsp;Secretary:
+                +81-52-789-2743
                 <br />
               </p>
               <br />
 
               <h3 id="access" className="title post-title">
-                Access:{" "}
+                Access:{' '}
               </h3>
               <p className="post-excerpt">
-                YAMAZATO Laboratory is located at 5th Floor of the North IB Building.
+                YAMAZATO Laboratory is located at 5th Floor of the North IB
+                Building.
                 <br />
-                See also our <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf">campus map, C3-1</a> , for the location of the North IB Building.
+                See also our{' '}
+                <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf">
+                  campus map, C3-1
+                </a>{' '}
+                , for the location of the North IB Building.
               </p>
               <br />
               <h4 className="subtitle post-subtitle">
                 <i class="fas fa-subway"></i> From Nagoya Station:
               </h4>
-              <p className="post-excerpt">Take the Subway Higashiyama Line to Motoyama Sta. (15 minutes), then transfer to the Subway Meijo Line to Nagoya Daigaku Sta. (Higashiyama Campus is just off the subway exit.).</p>
+              <p className="post-excerpt">
+                Take the Subway Higashiyama Line to Motoyama Sta. (15 minutes),
+                then transfer to the Subway Meijo Line to Nagoya Daigaku Sta.
+                (Higashiyama Campus is just off the subway exit.).
+              </p>
               <br />
               <h4 className="subtitle post-subtitle">
-                <i class="fas fa-subway"></i> From Centrair (Central Japan International Airport):{" "}
+                <i class="fas fa-subway"></i> From Centrair (Central Japan
+                International Airport):{' '}
               </h4>
-              <p className="post-excerpt">Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
+              <p className="post-excerpt">
+                Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer
+                to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).
+              </p>
               <br />
               <p className="post-excerpt">
-                See also <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
+                See also{' '}
+                <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
               </p>
               <br />
               <iframe
@@ -290,9 +373,9 @@ const IndexPageTemplateEN = ({ data }) => (
       </div>
     </section>
   </Layout>
-);
+)
 
-export default IndexPageTemplateEN;
+export default IndexPageTemplateEN
 
 export const pageQuery = graphql`
   query IndexPageTemplateEN {
@@ -303,7 +386,9 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page-en" }, lang: { eq: "en" } }) {
+    markdownRemark(
+      frontmatter: { templateKey: { eq: "index-page-en" }, lang: { eq: "en" } }
+    ) {
       id
       frontmatter {
         templateKey
@@ -316,4 +401,4 @@ export const pageQuery = graphql`
       html
     }
   }
-`;
+`
