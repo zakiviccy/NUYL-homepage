@@ -3,23 +3,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import SeO from '../../components/seo'
 
-export default function Award2() {
+export default function Award() {
   const data = useStaticQuery(graphql`
-    query AwardQuery2 {
+    query rAwardQuery {
       site {
         siteMetadata {
           title
-        }
-      }
-      markdownRemark(frontmatter: { templateKey: { eq: "awards-page" } }) {
-        id
-        excerpt(pruneLength: 160)
-        frontmatter {
-          title
-          date(formatString: "MMMM DD, YYYY")
           description
         }
-        html
       }
       allAwardsCsv {
         nodes {
@@ -33,15 +24,12 @@ export default function Award2() {
     }
   `)
 
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+
   return (
-    // <Layout location={location} title={siteTitle}>
     <Layout>
       <SeO
-        // title={post.frontmatter.title}
-        title={siteTitle}
-        // description={post.frontmatter.description}
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
       />
       <section className="section section--gradient">
         <div className="container content">
