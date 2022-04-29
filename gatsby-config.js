@@ -4,12 +4,12 @@ module.exports = {
   // },
   // pathPrefix: `~yamazato`,　//チェック用
   siteMetadata: {
-    title: "Nagoya University Yamazato Laboratory Homepage",
-    description: "Welcome to Nagoya University Yamazato Laboratory Homepage.",
+    title: 'Nagoya University Yamazato Laboratory Homepage',
+    description: 'Welcome to Nagoya University Yamazato Laboratory Homepage.',
     siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp/`,
     social: {
-      twitter: `nuyl`
-    }
+      twitter: `nuyl`,
+    },
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -18,22 +18,36 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,
-        name: "uploads"
-      }
+        name: 'uploads',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/img`,
-        name: "images"
-      }
+        name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-csv`,
+      options: {
+        noheader: true,
+        ignoreEmpty: true,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -44,8 +58,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: "uploads"
-            }
+              name: 'uploads',
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -53,17 +67,17 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048
-            }
+              maxWidth: 2048,
+            },
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              destinationDir: "static"
-            }
-          }
-        ]
-      }
+              destinationDir: 'static',
+            },
+          },
+        ],
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -71,8 +85,8 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`, // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
-        purgeOnly: ["/all.sass"] // applies purging only on the bulma css file
-      }
-    } // must be after other CSS plugins
-  ]
-};
+        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+      },
+    }, // must be after other CSS plugins
+  ],
+}

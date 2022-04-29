@@ -1,16 +1,19 @@
-import * as React from "react";
-import PageTop from "../components/PageTop";
+import * as React from 'react'
+import PageTop from '../components/PageTop'
 // import PropTypes from 'prop-types'
-import { Link, graphql } from "gatsby";
-import SeO from "../components/seo";
-import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
-import { StaticImage } from "gatsby-plugin-image";
+import { Link, graphql } from 'gatsby'
+import SeO from '../components/seo'
+import Layout from '../components/Layout'
+import BlogRoll from '../components/BlogRoll'
+import { StaticImage } from 'gatsby-plugin-image'
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 const IndexPageTemplate = ({ data }) => (
   <Layout>
-    <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
+    <SeO
+      title={data.markdownRemark.frontmatter.title}
+      description={data.markdownRemark.frontmatter.description}
+    />
     {/* <div
       className="full-width-image margin-top-0"
       style={{
@@ -35,7 +38,12 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage src="../img/logo-j.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+          <StaticImage
+            src="../img/logo-j.png"
+            width="300"
+            alt="Yamazato Laboratory"
+            placeholder="blurred"
+          />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -47,7 +55,10 @@ const IndexPageTemplate = ({ data }) => (
             <br />
             <div className="tile box">
               <blockquote>
-                <div className="content" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+                />
               </blockquote>
             </div>
 
@@ -56,15 +67,25 @@ const IndexPageTemplate = ({ data }) => (
                 <article className="columns featured">
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
+                      <StaticImage
+                        src="../img/ITS-VLC.png"
+                        alt="ITS-VLC"
+                        placeholder="blurred"
+                      />
                     </div>
                   </div>
                   <div className="column post is-5">
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">可視光通信</h1>
-                      <div className="content px-2">可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です． 私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．</div>
-                      <Link className="button" to="/research/Visible-light-communications/">
+                      <div className="content px-2">
+                        可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です．
+                        私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．
+                      </div>
+                      <Link
+                        className="button"
+                        to="/research/Visible-light-communications/"
+                      >
                         Read more
                       </Link>
                     </div>
@@ -81,15 +102,24 @@ const IndexPageTemplate = ({ data }) => (
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">確率共鳴現象の通信への応用</h1>
-                      <div className="content px-2">確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．</div>
-                      <Link className="button" to="/research/Stochastic-resonance/">
+                      <div className="content px-2">
+                        確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．
+                      </div>
+                      <Link
+                        className="button"
+                        to="/research/Stochastic-resonance/"
+                      >
                         Read more
                       </Link>
                     </div>
                   </div>
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
+                      <StaticImage
+                        src="../img/SR.png"
+                        alt="Stochastic Resonance"
+                        placeholder="blurred"
+                      />
                     </div>
                   </div>
                 </article>
@@ -123,7 +153,8 @@ const IndexPageTemplate = ({ data }) => (
                     </h1>
                     <p className="is-size-5">
                       教授 <br />
-                      &nbsp; &nbsp;<Link to="/team/Takaya-Yamazato/">山里敬也</Link>
+                      &nbsp; &nbsp;
+                      <Link to="/team/Takaya-Yamazato/">山里敬也</Link>
                       <br />
                       <br />
                       秘書 <br />
@@ -208,7 +239,8 @@ const IndexPageTemplate = ({ data }) => (
                 <br />
               </p>
               <p className="is-size-5">
-                <i class="fas fa-envelope"></i>&nbsp; &nbsp;〒464-8603 名古屋市千種区不老町1
+                <i class="fas fa-envelope"></i>&nbsp; &nbsp;〒464-8603
+                名古屋市千種区不老町1
                 <br />
                 研究室（学生）：IB電子情報館5F&nbsp; &nbsp;
                 <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;052-789-3173
@@ -222,7 +254,10 @@ const IndexPageTemplate = ({ data }) => (
               <p className="is-size-5">
                 山里研究室は IB電子情報館 5Fにあります．
                 <br />
-                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
+                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">
+                  キャンパスマップ
+                </a>{' '}
+                のC3-1になります．
               </p>
               <br />
               <h4 className="is-size-4">
@@ -236,7 +271,10 @@ const IndexPageTemplate = ({ data }) => (
               <br />
               <h4 className="is-size-4">
                 <i class="fas fa-subway"></i>&nbsp;
-                <a href="http://www.nagoya-u.ac.jp/access/index.html">こちらも</a> ご参照ください．
+                <a href="http://www.nagoya-u.ac.jp/access/index.html">
+                  こちらも
+                </a>{' '}
+                ご参照ください．
               </h4>
 
               <br />
@@ -256,9 +294,9 @@ const IndexPageTemplate = ({ data }) => (
       </div>
     </section>
   </Layout>
-);
+)
 
-export default IndexPageTemplate;
+export default IndexPageTemplate
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -269,7 +307,9 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }) {
+    markdownRemark(
+      frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }
+    ) {
       id
       frontmatter {
         templateKey
@@ -282,4 +322,4 @@ export const pageQuery = graphql`
       html
     }
   }
-`;
+`

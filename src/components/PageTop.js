@@ -1,13 +1,13 @@
-import React from "react";
-import { animateScroll as scroll } from "react-scroll";
+import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 class PageTop extends React.Component {
   scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   render() {
     return (
@@ -16,8 +16,8 @@ class PageTop extends React.Component {
           <i class="fas fa-chevron-circle-up"></i>&nbsp;Top
         </button>
       </div>
-    );
+    )
   }
 }
 
-export default PageTop;
+export default PageTop

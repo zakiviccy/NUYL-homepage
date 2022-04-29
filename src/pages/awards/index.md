@@ -1,6 +1,6 @@
 ---
-# templateKey: awards-page
-templateKey: pages
+templateKey: awards-page
+# templateKey: pages
 lang: ja
 title: 教育基盤統括本部における表彰内規
 description: 東海国立大学機構（以下，「機構」という）に設置された教育基盤統括本部（以下，「ＡＣ」という）が掲げる「勇気をもってともに未来をつくる」ことを実践するため，岐阜大学及び名古屋大学の学生（以下，「学生」という）並びに機構に所属する教職員（以下，「教職員」という）に対する表彰に関し必要な事項は，本内規の定めるところによる。
