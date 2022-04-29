@@ -4,7 +4,7 @@ module.exports = {
   // },
   // pathPrefix: `~yamazato`,　//チェック用
   siteMetadata: {
-    title: 'Nagoya University Yamazato Laboratory Homepage',
+    title: 'Yamazato Laboratory, Nagoya University',
     description: 'Welcome to Nagoya University Yamazato Laboratory Homepage.',
     siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp/`,
     social: {

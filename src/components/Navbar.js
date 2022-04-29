@@ -69,51 +69,12 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/research/">
                 研究
               </Link>
-              <Link className="navbar-item" to="/awards/">
-                業績／表彰
+              <Link className="navbar-item" to="/research/publications/">
+                業績
               </Link>
-              {/* <div className="navbar-item has-dropdown is-hoverable">
-                <div className="navbar-link">
-                  <Link to="/research/">
-                    <div className="navbar-item">研究</div>
-                  </Link>
-                </div>
-                <div className="navbar-dropdown">
-                  <Link to="/open-educational-resources/">
-                    <div className="navbar-item">オープン教材</div>
-                  </Link>
-                  <Link to="/stochastic-resonance/">
-                    <div className="navbar-item">確率共鳴</div>
-                  </Link>
-                  <Link to="/Image-sensor-communications/">
-                    <div className="navbar-item">可視光通信</div>
-                  </Link>
-                  <hr className="navbar-divider" />
-                  <Link to="/open-educational-resources/">
-                    <div className="navbar-item">オープン教材</div>
-                  </Link>
-                </div>
-              </div> */}
-              {/* <div className="navbar-start has-text-centered">
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <div className="navbar-link">
-                    <Link to="/research/">
-                      <div className="navbar-item">業績／表彰</div>
-                    </Link>
-                  </div>
-                  <div className="navbar-dropdown">
-                    <Link to="/open-educational-resources/">
-                      <div className="navbar-item">業績</div>
-                    </Link>
-                    <Link className="navbar-item" to="/awards/">
-                      表彰
-                    </Link>
-                  </div>
-                </div>
-                <Link className="navbar-item" to="/news/">
-                  ニュース
-                </Link>
-              </div> */}
+              <Link className="navbar-item" to="/research/awards/">
+                受賞
+              </Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
