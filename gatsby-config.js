@@ -35,6 +35,13 @@ module.exports = {
         name: "images"
       }
     },
+    {
+      resolve: `gatsby-transformer-csv`,
+      options: {
+        noheader: true,
+        ignoreEmpty: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
