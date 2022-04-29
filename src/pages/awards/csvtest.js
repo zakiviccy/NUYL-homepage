@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import SeO from '../components/seo'
+import Layout from '../../components/Layout'
+import SeO from '../../components/seo'
 
 export default function Award2() {
   const data = useStaticQuery(graphql`
@@ -34,6 +34,7 @@ export default function Award2() {
   `)
 
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const post = data.markdownRemark
 
   return (
     // <Layout location={location} title={siteTitle}>
