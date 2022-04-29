@@ -250,6 +250,7 @@ const IndexPageTemplate = ({ data }) => (
                 loading="lazy"
               ></iframe>
             </div>
+            <PageTop />
           </div>
         </div>
       </div>
