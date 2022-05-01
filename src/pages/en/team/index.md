@@ -1,5 +1,5 @@
 ---
-templateKey: pages-eng
+templateKey: pages-en-white
 lang: en
 title: 2022 team
 description: Our team at Yamazato Lab.
