@@ -1,41 +1,43 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../components/LayoutEN-white'
 import SeO from '../components/seo'
 
 export default function PublicationsEn() {
   const data = useStaticQuery(graphql`
-    query PubllicationsEnQuery {
-      site {
-        siteMetadata {
-          description
-          title
-        }
-      }
-      markdownRemark(frontmatter: {templateKey: {eq: "publications"}, lang: {eq: "en"}}) {
-        frontmatter {
-          title
-          description
-          date(formatString: "MMMM DD, YYYY")
-          templateKey
-          lang
-          journal
-          conference
-          oral
-        }
-      }
-      allResearchCsv {
-        nodes {
-          field1
-          field2
-          field3
-          field4
-          field5
-          field6
-          id
-        }
+  query PubllicationsEnQuery {
+    allResearchCsv {
+      nodes {
+        field1
+        field2
+        field3
+        field4
+        field5
+        field6
+        id
       }
     }
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+    markdownRemark(
+      frontmatter: {templateKey: {eq: "publications-en"}}
+    ) {
+      frontmatter {
+        title
+        description
+        date(formatString: "MMMM DD, YYYY")
+        templateKey
+        lang
+        journal
+        conference
+        oral
+      }
+    }
+  }  
   `)
 
   const post = data.markdownRemark.frontmatter
@@ -52,7 +54,7 @@ export default function PublicationsEn() {
             <div className="column is-10 is-offset-1">
               <div className="section content">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {post.title}
+                  {data.markdownRemark.frontmatter.title}
                 </h2>
                 <p>
                   As of {post.date}, we published and presented{' '}
@@ -99,7 +101,7 @@ export default function PublicationsEn() {
                 <hr />
                 <ul>
                   {data.allResearchCsv.nodes.map((node) => (
-                    <li key={node.id}>
+                    <li key={node.id} >
                       <h5>{node.field2}</h5>
                       <ul>
                         <li>{node.field1}</li>

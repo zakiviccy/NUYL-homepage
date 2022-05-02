@@ -5,11 +5,11 @@ title: 2022 team
 description: Our team at Yamazato Lab.
 date: 2021-08-01T07:57:21.383Z
 tags:
+  - Team 2022
   - Team
-  - 2022
 ---
 
-## Professor:
+Professor:
 
 - [Takaya YAMAZATO](/team/Takaya-Yamazato/)
 

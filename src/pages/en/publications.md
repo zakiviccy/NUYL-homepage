@@ -2,7 +2,7 @@
 templateKey: publications-en
 lang: en
 title: Publications
-description: あえて雑音を利用する通信，電波では無く目に見える光を使う通信（可視光通信），機械学習を活用した通信，超音波の応用など既存の通信の枠を超えたところからアプローチをすることで，通信の本質に迫ることを目指しています．
+description: We aim to approach the essence of communication by going beyond the existing communication framework. Such as communication that dares to use noise (stochastic resonance), communication that uses visible light instead of radio waves (visible light communication), communication that utilizes machine learning, and the application of ultrasonic waves.
 date: 2021-05-01T11:00:57.137Z
 journal: 195
 conference: 289

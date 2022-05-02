@@ -12,7 +12,7 @@ export default function Publications() {
           title
         }
       }
-      markdownRemark(frontmatter: {templateKey: {eq: "publications"}, lang: {eq: "ja"}}) {
+      markdownRemark(frontmatter: {templateKey: {eq: "publications"}}) {
         frontmatter {
           title
           description
