@@ -35,17 +35,6 @@ h2 {
   font-weight: 700;
 }
 
-.maru {
-  height: 200px;
-  width:  200px;
-  border-radius:50%;
-  line-height:200px;
-  text-align:center;
-  /* font-size: 5rem; */
-  background: #bca159;
-  color: white;
- }
-
  .circle {
   text-align: center;
   margin: 0 auto;
@@ -58,7 +47,7 @@ h2 {
   color: #fff;
 }
 
-.circle2 {
+.gold-circle {
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -67,6 +56,31 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #bca159;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.silver-circle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #989797;
+  color: #fff;
+  line-height: 1.5;
+}
+.bronze-circle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6A3805;
   color: #fff;
   line-height: 1.5;
 }

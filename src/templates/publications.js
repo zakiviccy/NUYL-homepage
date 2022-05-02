@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import SeO from '../../components/seo'
+import Layout from '../components/Layout'
+import SeO from '../components/seo'
 
 export default function Publications() {
   const data = useStaticQuery(graphql`
@@ -10,6 +10,18 @@ export default function Publications() {
         siteMetadata {
           description
           title
+        }
+      }
+      markdownRemark(frontmatter: {templateKey: {eq: "publications"}, lang: {eq: "ja"}}) {
+        frontmatter {
+          title
+          description
+          date(formatString: "MMMM DD, YYYY")
+          templateKey
+          lang
+          journal
+          conference
+          oral
         }
       }
       allResearchCsv {
@@ -26,6 +38,8 @@ export default function Publications() {
     }
   `)
 
+  const post = data.markdownRemark.frontmatter
+
   return (
     <Layout>
       <SeO
@@ -38,47 +52,51 @@ export default function Publications() {
             <div className="column is-10 is-offset-1">
               <div className="section content">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  研究業績
+                {post.title}
                 </h2>
-
+                <p>
+                  As of {post.date}, we published and presented{' '}
+                  {post.journal + post.conference + post.oral} articles.
+                </p>
                 <div className="columns">
                   <div className="column">
-                    <div className="circle2">
+                    <div className="gold-circle">
                       <p>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          2000
+                          {post.journal}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Journal Paper
+                          Journal Articles
                         </div>
                       </p>
                     </div>
                   </div>
                   <div class="column">
-                  <div className="circle2">
+                    <div className="silver-circle">
                       <p>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          2000
+                          {post.conference}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Journal Paper
+                          Peer-Reviewed Conference Papers
                         </div>
                       </p>
                     </div>
                   </div>
                   <div class="column">
-                    <div className="circle2">
+                    <div className="bronze-circle">
                       <p>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          2000
+                          {post.oral}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Journal Paper
+                          Oral Presentation
                         </div>
                       </p>
                     </div>
+                  </div>
                 </div>
-              </div>
+                <hr />
                 <ul>
                   {data.allResearchCsv.nodes.map((node) => (
                     <li key={node.id}>
