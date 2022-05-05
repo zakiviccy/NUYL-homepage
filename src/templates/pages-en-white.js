@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from '../components/LayoutEn'
+import Layout from '../components/LayoutEn-white'
 import SeO from '../components/seo'
 
 const PagesTemplate = ({ data, location }) => {
@@ -18,16 +18,16 @@ const PagesTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <section className="section has-text-white-ter">
+      <section className="section">
         <header>
           <title>{post.frontmatter.title}</title>
           <meta name="description" content={post.frontmatter.description} />
         </header>
-        <div className="container content has-text-white-ter">
-          <div className="columns has-text-white-ter">
-            <div className="column is-10 is-offset-1 has-text-white-ter">
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
               {post.frontmatter.date}
-              <h1 className="is-size-2 has-text-weight-bold is-bold-light has-text-white-ter">
+              <h1 className="is-size-2 has-text-weight-bold is-bold-light">
                 {post.frontmatter.title}
               </h1>
               <p>{post.frontmatter.description}</p>
