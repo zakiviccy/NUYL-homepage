@@ -71,6 +71,7 @@ const Footer = class extends React.Component {
                         href="https://www.nagoya-u.ac.jp"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Nagoya University"
                       >
                         東海国立大学機構 名古屋大学
                       </a>
@@ -81,6 +82,7 @@ const Footer = class extends React.Component {
                         href="https://www.ilas.nagoya-u.ac.jp/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Institute of Liberal Arts and Sciences, Nagoya University" 
                       >
                         名古屋大学 教養教育院
                       </a>
@@ -91,6 +93,7 @@ const Footer = class extends React.Component {
                         href="https://www.nuee.nagoya-u.ac.jp"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Department of Information and Communication Engineering, Graduate School of Engineering, Nagoya University"
                       >
                         名古屋大学大学院 工学研究科 情報・通信工学専攻
                       </a>
@@ -101,6 +104,7 @@ const Footer = class extends React.Component {
                         href="https://www.katayama.nagoya-u.ac.jp"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Nagoya University Katayama Laboratory"
                       >
                         片山研究室
                       </a>

@@ -115,7 +115,7 @@ const IndexPageTemplateEN = ({ data }) => (
                       <p className="post-excerpt">
                         This template is based off of the official default blog
                         template created by the fine folks over at{' '}
-                        <a href="https://ghost.io">Ghost</a>. If you are looking
+                        <a href="https://ghost.io" title="Ghost">Ghost</a>. If you are looking
                         for a fully featured blog platform, I highly recommend
                         checking them out!
                       </p>
@@ -328,7 +328,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 Building.
                 <br />
                 See also our{' '}
-                <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf">
+                <a href="https://en.nagoya-u.ac.jp/upload_images/20210129_map_en.pdf" title="Campus map">
                   campus map, C3-1
                 </a>{' '}
                 , for the location of the North IB Building.
@@ -354,7 +354,7 @@ const IndexPageTemplateEN = ({ data }) => (
               <br />
               <p className="post-excerpt">
                 See also{' '}
-                <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
+                <a href="http://en.nagoya-u.ac.jp/access/index.html" title="Nagoya University HP">here</a>.
               </p>
               <br />
               <iframe
@@ -362,7 +362,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 width="600"
                 height="450"
                 // style="border:0;"
-                title="Google Map"
+                title="See the location of Yamazato laboratory in Google Map."
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>

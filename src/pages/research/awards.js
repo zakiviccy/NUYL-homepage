@@ -24,8 +24,8 @@ export default function Award() {
     }
   `)
 
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const post = data.markdownRemark
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
     <Layout>

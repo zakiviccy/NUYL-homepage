@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../components/LayoutEN-white";
+import LayoutEnWhite from "../components/LayoutEN-white";
 import SeO from "../components/seo";
 
 export default function PublicationsEn() {
@@ -41,7 +41,7 @@ export default function PublicationsEn() {
   const post = data.markdownRemark.frontmatter;
 
   return (
-    <Layout>
+    <LayoutEnWhite>
       <SeO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
       <section className="section section--gradient">
         <div className="container">
@@ -98,6 +98,6 @@ export default function PublicationsEn() {
           </div>
         </div>
       </section>
-    </Layout>
+    </LayoutEnWhite>
   );
 }
