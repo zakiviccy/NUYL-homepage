@@ -10,7 +10,7 @@ import './all.sass'
 import './ghost-blog.css'
 import useSiteMetadata from './SiteMetadata'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapperEnWhite = ({ children }) => {
   const { title, description, lang } = useSiteMetadata()
 
   return (
@@ -65,4 +65,4 @@ const TemplateWrapper = ({ children }) => {
   )
 }
 
-export default TemplateWrapper
+export default TemplateWrapperEnWhite
