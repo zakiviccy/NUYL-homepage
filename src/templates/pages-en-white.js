@@ -64,8 +64,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        }
       }
-    }
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        }
       }
     }
-  }
 `

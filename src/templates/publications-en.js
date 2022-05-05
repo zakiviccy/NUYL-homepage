@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import LayoutEnWhite from "../components/LayoutEN-white";
+import Layout from "../components/LayoutEN-white";
 import SeO from "../components/seo";
 
 export default function PublicationsEn() {
@@ -15,14 +15,14 @@ export default function PublicationsEn() {
           field5
           field6
           id
+          }
         }
-      }
       site {
         siteMetadata {
           description
           title
+          }
         }
-      }
       markdownRemark(frontmatter: { templateKey: { eq: "publications-en" } }) {
         frontmatter {
           title
@@ -33,15 +33,15 @@ export default function PublicationsEn() {
           journal
           conference
           oral
+          }
         }
       }
-    }
   `);
 
   const post = data.markdownRemark.frontmatter;
 
   return (
-    <LayoutEnWhite>
+    <Layout>
       <SeO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
       <section className="section section--gradient">
         <div className="container">
@@ -98,6 +98,6 @@ export default function PublicationsEn() {
           </div>
         </div>
       </section>
-    </LayoutEnWhite>
+    </Layout>
   );
 }
