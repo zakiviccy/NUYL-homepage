@@ -6,12 +6,12 @@ import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV } from 'react-icons/fa'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 // import logo from "../img/og-image.jpg";
-import logo from '../img/logo.png'
-import facebook from '../img/social/facebook.svg'
+// import logo from '../img/logo.png'
+// import facebook from '../img/social/facebook.svg'
 // import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
+// import twitter from '../img/social/twitter.svg'
 // import vimeo from '../img/social/vimeo.svg'
-import youtube from '../img/social/youtube.svg'
+// import youtube from '../img/social/youtube.svg'
 // import github from "../img/github-icon.svg";
 
 const Footer = class extends React.Component {
