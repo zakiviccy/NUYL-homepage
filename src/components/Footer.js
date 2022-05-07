@@ -82,7 +82,7 @@ const Footer = class extends React.Component {
                         href="https://www.ilas.nagoya-u.ac.jp/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="Institute of Liberal Arts and Sciences, Nagoya University" 
+                        title="Institute of Liberal Arts and Sciences, Nagoya University"
                       >
                         名古屋大学 教養教育院
                       </a>

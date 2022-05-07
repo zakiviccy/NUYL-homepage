@@ -12,7 +12,7 @@ export default function Publications() {
           title
         }
       }
-      markdownRemark(frontmatter: {templateKey: {eq: "publications"}}) {
+      markdownRemark(frontmatter: { templateKey: { eq: "publications" } }) {
         frontmatter {
           title
           description
@@ -52,7 +52,7 @@ export default function Publications() {
             <div className="column is-10 is-offset-1">
               <div className="section content">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {post.title}
+                  {post.title}
                 </h2>
                 <p>
                   As of {post.date}, we published and presented{' '}
