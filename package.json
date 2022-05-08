@@ -5,7 +5,7 @@
   "author": "Takaya Yamazato",
   "dependencies": {
     "bulma": "^0.9.3",
-    "gatsby": "^4.13.0",
+    "gatsby": "^4.13.1",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.13.0",
