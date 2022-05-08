@@ -122,9 +122,9 @@ const IndexPageTemplateEN = ({ data }) => (
                         I highly recommend checking them out!
                       </p>
                       <br />
-                      <a href="#" className="button">
+                      <Link to='/en/#team' className="button">
                         Read More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -182,9 +182,9 @@ const IndexPageTemplateEN = ({ data }) => (
                       quam voluptatum.
                     </p>
                     <br />
-                    <a href="#" className="button">
+                    <Link to='/en/#' className="button">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </article>
               </div>

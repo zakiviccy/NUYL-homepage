@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import LayoutEnWhite from '../components/LayoutEn-white'
+import Layout from '../components/LayoutEn-white'
 import SeO from '../components/seo'
 
 const PagesTemplateEnWhite = ({ data, location }) => {
@@ -13,7 +13,7 @@ const PagesTemplateEnWhite = ({ data, location }) => {
   const tags = post.frontmatter.tags
 
   return (
-    <LayoutEnWhite location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SeO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -53,7 +53,7 @@ const PagesTemplateEnWhite = ({ data, location }) => {
           </div>
         </div>
       </section>
-    </LayoutEnWhite>
+    </Layout>
   )
 }
 
