@@ -127,6 +127,39 @@ const IndexPageTemplate = ({ data }) => (
             </div>
             <PageTop />
             <hr />
+            <div className="columns featured-post is-multiline">
+              <div className="column is-12 post">
+                <article className="columns featured">
+                  <div className="column post is-7">
+                    <div className="column is-12 post-img">
+                      <StaticImage
+                        src="../img/ITS-VLC.png"
+                        alt="ITS-VLC"
+                        placeholder="blurred"
+                      />
+                    </div>
+                  </div>
+                  <div className="column post is-5">
+                    <div className="column is-12 featured-content">
+                      <h3 className="heading post-category">Research</h3>
+                      <h1 className="is-size-3">オープン教材</h1>
+                      <div className="content px-2">
+                      オープン教材とは，教育・学習目的でインターネット上に無償で公開されたテキスト，画像，ビデオなどのデジタル・コンテンツ（教材）を指し，誰でも自由に利用できるだけで無く，改変や再利用の二次利用もできる教材のことを言います．
+                      私たちは、オープン教材について研究しています。とりわけ、名古屋大学において教材の無償公開を行っているサイト「<a href="https://ocw.nagoya-u.jp/" title="Nagoya University OpenCourseWare (NUOCW)" target="_blank" rel="noopener noreferrer" >名大の授業</a>」の管理・運用に係わっています。
+                      </div>
+                      <Link
+                        className="button"
+                        to="/research/OER/"
+                      >
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <PageTop />
+            <hr />
             <h2 id="news">ニュース</h2>
             <div className="columns is-multiline">
               <div className="column post is-12">

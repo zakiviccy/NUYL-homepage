@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV } from 'react-icons/fa'
+import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV, FaFlagUsa, FaAward, FaRegNewspaper, FaHome  } from 'react-icons/fa'
+import { GiArchiveResearch, GiJapan } from "react-icons/gi"
+import { RiEnglishInput } from "react-icons/ri";
+import { ImBooks } from "react-icons/im";
+import { VscCircuitBoard } from "react-icons/vsc";
+import { GoCircuitBoard } from "react-icons/go";
+import { MdAnnouncement } from "react-icons/md";
+
 // import { FaEnvelope } from "react-icons/fa";
 // import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
@@ -35,28 +42,33 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/en/" className="navbar-item">
-                        Home
+                      <Link to="/en/" className="navbar-item" title="Home">
+                      <FaHome />&nbsp;&nbsp; Home
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/en/news/">
-                        News
+                      <Link className="navbar-item" to="/en/news/" title="News">
+                      <MdAnnouncement />&nbsp;&nbsp;News
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/en/research/">
-                        Research
+                      <Link className="navbar-item" to="/en/research/" title="Reseach">
+                      <GoCircuitBoard />&nbsp;&nbsp;Research
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/en/awards/">
-                        Awards
+                      <Link className="navbar-item" to="/en/publications/" title="Publications">
+                      <ImBooks />&nbsp;&nbsp;Publications
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/#">
-                        Japanese
+                      <Link className="navbar-item" to="/en/#contact" title="Contact">
+                        <FaEnvelope />&nbsp;&nbsp;Contact
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/" title="go to Japanese page">
+                      <GiJapan />&nbsp;&nbsp;Japanese
                       </Link>
                     </li>
                   </ul>
@@ -68,7 +80,7 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="https://www.nagoya-u.ac.jp"
+                        href="https://en.nagoya-u.ac.jp/"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Nagoya University"
@@ -79,7 +91,7 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="https://www.ilas.nagoya-u.ac.jp/"
+                        href="https://www.ilas.nagoya-u.ac.jp/en/"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Institute of Liberal Arts and Sciences, Nagoya University"
@@ -90,7 +102,7 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="https://www.nuee.nagoya-u.ac.jp"
+                        href="http://www.nuee.nagoya-u.ac.jp/index-e.php"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Department of Information and Communication Engineering, Graduate School of Engineering, Nagoya University"
@@ -101,7 +113,7 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="https://www.katayama.nagoya-u.ac.jp"
+                        href="https://www.katayama.nuee.nagoya-u.ac.jp/index-e.php"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Nagoya University Katayama Laboratory"
@@ -109,43 +121,43 @@ const Footer = class extends React.Component {
                         Nagoya University Katayama Laboratory
                       </a>
                     </li>
-                    <li>
-                      <Link className="navbar-item" to="/#contact">
-                        <FaEnvelope />
-                        &nbsp;&nbsp;Contact
-                      </Link>
-                    </li>
                   </ul>
                 </section>
               </div>
               <div className="column is-4 social">
-                <div className="navbar-item">
-                  <Link to="/#team">
-                    <FaUserFriends />
+              <div className="navbar-item">
+              <Link to="/" title="go to Japanese page">
+                    <GiJapan />
                   </Link>
-                  <Link to="/#contact">
-                    <FaEnvelope />
+                  <Link to="/en/news/" title="News">
+                    <MdAnnouncement />
                   </Link>
-                  <Link to="/#access">
-                    <FaSubway />
+                  <Link to="/en/research/" title="Research">
+                    <GoCircuitBoard />
                   </Link>
-                  <Link to="/#access">
-                    <FaVimeoV />
+                  <Link to="/en/publications/" title="Publications">
+                    <ImBooks />
                   </Link>
                 </div>
                 <div className="navbar-item">
-                  <Link to="/#team">
+                  <Link to="/en/#team" title="Team">
                     <FaUserFriends />
                   </Link>
-                  <Link to="/#contact">
+                  <Link to="/en/#contact" title="Contact">
                     <FaEnvelope />
                   </Link>
-                  <Link to="/#access">
+                  <Link to="/en/#access" title="Access">
                     <FaSubway />
                   </Link>
-                  <Link to="/#access">
+                  <a
+                        className="navbar-item"
+                        href="https://vimeo.com/user96502067"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Vimeo: Takaya Yamazato"
+                      >
                     <FaVimeoV />
-                  </Link>
+                      </a>
                 </div>
               </div>
             </div>

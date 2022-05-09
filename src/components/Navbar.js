@@ -63,29 +63,29 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start">
-              <Link className="navbar-item" to="/news/">
+              <Link className="navbar-item" to="/news/" title="News">
                 ニュース
               </Link>
-              <Link className="navbar-item" to="/research/">
+              <Link className="navbar-item" to="/research/" title="Reseach">
                 研究
               </Link>
-              <Link className="navbar-item" to="/research/publications/">
+              <Link className="navbar-item" to="/research/publications/" title="Publications">
                 業績
               </Link>
-              <Link className="navbar-item" to="/research/awards/">
+              <Link className="navbar-item" to="/research/awards/" title="Awards">
                 受賞
               </Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <Link to="/en/#">EN</Link>
-                <Link to="/#team">
+                <Link to="/en/" title="go to English page">EN</Link>
+                <Link to="/#team" title="Team">
                   <i class="fas fa-user-friends"></i>
                 </Link>
-                <Link to="/#contact">
+                <Link to="/#contact" title="Contact">
                   <i class="fas fa-envelope"></i>
                 </Link>
-                <Link to="/#access">
+                <Link to="/#access" title="Access">
                   <i class="fas fa-subway"></i>
                 </Link>
               </div>
