@@ -55,26 +55,26 @@ export default function PublicationsEn() {
                 <div className="columns">
                   <div className="column">
                     <div className="gold-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">{post.journal}</div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">Journal Articles</div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="column">
                     <div className="silver-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">{post.conference}</div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">Peer-Reviewed Conference Papers</div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="column">
                     <div className="bronze-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">{post.oral}</div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">Oral Presentation</div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>

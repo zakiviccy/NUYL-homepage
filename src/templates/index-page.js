@@ -9,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+const width = 300;
+
 const IndexPageTemplate = ({ data }) => (
   <Layout>
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
@@ -36,7 +38,7 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage src="../img/logo-j.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+          <StaticImage src="../img/logo-j.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -147,7 +149,7 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-3">
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Staff</h3>
+                    <h3 className="heading post-category">スタッフ</h3>
                     <h1>
                       <FaUserTie />
                     </h1>

@@ -9,12 +9,14 @@ import { StaticImage } from "gatsby-plugin-image";
 import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+const width = 300;
+
 const IndexPageTemplateEN = ({ data }) => (
   <Layout>
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../img/logo.png" width="300" alt="Yamazato Laboratory" placeholder="blurred" />
+        <StaticImage src="../img/logo.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
         {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
