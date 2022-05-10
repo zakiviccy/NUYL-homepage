@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 // import { graphql } from "gatsby"
 // import { navigate } from 'gatsby-link'
-import Layout from '../src/components/Layout'
+import Layout from "../src/components/Layout";
 
 const ContactUsPage = () => (
   <Layout>
@@ -10,42 +10,30 @@ const ContactUsPage = () => (
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                Contact / Access
-              </h2>
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Contact / Access</h2>
               <h3 className="is-size-4 has-text-weight-bold">Contact:</h3>
               <p>Takaya YAMAZATO (yamazato AT nagoya-u DOT jp) </p>
 
               <p>Institute of Liberal Arts and Sciences, Nagoya University</p>
               <p>
-                <i class="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho,
-                Chikusa-ku, Nagoya 464-8063 JAPAN
+                <i className="fas fa-envelope"></i>&nbsp; &nbsp;Furo-cho, Chikusa-ku, Nagoya 464-8063 JAPAN
               </p>
               <br />
 
               <h3 className="is-size-4 has-text-weight-bold ">Access:</h3>
 
               <h4 className="is-size-5 has-text-weight-bold">
-                <i class="fas fa-subway"></i> From Nagoya Station:
+                <i className="fas fa-subway"></i> From Nagoya Station:
               </h4>
-              <p>
-                Take the Subway Higashiyama Line to Motoyama Sta. (15 minutes),
-                then transfer to the Subway Meijo Line to Nagoya Daigaku Sta.
-                (Higashiyama Campus is just off the subway exit.).
-              </p>
+              <p>Take the Subway Higashiyama Line to Motoyama Sta. (15 minutes), then transfer to the Subway Meijo Line to Nagoya Daigaku Sta. (Higashiyama Campus is just off the subway exit.).</p>
               <br />
               <h4 className="is-size-5 has-text-weight-bold">
-                <i class="fas fa-subway"></i> From Centrair (Central Japan
-                International Airport):{' '}
+                <i className="fas fa-subway"></i> From Centrair (Central Japan International Airport):{" "}
               </h4>
-              <p>
-                Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer
-                to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).
-              </p>
+              <p>Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
               <br />
               <p>
-                See also{' '}
-                <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
+                See also <a href="http://en.nagoya-u.ac.jp/access/index.html">here</a>.
               </p>
               <br />
               {/* <iframe
@@ -72,6 +60,6 @@ const ContactUsPage = () => (
       </div>
     </section>
   </Layout>
-)
+);
 
-export default ContactUsPage
+export default ContactUsPage;

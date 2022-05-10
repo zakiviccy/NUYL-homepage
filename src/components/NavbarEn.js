@@ -1,14 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/NUYL-logo.svg'
+import React from "react";
+import { Link } from "gatsby";
+import { FaEnvelope, FaSubway, FaUserFriends } from "react-icons/fa";
+import logo from "../img/NUYL-logo.svg";
 
 const NavbarEn = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -22,29 +23,25 @@ const NavbarEn = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
       <section className="hero is-medium">
         <div className="hero-head">
           <div className="container">
-            <nav
-              className="navbar"
-              role="navigation"
-              aria-label="main navigation"
-            >
+            <nav className="navbar" role="navigation" aria-label="main navigation">
               <div className="container">
                 <div className="navbar-brand">
                   <Link to="/en/" className="navbar-item" title="Logo">
-                    <img src={logo} alt="NUYL" style={{ width: '88px' }} />
+                    <img src={logo} alt="NUYL" style={{ width: "88px" }} />
                   </Link>
                   {/* Hamburger menu */}
                   <button
@@ -60,10 +57,7 @@ const NavbarEn = class extends React.Component {
                     <span />
                   </button>
                 </div>
-                <div
-                  id="navMenu"
-                  className={`navbar-menu ${this.state.navBarActiveClass}`}
-                >
+                <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                   {/* <div id="navbarBasicExample" className="navbar-menu"> */}
                   <div className="navbar-start">
                     <Link className="navbar-item" to="/news/">
@@ -79,14 +73,14 @@ const NavbarEn = class extends React.Component {
                   <div className="navbar-end">
                     <div className="navbar-item">
                       <Link to="/">JP</Link>
-                      <Link to="/en/#team">
-                        <i class="fas fa-user-friends"></i>
+                      <Link to="/en/#team" title="Team">
+                        <FaUserFriends />
                       </Link>
-                      <Link to="/en/#contact">
-                        <i class="fas fa-envelope"></i>
+                      <Link to="/en/#contact" title="Contact">
+                        <FaEnvelope />
                       </Link>
-                      <Link to="/en/#access">
-                        <i class="fas fa-subway"></i>
+                      <Link to="/en/#access" title="Access">
+                        <FaSubway />
                       </Link>
                     </div>
                   </div>
@@ -96,8 +90,8 @@ const NavbarEn = class extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
-}
+};
 
-export default NavbarEn
+export default NavbarEn;
