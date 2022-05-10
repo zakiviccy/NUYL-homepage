@@ -1,10 +1,10 @@
 import * as React from 'react'
-import ScrollButton from '../components/scrollToTop'
+import ScrollButton from './scrollToTop'
 // import { Link, withPrefix } from "gatsby"
 import { withPrefix } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/FooterEn'
-import Navbar from '../components/NavbarEN'
+import Footer from './FooterEn'
+import Navbar from './NavbarEn'
 import './all.sass'
 // import "./bulma.min.css";
 import './ghost-blog.css'

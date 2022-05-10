@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from '../components/LayoutEn-white'
+import Layout from '../components/LayoutEnWhite'
 import SeO from '../components/seo'
 
 const PagesTemplateEnWhite = ({ data, location }) => {

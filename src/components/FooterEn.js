@@ -1,9 +1,9 @@
 import React from 'react'
-import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV, FaFlagUsa, FaAward, FaRegNewspaper, FaHome  } from 'react-icons/fa'
-import { GiArchiveResearch, GiJapan } from "react-icons/gi"
-import { RiEnglishInput } from "react-icons/ri";
+import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV, FaHome  } from 'react-icons/fa'
+import { GiJapan } from "react-icons/gi"
+// import { RiEnglishInput } from "react-icons/ri";
 import { ImBooks } from "react-icons/im";
-import { VscCircuitBoard } from "react-icons/vsc";
+// import { VscCircuitBoard } from "react-icons/vsc";
 import { GoCircuitBoard } from "react-icons/go";
 import { MdAnnouncement } from "react-icons/md";
 

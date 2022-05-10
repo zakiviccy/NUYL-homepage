@@ -3,7 +3,7 @@ import PageTopEn from '../components/PageTopEn'
 // import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import SeO from '../components/seo'
-import Layout from '../components/LayoutEN'
+import Layout from '../components/LayoutEn'
 import BlogRollEn from '../components/BlogRollEn'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -103,26 +103,20 @@ const IndexPageTemplateEN = ({ data }) => (
                 <article className="columns featured">
                   <div className="column is-7 post-img ">
                     <StaticImage
-                      src="../img/ITS-VLC.png"
-                      alt="ITS-VLC"
+                      src="../img/USA.png"
+                      alt="Ultrasonic sensor array"
                       placeholder="blurred"
                     />
                   </div>
                   <div className="column is-5 featured-content va">
                     <div>
                       <h3 className="heading post-category">Research</h3>
-                      <h1 className="title post-title">Blog Posts Template</h1>
+                      <h1 className="title post-title">Ultrasonic sensor array</h1>
                       <p className="post-excerpt">
-                        This template is based off of the official default blog
-                        template created by the fine folks over at{' '}
-                        <a href="https://ghost.io" title="Ghost">
-                          Ghost
-                        </a>
-                        . If you are looking for a fully featured blog platform,
-                        I highly recommend checking them out!
+                      We are working on an ultrasonic sensor array system for slow-moving vehicles.
                       </p>
                       <br />
-                      <Link to='/en/#team' className="button">
+                      <Link to='/en/OER' className="button">
                         Read More
                       </Link>
                     </div>
@@ -134,36 +128,7 @@ const IndexPageTemplateEN = ({ data }) => (
             <hr />
             <div className="columns is-multiline">
               <div className="column post is-6">
-                <article className="columns is-multiline">
-                  <div className="column is-12 post-img">
-                    <StaticImage
-                      src="../img/Global_Open_Educational_Resources_Logo.svg"
-                      alt="ITS-VLC"
-                      placeholder="blurred"
-                    />
-                  </div>
-                  <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Research</h3>
-                    <h1 className="title post-title">
-                      Open educational resources (OERs)
-                    </h1>
-                    <p className="post-excerpt">
-                      Open educational resources (OERs) are teaching, learning,
-                      or research materials that are available in the public
-                      domain or released with an intellectual property license
-                      that allows for free use, adaptation, and distribution. We
-                      are currently focusing on developing OERs and their
-                      related technologies.
-                    </p>
-                    <br />
-                    <Link to="/en/OER/" className="button">
-                      Read More
-                    </Link>
-                  </div>
-                </article>
-              </div>
-              <div className="column post is-6">
-                <article className="columns is-multiline">
+              <article className="columns is-multiline">
                   <div className="column is-12 post-img">
                     <StaticImage
                       src="../img/Rotary-LED.png"
@@ -172,17 +137,44 @@ const IndexPageTemplateEN = ({ data }) => (
                     />
                   </div>
                   <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Category Name</h3>
+                    <h3 className="heading post-category">Research</h3>
                     <h1 className="title post-title">
-                      Slightly Longer Blog Post Title
+                      Rotary LED transmitter
                     </h1>
                     <p className="post-excerpt">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Accusamus ratione harum eaque, animi nulla tempore quis,
-                      quam voluptatum.
+                    To improve the data rate of image sensor communication (ISC), we are currently working on using the afterimage effect by a rotary LED transmitter.
                     </p>
                     <br />
                     <Link to='/en/#' className="button">
+                      Read More
+                    </Link>
+                  </div>
+                </article>
+              </div>
+              <div className="column post is-6">
+              <article className="columns is-multiline">
+                  <div className="column is-12 post-img">
+                  <StaticImage
+                      src="../img/Global_Open_Educational_Resources_Logo.svg"
+                      alt="Open Educational Resources Logo"
+                      placeholder="blurred"
+                    />
+                  </div>
+                  <div className="column is-12 featured-content ">
+                    <h3 className="heading post-category">Research</h3>
+                    <h1 className="title post-title">
+                    Open educational resources (OERs)
+                    </h1>
+                    <p className="post-excerpt">
+                    Open educational resources (OERs) are teaching, learning,
+                      or research materials that are available in the public
+                      domain or released with an intellectual property license
+                      that allows for free use, adaptation, and distribution. We
+                      are currently focusing on developing OERs and their
+                      related technologies.
+                      </p>
+                    <br />
+                    <Link to="/en/OER/" className="button">
                       Read More
                     </Link>
                   </div>

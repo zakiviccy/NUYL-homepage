@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from '../components/LayoutEN'
+import Layout from '../components/LayoutEn'
 import SeO from '../components/seo'
 
 const PagesTemplate = ({ data, location }) => {

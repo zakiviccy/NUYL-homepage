@@ -4,13 +4,13 @@ import ScrollButton from './scrollToTop'
 import { withPrefix } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Footer from './FooterEn'
-import Navbar from './NavbarEN'
+import Navbar from './NavbarEn'
 import './all.sass'
 // import "./bulma.min.css";
 import './ghost-blog.css'
 import useSiteMetadata from './SiteMetadata'
 
-const TemplateWrapperEnWhite = ({ children }) => {
+const TemplateWrapper = ({ children }) => {
   const { title, description, lang } = useSiteMetadata()
 
   return (
@@ -65,4 +65,4 @@ const TemplateWrapperEnWhite = ({ children }) => {
   )
 }
 
-export default TemplateWrapperEnWhite
+export default TemplateWrapper
