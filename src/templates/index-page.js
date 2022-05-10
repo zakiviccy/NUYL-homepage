@@ -1,29 +1,19 @@
-import * as React from 'react'
-import PageTop from '../components/PageTop'
+import * as React from "react";
+import PageTop from "../components/PageTop";
 // import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import SeO from '../components/seo'
-import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
-import { StaticImage } from 'gatsby-plugin-image'
-import {
-  FaUserTie,
-  FaUserGraduate,
-  FaUserFriends,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaSubway,
-} from 'react-icons/fa'
+import { Link, graphql } from "gatsby";
+import SeO from "../components/seo";
+import Layout from "../components/Layout";
+import BlogRoll from "../components/BlogRoll";
+import { StaticImage } from "gatsby-plugin-image";
+import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-const width = 300
+const width = 300;
 
 const IndexPageTemplate = ({ data }) => (
   <Layout>
-    <SeO
-      title={data.markdownRemark.frontmatter.title}
-      description={data.markdownRemark.frontmatter.description}
-    />
+    <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     {/* <div
       className="full-width-image margin-top-0"
       style={{
@@ -48,12 +38,7 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage
-            src="../img/logo-j.png"
-            width={width}
-            alt="Yamazato Laboratory"
-            placeholder="blurred"
-          />
+          <StaticImage src="../img/logo-j.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -65,10 +50,7 @@ const IndexPageTemplate = ({ data }) => (
             <br />
             <div className="tile box">
               <blockquote>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-                />
+                <div className="content" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
               </blockquote>
             </div>
 
@@ -77,25 +59,15 @@ const IndexPageTemplate = ({ data }) => (
                 <article className="columns featured">
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage
-                        src="../img/ITS-VLC.png"
-                        alt="ITS-VLC"
-                        placeholder="blurred"
-                      />
+                      <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
                     </div>
                   </div>
                   <div className="column post is-5">
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">可視光通信</h1>
-                      <div className="content px-2">
-                        可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です．
-                        私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．
-                      </div>
-                      <Link
-                        className="button"
-                        to="/research/Visible-light-communications/"
-                      >
+                      <div className="content px-2">可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です． 私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．</div>
+                      <Link className="button" to="/research/Visible-light-communications/">
                         Read more
                       </Link>
                     </div>
@@ -112,24 +84,15 @@ const IndexPageTemplate = ({ data }) => (
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">確率共鳴現象の通信への応用</h1>
-                      <div className="content px-2">
-                        確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．
-                      </div>
-                      <Link
-                        className="button"
-                        to="/research/Stochastic-resonance/"
-                      >
+                      <div className="content px-2">確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．</div>
+                      <Link className="button" to="/research/Stochastic-resonance/">
                         Read more
                       </Link>
                     </div>
                   </div>
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage
-                        src="../img/SR.png"
-                        alt="Stochastic Resonance"
-                        placeholder="blurred"
-                      />
+                      <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
                     </div>
                   </div>
                 </article>
@@ -142,11 +105,7 @@ const IndexPageTemplate = ({ data }) => (
                 <article className="columns featured">
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage
-                        src="../img/Global_Open_Educational_Resources_Logo.svg"
-                        alt="Open Educational Resources Logo"
-                        placeholder="blurred"
-                      />
+                      <StaticImage src="../img/Global_Open_Educational_Resources_Logo.svg" alt="Open Educational Resources Logo" placeholder="blurred" />
                     </div>
                   </div>
                   <div className="column post is-5">
@@ -154,14 +113,8 @@ const IndexPageTemplate = ({ data }) => (
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">オープン教材</h1>
                       <div className="content px-2">
-                        オープン教材とは，教育・学習目的でインターネット上に無償で公開されたテキスト，画像，ビデオなどのデジタル・コンテンツ（教材）を指し，誰でも自由に利用できるだけで無く，改変や再利用の二次利用もできる教材のことを言います．
-                        私たちは、オープン教材について研究しています。とりわけ、名古屋大学において教材の無償公開を行っているサイト「
-                        <a
-                          href="https://ocw.nagoya-u.jp/"
-                          title="Nagoya University OpenCourseWare (NUOCW)"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        オープン教材とは，教育・学習目的でインターネット上に無償で公開されたテキスト，画像，ビデオなどのデジタル・コンテンツ（教材）を指し，誰でも自由に利用できるだけで無く，改変や再利用の二次利用もできる教材のことを言います． 私たちは、オープン教材について研究しています。とりわけ、名古屋大学において教材の無償公開を行っているサイト「
+                        <a href="https://ocw.nagoya-u.jp/" title="Nagoya University OpenCourseWare (NUOCW)" target="_blank" rel="noopener noreferrer">
                           名大の授業
                         </a>
                         」の管理・運用に係わっています。
@@ -305,10 +258,7 @@ const IndexPageTemplate = ({ data }) => (
               <p className="is-size-5">
                 山里研究室は IB電子情報館 5Fにあります．
                 <br />
-                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">
-                  キャンパスマップ
-                </a>{' '}
-                のC3-1になります．
+                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
               </p>
               <br />
               <h4 className="is-size-4">
@@ -323,13 +273,10 @@ const IndexPageTemplate = ({ data }) => (
               <h4 className="is-size-4">
                 <FaSubway />
                 &nbsp;
-                <a href="http://www.nagoya-u.ac.jp/access/index.html">
-                  こちらも
-                </a>{' '}
-                ご参照ください．
+                <a href="http://www.nagoya-u.ac.jp/access/index.html">こちらも</a> ご参照ください．
               </h4>
 
-              <br />
+              {/* <br />
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.067613051525!2d136.963807252052!3d35.154934480223524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037abb489f342d%3A0x77c72171e4e956e8!2z5ZCN5Y-k5bGL5aSn5a2m5bel5a2m6YOo44O75aSn5a2m6Zmi5bel5a2m56CU56m256eR!5e0!3m2!1sja!2sjp!4v1634217089125!5m2!1sja!2sjp&amp;language=ja"
                 width="600"
@@ -338,7 +285,7 @@ const IndexPageTemplate = ({ data }) => (
                 title="Google Map"
                 allowFullScreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe> */}
             </div>
             <PageTop />
           </div>
@@ -346,9 +293,9 @@ const IndexPageTemplate = ({ data }) => (
       </div>
     </section>
   </Layout>
-)
+);
 
-export default IndexPageTemplate
+export default IndexPageTemplate;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -359,9 +306,7 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    markdownRemark(
-      frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }
-    ) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }) {
       id
       frontmatter {
         templateKey
@@ -374,4 +319,4 @@ export const pageQuery = graphql`
       html
     }
   }
-`
+`;
