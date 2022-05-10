@@ -42,7 +42,7 @@ const ContactUsPage = () => (
                 height="450"
                 frameborder="0"
                 // style="border:0;"
-                allowfullscreen=""
+                allowFullScreen=""
                 aria-hidden="false"
                 tabindex="0"
               ></iframe> */}
@@ -51,7 +51,7 @@ const ContactUsPage = () => (
                 width="600"
                 height="450"
                 // style="border:0;"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </div>

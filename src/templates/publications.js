@@ -1,7 +1,7 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import SeO from '../components/seo'
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Layout from "../components/Layout";
+import SeO from "../components/seo";
 
 export default function Publications() {
   const data = useStaticQuery(graphql`
@@ -35,62 +35,44 @@ export default function Publications() {
         }
       }
     }
-  `)
+  `);
 
-  const post = data.markdownRemark.frontmatter
+  const post = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
-      <SeO
-        title={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description}
-      />
+      <SeO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section content">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {post.title}
-                </h2>
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{post.title}</h2>
                 <p>
-                  As of {post.date}, we published and presented{' '}
-                  {post.journal + post.conference + post.oral} articles.
+                  As of {post.date}, we published and presented {post.journal + post.conference + post.oral} articles.
                 </p>
                 <div className="columns">
                   <div className="column">
                     <div className="gold-circle">
                       <p>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          {post.journal}
-                        </div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Journal Articles
-                        </div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.journal}</div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">Journal Articles</div>
                       </p>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div className="silver-circle">
                       <p>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          {post.conference}
-                        </div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Peer-Reviewed Conference Papers
-                        </div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.conference}</div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">Peer-Reviewed Conference Papers</div>
                       </p>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div className="bronze-circle">
                       <p>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">
-                          {post.oral}
-                        </div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">
-                          Oral Presentation
-                        </div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.oral}</div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">Oral Presentation</div>
                       </p>
                     </div>
                   </div>
@@ -116,5 +98,5 @@ export default function Publications() {
         </div>
       </section>
     </Layout>
-  )
+  );
 }
