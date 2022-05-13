@@ -1,7 +1,7 @@
-import * as React from 'react'
+import * as React from "react";
 // import { graphql } from "gatsby"
-import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import Layout from "../../components/Layout";
+import BlogRoll from "../../components/BlogRoll";
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -20,10 +20,10 @@ export default class BlogIndexPage extends React.Component {
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: '0.5rem 0 0 #002c76, -0.5rem 0 0 #002c76',
-              backgroundColor: '#002c76',
-              color: 'white',
-              padding: '1rem',
+              boxShadow: "0.5rem 0 0 #002c76, -0.5rem 0 0 #002c76",
+              backgroundColor: "#002c76",
+              color: "white",
+              padding: "1rem",
             }}
           >
             News and Updates
@@ -37,6 +37,6 @@ export default class BlogIndexPage extends React.Component {
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }
