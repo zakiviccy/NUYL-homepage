@@ -6,8 +6,12 @@ import SeO from "../components/seo";
 import Layout from "../components/LayoutEn";
 import BlogRollEn from "../components/BlogRollEn";
 import { StaticImage } from "gatsby-plugin-image";
-import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
-// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { FaUserTie } from "@react-icons/all-files/fa/FaUserTie";
+import { FaUserGraduate } from "@react-icons/all-files/fa/FaUserGraduate";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaPhoneAlt } from "@react-icons/all-files/fa/FaPhoneAlt";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
 
 const width = 300;
 
@@ -16,7 +20,7 @@ const IndexPageTemplateEN = ({ data }) => (
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../img/logo.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
+        <StaticImage src="../img/logo.png" width={width} alt="Nagoya University Yamazato Laboratory" placeholder="blurred" />
         {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>

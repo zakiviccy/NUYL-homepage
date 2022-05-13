@@ -1,14 +1,13 @@
 import React from "react";
-import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV, FaHome } from "react-icons/fa";
-import { GiJapan } from "react-icons/gi";
-// import { RiEnglishInput } from "react-icons/ri";
-import { ImBooks } from "react-icons/im";
-// import { VscCircuitBoard } from "react-icons/vsc";
-import { GoCircuitBoard } from "react-icons/go";
-import { MdAnnouncement } from "react-icons/md";
-
-// import { FaEnvelope } from "react-icons/fa";
-// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaVimeoV } from "@react-icons/all-files/fa/FaVimeoV";
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { GoCircuitBoard } from "@react-icons/all-files/go/GoCircuitBoard";
+import { MdAnnouncement } from "@react-icons/all-files/md/MdAnnouncement";
+import { GiJapan } from "@react-icons/all-files/gi/GiJapan";
+import { ImBooks } from "@react-icons/all-files/im/ImBooks";
 
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";

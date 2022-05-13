@@ -1,14 +1,14 @@
 import React from "react";
-import { FaEnvelope, FaSubway, FaUserFriends, FaVimeoV, FaFlagUsa, FaAward, FaHome } from "react-icons/fa";
-import { GiArchiveResearch } from "react-icons/gi";
-// import { RiEnglishInput } from "react-icons/ri";
-// import { ImBooks } from "react-icons/im";
-// import { VscCircuitBoard } from "react-icons/vsc";
-import { GoCircuitBoard } from "react-icons/go";
-import { MdAnnouncement } from "react-icons/md";
-
-// import { FaEnvelope } from "react-icons/fa";
-// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaVimeoV } from "@react-icons/all-files/fa/FaVimeoV";
+import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
+import { FaAward } from "@react-icons/all-files/fa/FaAward";
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { GiArchiveResearch } from "@react-icons/all-files/gi/GiArchiveResearch";
+import { GoCircuitBoard } from "@react-icons/all-files/go/GoCircuitBoard";
+import { MdAnnouncement } from "@react-icons/all-files/md/MdAnnouncement";
 
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
