@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
-// import { FaEnvelope, FaSubway, FaUserFriends } from 'react-icons/fa'
 import logo from "../img/NUYL-logo.svg";
 
 const NavbarEn = class extends React.Component {
