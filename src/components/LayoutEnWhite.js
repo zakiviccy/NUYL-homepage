@@ -3,8 +3,8 @@ import ScrollButton from './scrollToTop'
 // import { Link, withPrefix } from "gatsby"
 import { withPrefix } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Footer from './Footer'
-import NavbarEN from './NavbarEN'
+import Footer from './FooterEn'
+import Navbar from './NavbarEn'
 import './all.sass'
 // import "./bulma.min.css";
 import './ghost-blog.css'
@@ -57,7 +57,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <NavbarEN />
+      <Navbar />
       <div>{children}</div>
       <ScrollButton />
       <Footer />

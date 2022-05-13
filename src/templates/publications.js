@@ -12,7 +12,7 @@ export default function Publications() {
           title
         }
       }
-      markdownRemark(frontmatter: {templateKey: {eq: "publications"}}) {
+      markdownRemark(frontmatter: { templateKey: { eq: "publications" } }) {
         frontmatter {
           title
           description
@@ -31,7 +31,6 @@ export default function Publications() {
           field3
           field4
           field5
-          field6
           id
         }
       }
@@ -52,7 +51,7 @@ export default function Publications() {
             <div className="column is-10 is-offset-1">
               <div className="section content">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {post.title}
+                  {post.title}
                 </h2>
                 <p>
                   As of {post.date}, we published and presented{' '}
@@ -61,38 +60,38 @@ export default function Publications() {
                 <div className="columns">
                   <div className="column">
                     <div className="gold-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
                           {post.journal}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
                           Journal Articles
                         </div>
-                      </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div className="silver-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
                           {post.conference}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
                           Peer-Reviewed Conference Papers
                         </div>
-                      </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div className="bronze-circle">
-                      <p>
+                      <div>
                         <div className="is-size-1 has-text-weight-bold has-text-centered">
                           {post.oral}
                         </div>
                         <div className="is-size-6 has-text-weight-bold has-text-centered">
                           Oral Presentation
                         </div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -106,7 +105,7 @@ export default function Publications() {
                         <li>{node.field3}</li>
                         <li>{node.field5}</li>
                         <li className="nodot">{node.field6}</li>
-                        <li className="nodot">{node.field4}</li>
+                        {/* <li className="nodot">{node.field4}</li> */}
                       </ul>
                     </li>
                   ))}

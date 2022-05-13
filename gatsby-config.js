@@ -2,10 +2,10 @@ module.exports = {
   // flags: {
   //   DEV_SSR: true
   // },
-  // pathPrefix: `~yamazato`,　//チェック用
+  pathPrefix: `/NUYL`, //チェック用
   siteMetadata: {
-    title: 'Yamazato Laboratory, Nagoya University',
-    description: 'Welcome to Nagoya University Yamazato Laboratory Homepage.',
+    title: "Yamazato Laboratory, Nagoya University",
+    description: "Welcome to Nagoya University Yamazato Laboratory Homepage.",
     siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp/`,
     social: {
       twitter: `nuyl`,
@@ -18,21 +18,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,
-        name: 'uploads',
+        name: "uploads",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/img`,
-        name: 'images',
+        name: "images",
       },
     },
     {
@@ -72,7 +72,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
@@ -87,7 +87,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              destinationDir: 'static',
+              destinationDir: "static",
             },
           },
         ],
@@ -99,8 +99,8 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`, // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+        purgeOnly: ["/all.sass"], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
   ],
-}
+};

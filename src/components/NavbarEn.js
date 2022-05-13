@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FaEnvelope, FaSubway, FaUserFriends } from 'react-icons/fa'
 import logo from '../img/NUYL-logo.svg'
 
 const NavbarEn = class extends React.Component {
@@ -72,21 +73,21 @@ const NavbarEn = class extends React.Component {
                     <Link className="navbar-item" to="/en/research/">
                       Research
                     </Link>
-                  <Link className="navbar-item" to="/en/publications/">
+                    <Link className="navbar-item" to="/en/publications/">
                       Publications
                     </Link>
                   </div>
                   <div className="navbar-end">
                     <div className="navbar-item">
                       <Link to="/">JP</Link>
-                      <Link to="/en/#team">
-                        <i class="fas fa-user-friends"></i>
+                      <Link to="/en/#team" title="Team">
+                        <FaUserFriends />
                       </Link>
-                      <Link to="/en/#contact">
-                        <i class="fas fa-envelope"></i>
+                      <Link to="/en/#contact" title="Contact">
+                        <FaEnvelope />
                       </Link>
-                      <Link to="/en/#access">
-                        <i class="fas fa-subway"></i>
+                      <Link to="/en/#access" title="Access">
+                        <FaSubway />
                       </Link>
                     </div>
                   </div>

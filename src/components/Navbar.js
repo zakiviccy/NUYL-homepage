@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FaEnvelope, FaSubway, FaUserFriends } from 'react-icons/fa'
 import logo from '../img/NUYL-logo.svg'
 // import "./all.sass";
 
@@ -63,30 +64,40 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start">
-              <Link className="navbar-item" to="/news/">
+              <Link className="navbar-item" to="/news/" title="News">
                 ニュース
               </Link>
-              <Link className="navbar-item" to="/research/">
+              <Link className="navbar-item" to="/research/" title="Reseach">
                 研究
               </Link>
-              <Link className="navbar-item" to="/research/publications/">
+              <Link
+                className="navbar-item"
+                to="/research/publications/"
+                title="Publications"
+              >
                 業績
               </Link>
-              <Link className="navbar-item" to="/research/awards/">
+              <Link
+                className="navbar-item"
+                to="/research/awards/"
+                title="Awards"
+              >
                 受賞
               </Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <Link to="/en/#">EN</Link>
-                <Link to="/#team">
-                  <i class="fas fa-user-friends"></i>
+                <Link to="/en/" title="go to English page">
+                  EN
                 </Link>
-                <Link to="/#contact">
-                  <i class="fas fa-envelope"></i>
+                <Link to="/#team" title="Team">
+                  <FaUserFriends />
                 </Link>
-                <Link to="/#access">
-                  <i class="fas fa-subway"></i>
+                <Link to="/#contact" title="Contact">
+                  <FaEnvelope />
+                </Link>
+                <Link to="/#access" title="Access">
+                  <FaSubway />
                 </Link>
               </div>
             </div>

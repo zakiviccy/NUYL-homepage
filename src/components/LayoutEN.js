@@ -1,10 +1,10 @@
 import * as React from 'react'
-import ScrollButton from '../components/scrollToTop'
+import ScrollButton from './scrollToTop'
 // import { Link, withPrefix } from "gatsby"
 import { withPrefix } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import NavbarEN from '../components/NavbarEN'
+import Footer from './FooterEn'
+import Navbar from './NavbarEn'
 import './all.sass'
 // import "./bulma.min.css";
 import './ghost-blog.css'
@@ -57,7 +57,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <NavbarEN />
+      <Navbar />
       <div className="hero is-medium">{children}</div>
       <ScrollButton />
       <Footer />

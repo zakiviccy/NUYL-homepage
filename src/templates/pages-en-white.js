@@ -3,10 +3,10 @@ import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from '../components/LayoutEn-white'
+import Layout from '../components/LayoutEnWhite'
 import SeO from '../components/seo'
 
-const PagesTemplate = ({ data, location }) => {
+const PagesTemplateEnWhite = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   // const { previous, next } = data
@@ -57,10 +57,10 @@ const PagesTemplate = ({ data, location }) => {
   )
 }
 
-export default PagesTemplate
+export default PagesTemplateEnWhite
 
 export const pageQuery = graphql`
-  query PagesBySlugEng($id: String!) {
+  query PagesBySlugEnWhite($id: String!) {
     site {
       siteMetadata {
         title

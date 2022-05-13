@@ -1,19 +1,19 @@
-import * as React from 'react'
-import PageTop from '../components/PageTop'
+import * as React from "react";
+import PageTop from "../components/PageTop";
 // import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import SeO from '../components/seo'
-import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
-import { StaticImage } from 'gatsby-plugin-image'
+import { Link, graphql } from "gatsby";
+import SeO from "../components/seo";
+import Layout from "../components/Layout";
+import BlogRoll from "../components/BlogRoll";
+import { StaticImage } from "gatsby-plugin-image";
+import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+
+const width = 300;
 
 const IndexPageTemplate = ({ data }) => (
   <Layout>
-    <SeO
-      title={data.markdownRemark.frontmatter.title}
-      description={data.markdownRemark.frontmatter.description}
-    />
+    <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     {/* <div
       className="full-width-image margin-top-0"
       style={{
@@ -38,12 +38,7 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage
-            src="../img/logo-j.png"
-            width="300"
-            alt="Yamazato Laboratory"
-            placeholder="blurred"
-          />
+          <StaticImage src="../img/logo-j.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -55,10 +50,7 @@ const IndexPageTemplate = ({ data }) => (
             <br />
             <div className="tile box">
               <blockquote>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-                />
+                <div className="content" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
               </blockquote>
             </div>
 
@@ -67,25 +59,15 @@ const IndexPageTemplate = ({ data }) => (
                 <article className="columns featured">
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage
-                        src="../img/ITS-VLC.png"
-                        alt="ITS-VLC"
-                        placeholder="blurred"
-                      />
+                      <StaticImage src="../img/ITS-VLC.png" alt="ITS-VLC" placeholder="blurred" />
                     </div>
                   </div>
                   <div className="column post is-5">
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">可視光通信</h1>
-                      <div className="content px-2">
-                        可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です．
-                        私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．
-                      </div>
-                      <Link
-                        className="button"
-                        to="/research/Visible-light-communications/"
-                      >
+                      <div className="content px-2">可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です． 私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．</div>
+                      <Link className="button" to="/research/Visible-light-communications/">
                         Read more
                       </Link>
                     </div>
@@ -102,24 +84,44 @@ const IndexPageTemplate = ({ data }) => (
                     <div className="column is-12 featured-content">
                       <h3 className="heading post-category">Research</h3>
                       <h1 className="is-size-3">確率共鳴現象の通信への応用</h1>
-                      <div className="content px-2">
-                        確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．
-                      </div>
-                      <Link
-                        className="button"
-                        to="/research/Stochastic-resonance/"
-                      >
+                      <div className="content px-2">確率共鳴とは、システムへの入力雑音の増大と共にそのシステムの応答が向上する現象のことです．私たちは，確率共鳴現象の通信への応用について研究しています．</div>
+                      <Link className="button" to="/research/Stochastic-resonance/">
                         Read more
                       </Link>
                     </div>
                   </div>
                   <div className="column post is-7">
                     <div className="column is-12 post-img">
-                      <StaticImage
-                        src="../img/SR.png"
-                        alt="Stochastic Resonance"
-                        placeholder="blurred"
-                      />
+                      <StaticImage src="../img/SR.png" alt="Stochastic Resonance" placeholder="blurred" />
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <PageTop />
+            <hr />
+            <div className="columns featured-post is-multiline">
+              <div className="column is-12 post">
+                <article className="columns featured">
+                  <div className="column post is-7">
+                    <div className="column is-12 post-img">
+                      <StaticImage src="../img/Global_Open_Educational_Resources_Logo.svg" alt="Open Educational Resources Logo" placeholder="blurred" />
+                    </div>
+                  </div>
+                  <div className="column post is-5">
+                    <div className="column is-12 featured-content">
+                      <h3 className="heading post-category">Research</h3>
+                      <h1 className="is-size-3">オープン教材</h1>
+                      <div className="content px-2">
+                        オープン教材とは，教育・学習目的でインターネット上に無償で公開されたテキスト，画像，ビデオなどのデジタル・コンテンツ（教材）を指し，誰でも自由に利用できるだけで無く，改変や再利用の二次利用もできる教材のことを言います． 私たちは、オープン教材について研究しています。とりわけ、名古屋大学において教材の無償公開を行っているサイト「
+                        <a href="https://ocw.nagoya-u.jp/" title="Nagoya University OpenCourseWare (NUOCW)" target="_blank" rel="noopener noreferrer">
+                          名大の授業
+                        </a>
+                        」の管理・運用に係わっています。
+                      </div>
+                      <Link className="button" to="/research/OER/">
+                        Read more
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -147,9 +149,9 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-3">
                 <article className="columns is-multiline">
                   <div className="column is-12 featured-content ">
-                    <h3 className="heading post-category">Staff</h3>
+                    <h3 className="heading post-category">スタッフ</h3>
                     <h1>
-                      <i class="fas fa-user-tie"></i>
+                      <FaUserTie />
                     </h1>
                     <p className="is-size-5">
                       教授 <br />
@@ -170,7 +172,7 @@ const IndexPageTemplate = ({ data }) => (
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">博士後期課程</h3>
                     <h1>
-                      <i class="fas fa-user-graduate"></i>
+                      <FaUserGraduate />
                     </h1>
                     <p className="is-size-5">
                       D3 <br />
@@ -190,7 +192,7 @@ const IndexPageTemplate = ({ data }) => (
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">博士前期課程</h3>
                     <h1>
-                      <i class="fas fa-user-graduate"></i>
+                      <FaUserGraduate />
                     </h1>
                     <p className="is-size-5">
                       M2 <br />
@@ -216,7 +218,7 @@ const IndexPageTemplate = ({ data }) => (
                   <div className="column is-12 featured-content ">
                     <h3 className="heading post-category">学部</h3>
                     <h1>
-                      <i class="fas fa-user-friends"></i>
+                      <FaUserFriends />
                     </h1>
                     <p className="is-size-5">
                       B4 <br />
@@ -239,14 +241,16 @@ const IndexPageTemplate = ({ data }) => (
                 <br />
               </p>
               <p className="is-size-5">
-                <i class="fas fa-envelope"></i>&nbsp; &nbsp;〒464-8603
-                名古屋市千種区不老町1
+                <FaEnvelope />
+                &nbsp; &nbsp;〒464-8603 名古屋市千種区不老町1
                 <br />
                 研究室（学生）：IB電子情報館5F&nbsp; &nbsp;
-                <i class="fas fa-phone-square-alt"></i>&nbsp; &nbsp;052-789-3173
+                <FaPhoneAlt />
+                &nbsp; &nbsp;052-789-3173
                 <br />
                 秘書：IB電子情報館9F片山研&nbsp; &nbsp;
-                <i class="fas fa-phone-square"></i>&nbsp; &nbsp;052-789-2743
+                <FaPhoneAlt />
+                &nbsp; &nbsp;052-789-2743
                 <br />
               </p>
               <br />
@@ -254,14 +258,11 @@ const IndexPageTemplate = ({ data }) => (
               <p className="is-size-5">
                 山里研究室は IB電子情報館 5Fにあります．
                 <br />
-                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">
-                  キャンパスマップ
-                </a>{' '}
-                のC3-1になります．
+                <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
               </p>
               <br />
               <h4 className="is-size-4">
-                <i class="fas fa-subway"></i> 名古屋駅から
+                <FaSubway /> 名古屋駅から
               </h4>
               <p className="is-size-5">
                 名古屋駅より地下鉄東山線(藤が丘方面行き)乗車，本山駅下車
@@ -270,11 +271,9 @@ const IndexPageTemplate = ({ data }) => (
               </p>
               <br />
               <h4 className="is-size-4">
-                <i class="fas fa-subway"></i>&nbsp;
-                <a href="http://www.nagoya-u.ac.jp/access/index.html">
-                  こちらも
-                </a>{' '}
-                ご参照ください．
+                <FaSubway />
+                &nbsp;
+                <a href="http://www.nagoya-u.ac.jp/access/index.html">こちらも</a> ご参照ください．
               </h4>
 
               <br />
@@ -284,7 +283,7 @@ const IndexPageTemplate = ({ data }) => (
                 height="450"
                 // style="border:0;"
                 title="Google Map"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </div>
@@ -294,9 +293,9 @@ const IndexPageTemplate = ({ data }) => (
       </div>
     </section>
   </Layout>
-)
+);
 
-export default IndexPageTemplate
+export default IndexPageTemplate;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -307,9 +306,7 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    markdownRemark(
-      frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }
-    ) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" }, lang: { eq: "ja" } }) {
       id
       frontmatter {
         templateKey
@@ -322,4 +319,4 @@ export const pageQuery = graphql`
       html
     }
   }
-`
+`;
