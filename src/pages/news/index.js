@@ -29,13 +29,14 @@ export default class BlogIndexPage extends React.Component {
             News and Updates
           </h1>
         </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
+
+        <div className="container">
+          <div className="content">
+            <section className="section">
               <BlogRoll />
-            </div>
+            </section>
           </div>
-        </section>
+        </div>
       </Layout>
     )
   }
