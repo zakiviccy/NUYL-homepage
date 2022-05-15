@@ -1,11 +1,11 @@
-import React from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { FaArrowCircleUp } from "@react-icons/all-files/fa/FaArrowCircleUp";
+import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
+import { FaArrowCircleUp } from '@react-icons/all-files/fa/FaArrowCircleUp'
 
 class PageTop extends React.Component {
   scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   render() {
     return (
@@ -15,8 +15,8 @@ class PageTop extends React.Component {
           &nbsp;Top
         </button>
       </div>
-    );
+    )
   }
 }
 
-export default PageTop;
+export default PageTop
