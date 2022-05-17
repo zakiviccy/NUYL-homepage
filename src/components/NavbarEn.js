@@ -41,7 +41,7 @@ const NavbarEn = class extends React.Component {
           <div className="container">
             <nav className="navbar" role="navigation" aria-label="main navigation">
               <div className="container">
-                <div className="navbar-brand" role="menuitem">
+                <div className="navbar-brand" role="menuitem" aria-label="menuitem">
                   <Link to="/en/" className="navbar-item" title="Logo">
                     <img src={logo} alt="NUYL" style={{ width: "88px" }} />
                   </Link>
