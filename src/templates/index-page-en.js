@@ -4,10 +4,15 @@ import PageTopEn from "../components/PageTopEn";
 import { Link, graphql } from "gatsby";
 import SeO from "../components/seo";
 import Layout from "../components/LayoutEn";
-import BlogRollEn from "../components/BlogRollEn";
+import BlogRoll from "../components/indexRollEn";
 import { StaticImage } from "gatsby-plugin-image";
-import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
-// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { FaUserTie } from "@react-icons/all-files/fa/FaUserTie";
+import { FaUserGraduate } from "@react-icons/all-files/fa/FaUserGraduate";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaPhoneAlt } from "@react-icons/all-files/fa/FaPhoneAlt";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import { SiGooglemaps } from "@react-icons/all-files/si/SiGooglemaps";
 
 const width = 300;
 
@@ -16,7 +21,7 @@ const IndexPageTemplateEN = ({ data }) => (
     <SeO title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description} />
     <div className="hero-body">
       <div className="container has-text-centered">
-        <StaticImage src="../img/logo.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
+        <StaticImage src="../img/logo.png" width={width} alt="Nagoya University Yamazato Laboratory" placeholder="blurred" />
         {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
@@ -80,7 +85,7 @@ const IndexPageTemplateEN = ({ data }) => (
                       <h1 className="title post-title">Ultrasonic sensor array</h1>
                       <p className="post-excerpt">We are working on an ultrasonic sensor array system for slow-moving vehicles.</p>
                       <br />
-                      <Link to="/en/OER" className="button">
+                      <Link to="/en/research/" className="button">
                         Read More
                       </Link>
                     </div>
@@ -101,7 +106,7 @@ const IndexPageTemplateEN = ({ data }) => (
                     <h1 className="title post-title">Rotary LED transmitter</h1>
                     <p className="post-excerpt">To improve the data rate of image sensor communication (ISC), we are currently working on using the afterimage effect by a rotary LED transmitter.</p>
                     <br />
-                    <Link to="/en/#" className="button">
+                    <Link to="/en/Image-sensor-communication/" className="button">
                       Read More
                     </Link>
                   </div>
@@ -129,7 +134,7 @@ const IndexPageTemplateEN = ({ data }) => (
             <h2 className="title post-title">News and Updates</h2>
             <div className="columns is-multiline">
               <div className="column post is-12">
-                <BlogRollEn />
+                <BlogRoll />
                 <div className="column is-12 has-text-centered">
                   <Link className="button" to="/news">
                     Read more "News and Updates" →
@@ -279,14 +284,18 @@ const IndexPageTemplateEN = ({ data }) => (
               <p className="post-excerpt">Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
               <br />
               <p className="post-excerpt">
-                See also{" "}
+                <FaSubway /> See also{" "}
                 <a href="http://en.nagoya-u.ac.jp/access/index.html" title="Nagoya University HP">
-                  here
+                  Nagoya University access map
                 </a>
                 .
               </p>
-              <br />
-              <iframe
+              <p className="post-excerpt">
+                <SiGooglemaps />
+                &nbsp;See the location of Yamazato laboratory in <a href="https://www.google.co.jp/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%A4%A7%E5%AD%A6+IB%E9%9B%BB%E5%AD%90%E6%83%85%E5%A0%B1%E9%A4%A8+%E5%8C%97%E6%A3%9F/@35.155147,136.9647537,18z/data=!4m5!3m4!1s0x60037b3dbaffafc5:0x4b259fac77fcc377!8m2!3d35.1553519!4d136.9660213?hl=ja">Google map</a>.
+              </p>
+
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.067613051525!2d136.963807252052!3d35.154934480223524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037abb489f342d%3A0x77c72171e4e956e8!2z5ZCN5Y-k5bGL5aSn5a2m5bel5a2m6YOo44O75aSn5a2m6Zmi5bel5a2m56CU56m256eR!5e0!3m2!1sja!2sjp!4v1634217089125!5m2!1sja!2sjp&amp;language=en"
                 width="600"
                 height="450"
@@ -294,7 +303,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 title="See the location of Yamazato laboratory in Google Map."
                 allowFullScreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe> */}
             </div>
             <PageTopEn />
           </div>

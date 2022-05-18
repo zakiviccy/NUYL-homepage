@@ -1,16 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { FaEnvelope, FaSubway, FaUserFriends } from 'react-icons/fa'
-import logo from '../img/NUYL-logo.svg'
+import React from "react";
+import { Link } from "gatsby";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import logo from "../img/NUYL-logo.svg";
 // import "./all.sass";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -24,45 +26,31 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
-      <nav
-        className="navbar is-info"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <nav className="navbar is-info" role="navigation" aria-label="main-navigation">
         <div className="container">
-          <div className="navbar-brand">
+          <div className="navbar-brand" role="menuitem">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="NUYL" style={{ width: '88px' }} />
+              <img src={logo} alt="NUYL" style={{ width: "88px" }} />
             </Link>
             {/* Hamburger menu */}
-            <button
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-              // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md#how-do-i-resolve-this-error
-              role="menuitem"
-              tabIndex={0}
-            >
+            <button aria-label="Hamburger menu" role="menuitem" className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()} tabIndex={0}>
               <span />
               <span />
               <span />
             </button>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+          <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start">
               <Link className="navbar-item" to="/news/" title="News">
                 ニュース
@@ -70,25 +58,17 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/research/" title="Reseach">
                 研究
               </Link>
-              <Link
-                className="navbar-item"
-                to="/research/publications/"
-                title="Publications"
-              >
+              <Link className="navbar-item" to="/research/publications/" title="Publications">
                 業績
               </Link>
-              <Link
-                className="navbar-item"
-                to="/research/awards/"
-                title="Awards"
-              >
+              <Link className="navbar-item" to="/research/awards/" title="Awards">
                 受賞
               </Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
                 <Link to="/en/" title="go to English page">
-                  EN
+                  English
                 </Link>
                 <Link to="/#team" title="Team">
                   <FaUserFriends />
@@ -104,8 +84,8 @@ const Navbar = class extends React.Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;

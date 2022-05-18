@@ -1,9 +1,9 @@
 ---
-templateKey: blog-post
-title: 唐 正強くんと神谷 峻輝くんがIEEE ICC Workshop on OWCで発表します
+templateKey: blog-post-en
+title: Mr. Z. Tang and Mr. S. Kamiya will present at IEEE ICC Workshop on OWC
 date: 2022-05-20T10:05:39.789Z
 description: >-
-  米国電気電子学会（IEEE）が主催する国際通信会議（International Conference on Communication: ICC）は，世界通信会議（Global Communication Conference: Globecom）と並び，通信分野で最も権威のある国際会議です．
+  The International Conference on Communication (ICC), organized by the Institute of Electrical and Electronics Engineers (IEEE), is the most prestigious international conference in the field of communications, along with the Global Communication Conference (Globecom).
 featuredpost: true
 featuredimage: /img/coffee.png
 tags:
@@ -11,7 +11,9 @@ tags:
   - Optical Wireless Communications (OWC)
 ---
 
-コロナ禍のため，開催地である韓国ソウルに行くことができませんので，お二人は岡山理科大学に設置されるサテライト会場で発表します．荒井先生ありがとうございます．
+Due to the Covid-19 disaster, we are unable to go to Seoul, Korea, where the workshop will be held, so the two presenters will give their presentations at the satellite site at Okayama University of Science.
+
+Thank you, Prof. Arai.
 
 - Visible Light Communication System Using Rolling Shutter Image Sensor for ITS
 
@@ -22,7 +24,7 @@ tags:
   - Z. Tang,T. Yamazato, S. Arai
   - IEEE ICC Workshop on Optical Wireless Communications (OWC), Seoul, South Korea
 
-当研究室では，IEEE ICC Workshop on Optical Wireless Communications (OWC)をサポートしています．
+Our laboratory supports IEEE ICC Workshop on Optical Wireless Communications (OWC).
 
 - [OWC'18](http://yamazato.ilas.nagoya-u.ac.jp/owc/)
 - [OWC'20](http://yamazato.ilas.nagoya-u.ac.jp/owc-2020)

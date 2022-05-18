@@ -6,8 +6,13 @@ import SeO from "../components/seo";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import { StaticImage } from "gatsby-plugin-image";
-import { FaUserTie, FaUserGraduate, FaUserFriends, FaPhoneAlt, FaEnvelope, FaSubway } from "react-icons/fa";
-// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { FaUserTie } from "@react-icons/all-files/fa/FaUserTie";
+import { FaUserGraduate } from "@react-icons/all-files/fa/FaUserGraduate";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaPhoneAlt } from "@react-icons/all-files/fa/FaPhoneAlt";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import { SiGooglemaps } from "@react-icons/all-files/si/SiGooglemaps";
 
 const width = 300;
 
@@ -38,7 +43,7 @@ const IndexPageTemplate = ({ data }) => (
     <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <StaticImage src="../img/logo-j.png" width={width} alt="Yamazato Laboratory" placeholder="blurred" />
+          <StaticImage src="../img/logo-j.png" width={width} alt="Nagoya University Yamazato Laboratory" placeholder="blurred" />
           {/* <h2 className="subtitle">名古屋大学山里研究室</h2> */}
         </div>
       </div>
@@ -129,7 +134,7 @@ const IndexPageTemplate = ({ data }) => (
             </div>
             <PageTop />
             <hr />
-            <h2 id="news">ニュース</h2>
+            <h2 id="news">&nbsp;ニュース</h2>
             <div className="columns is-multiline">
               <div className="column post is-12">
                 <BlogRoll />
@@ -143,7 +148,7 @@ const IndexPageTemplate = ({ data }) => (
             <PageTop />
             <hr />
             <h2 id="team">
-              <Link to="/team/">チーム</Link>
+              <Link to="/team/">&nbsp;チーム</Link>
             </h2>
             <div className="columns is-multiline">
               <div className="column post is-3">
@@ -261,22 +266,28 @@ const IndexPageTemplate = ({ data }) => (
                 <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
               </p>
               <br />
-              <h4 className="is-size-4">
+              <h3 className="is-size-4">
                 <FaSubway /> 名古屋駅から
-              </h4>
+              </h3>
               <p className="is-size-5">
                 名古屋駅より地下鉄東山線(藤が丘方面行き)乗車，本山駅下車
                 <br />
                 地下鉄名城線(右回り,八事方面行き)乗り換え,名古屋大学駅下車
               </p>
               <br />
-              <h4 className="is-size-4">
+              <h3 className="is-size-4">
                 <FaSubway />
-                &nbsp;
-                <a href="http://www.nagoya-u.ac.jp/access/index.html">こちらも</a> ご参照ください．
-              </h4>
-
+                &nbsp;名大HPの
+                <a href="http://www.nagoya-u.ac.jp/access/index.html">アクセスマップ</a>もご参照ください．
+              </h3>
               <br />
+              <h3 className="is-size-4">
+                <SiGooglemaps />
+                &nbsp;
+                <a href="https://www.google.co.jp/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%A4%A7%E5%AD%A6+IB%E9%9B%BB%E5%AD%90%E6%83%85%E5%A0%B1%E9%A4%A8+%E5%8C%97%E6%A3%9F/@35.155147,136.9647537,18z/data=!4m5!3m4!1s0x60037b3dbaffafc5:0x4b259fac77fcc377!8m2!3d35.1553519!4d136.9660213?hl=ja">Google map</a> もご参照下さい．
+              </h3>
+
+              {/* <br />
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.067613051525!2d136.963807252052!3d35.154934480223524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037abb489f342d%3A0x77c72171e4e956e8!2z5ZCN5Y-k5bGL5aSn5a2m5bel5a2m6YOo44O75aSn5a2m6Zmi5bel5a2m56CU56m256eR!5e0!3m2!1sja!2sjp!4v1634217089125!5m2!1sja!2sjp&amp;language=ja"
                 width="600"
@@ -285,7 +296,7 @@ const IndexPageTemplate = ({ data }) => (
                 title="Google Map"
                 allowFullScreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe> */}
             </div>
             <PageTop />
           </div>

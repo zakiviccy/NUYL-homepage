@@ -24,7 +24,7 @@ class BlogRoll extends React.Component {
                     {post.frontmatter.date}
                   </span>
                 </div>
-                <p className="is-size-6">
+                <p className="is-size-6 m-2">
                   {post.frontmatter.description}
                   <br />
                   <br />

@@ -1,7 +1,7 @@
 import * as React from 'react'
 // import { graphql } from "gatsby"
-import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import Layout from '../../../components/LayoutEnWhite'
+import BlogRoll from '../../../components/BlogRollEn'
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -11,7 +11,7 @@ export default class BlogIndexPage extends React.Component {
           className="full-width-image margin-top-0"
           style={{
             // backgroundImage: `url('../../img/ob-image.jpg')`,
-            backgroundImage: `url('../img/home-jumbotron.jpg')`, // これはダメ
+            backgroundImage: `url('../../../img/home-jumbotron.jpg')`, // これはダメ
             // backgroundImage: {data.markdownRemark.image},
             backgroundPosition: `top left`,
             backgroundAttachment: `fixed`,
