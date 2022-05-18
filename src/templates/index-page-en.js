@@ -284,18 +284,15 @@ const IndexPageTemplateEN = ({ data }) => (
               <p className="post-excerpt">Take the Meitetsu Line to Kanayama Sta. (30 min.), then transfer to the Subway Meijyo Line to Nagoya Daigaku Sta. (21 min.).</p>
               <br />
               <p className="post-excerpt">
-                See also{" "}
+                <FaSubway /> See also{" "}
                 <a href="http://en.nagoya-u.ac.jp/access/index.html" title="Nagoya University HP">
                   Nagoya University access map
                 </a>
                 .
               </p>
-              <br />
-              <br />
               <p className="post-excerpt">
                 <SiGooglemaps />
-                &nbsp;See the location of Yamazato laboratory in
-                <a href="https://www.google.co.jp/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%A4%A7%E5%AD%A6+IB%E9%9B%BB%E5%AD%90%E6%83%85%E5%A0%B1%E9%A4%A8+%E5%8C%97%E6%A3%9F/@35.155147,136.9647537,18z/data=!4m5!3m4!1s0x60037b3dbaffafc5:0x4b259fac77fcc377!8m2!3d35.1553519!4d136.9660213?hl=ja">Google map</a>.
+                &nbsp;See the location of Yamazato laboratory in <a href="https://www.google.co.jp/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%A4%A7%E5%AD%A6+IB%E9%9B%BB%E5%AD%90%E6%83%85%E5%A0%B1%E9%A4%A8+%E5%8C%97%E6%A3%9F/@35.155147,136.9647537,18z/data=!4m5!3m4!1s0x60037b3dbaffafc5:0x4b259fac77fcc377!8m2!3d35.1553519!4d136.9660213?hl=ja">Google map</a>.
               </p>
 
               {/* <iframe
