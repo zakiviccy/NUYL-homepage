@@ -33,7 +33,8 @@ jobs:
         run: |
           yarn
           # npm install
-          yarn run build
+          # yarn run build
+          yarn run build-prefix-path
       # 確認のためのリスト表示　必要なければ削除
       - name: List output files
         run: ls -laFG
