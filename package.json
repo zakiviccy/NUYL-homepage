@@ -37,7 +37,8 @@
   "scripts": {
     "clean": "gatsby clean && gatsby clean",
     "start": "npm run develop",
-    "build": "gatsby clean && gatsby build --prefix-paths",
+    "build": "gatsby clean && gatsby build",
+    "build-prefix-path": "gatsby clean && gatsby build --prefix-paths",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
