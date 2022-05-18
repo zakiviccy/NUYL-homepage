@@ -11,7 +11,7 @@ tags:
   - Optical Wireless Communications (OWC)
 ---
 
-コロナ禍のため，開催地である韓国ソウルに行くことができませんので，お二人は岡山理科大学に設置されるサテライト会場で発表します．荒井先生ありがとうございます．
+コロナ禍のため，開催地である韓国ソウルに行くことができませんので，お二人は岡山理科大学に設置されるサテライト会場で発表します．岡山理科大学荒井先生ありがとうございます．
 
 - Visible Light Communication System Using Rolling Shutter Image Sensor for ITS
 
