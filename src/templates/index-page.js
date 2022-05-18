@@ -134,7 +134,7 @@ const IndexPageTemplate = ({ data }) => (
             </div>
             <PageTop />
             <hr />
-            <h2 id="news">ニュース</h2>
+            <h2 id="news">&nbsp;ニュース</h2>
             <div className="columns is-multiline">
               <div className="column post is-12">
                 <BlogRoll />
@@ -148,7 +148,7 @@ const IndexPageTemplate = ({ data }) => (
             <PageTop />
             <hr />
             <h2 id="team">
-              <Link to="/team/">チーム</Link>
+              <Link to="/team/">&nbsp;チーム</Link>
             </h2>
             <div className="columns is-multiline">
               <div className="column post is-3">
@@ -266,26 +266,26 @@ const IndexPageTemplate = ({ data }) => (
                 <a href="https://www.nagoya-u.ac.jp/access-map/index.html">キャンパスマップ</a> のC3-1になります．
               </p>
               <br />
-              <h4 className="is-size-4">
+              <h3 className="is-size-4">
                 <FaSubway /> 名古屋駅から
-              </h4>
+              </h3>
               <p className="is-size-5">
                 名古屋駅より地下鉄東山線(藤が丘方面行き)乗車，本山駅下車
                 <br />
                 地下鉄名城線(右回り,八事方面行き)乗り換え,名古屋大学駅下車
               </p>
               <br />
-              <h4 className="is-size-4">
+              <h3 className="is-size-4">
                 <FaSubway />
                 &nbsp;名大HPの
                 <a href="http://www.nagoya-u.ac.jp/access/index.html">アクセスマップ</a>もご参照ください．
-              </h4>
+              </h3>
               <br />
-              <h4 className="is-size-4">
+              <h3 className="is-size-4">
                 <SiGooglemaps />
                 &nbsp;
                 <a href="https://www.google.co.jp/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%A4%A7%E5%AD%A6+IB%E9%9B%BB%E5%AD%90%E6%83%85%E5%A0%B1%E9%A4%A8+%E5%8C%97%E6%A3%9F/@35.155147,136.9647537,18z/data=!4m5!3m4!1s0x60037b3dbaffafc5:0x4b259fac77fcc377!8m2!3d35.1553519!4d136.9660213?hl=ja">Google map</a> もご参照下さい．
-              </h4>
+              </h3>
 
               {/* <br />
               <iframe
