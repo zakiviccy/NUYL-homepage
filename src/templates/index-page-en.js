@@ -158,7 +158,7 @@ const IndexPageTemplateEN = ({ data }) => (
                     <p className="post-excerpt">
                       Professor <br />
                       &nbsp; &nbsp;
-                      <Link to="/team/Takaya-Yamazato/">Takaya YAMAZATO</Link>
+                      <Link to="/en/team/Takaya-Yamazato/">Takaya YAMAZATO</Link>
                       <br />
                       <br />
                       Secretaries <br />
