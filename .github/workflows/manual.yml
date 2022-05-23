@@ -43,7 +43,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@4.1
         with:
-          switches: -avzr --delete --exclude="owc2020/" --exclude="owc2022/"
+          switches: -avzr --delete --exclude="owc2020/" --exclude="owc2022/" --exclude="owc2018/"
           path: public/
           remote_path: ${{ secrets.REMOTE_PATH }}
           remote_host: ${{ secrets.REMOTE_HOST }}
