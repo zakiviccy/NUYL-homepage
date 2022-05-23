@@ -7,6 +7,7 @@ module.exports = {
     title: "Yamazato Laboratory, Nagoya University",
     description: "Welcome to Nagoya University Yamazato Laboratory Homepage.",
     siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp/`,
+    author: "Takaya Yamazato",
     social: {
       twitter: `nuyl`,
     },
