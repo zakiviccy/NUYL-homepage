@@ -7,7 +7,7 @@ import Footer from "./FooterEn";
 import Navbar from "./NavbarEn";
 import "./all.sass";
 // import "./bulma.min.css";
-import "./ghost-blog.css";
+// import "./ghost-blog.css";
 import useSiteMetadata from "./SiteMetadata";
 
 const TemplateWrapper = ({ children }) => {

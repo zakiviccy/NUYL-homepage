@@ -26,6 +26,6 @@ Thank you, Prof. Arai.
 
 Our laboratory supports IEEE ICC Workshop on Optical Wireless Communications (OWC).
 
-- [OWC'18](http://yamazato.ilas.nagoya-u.ac.jp/owc/)
-- [OWC'20](http://yamazato.ilas.nagoya-u.ac.jp/owc-2020)
-- [OWC'22](http://yamazato.ilas.nagoya-u.ac.jp/owc2022)
+- [OWC'18](http://yamazato.nuee.nagoya-u.ac.jp/owc2018/)
+- [OWC'20](http://yamazato.nuee.nagoya-u.ac.jp/owc2020)
+- [OWC'22](http://yamazato.nuee.nagoya-u.ac.jp/owc2022)

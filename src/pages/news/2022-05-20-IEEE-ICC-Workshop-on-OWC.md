@@ -24,6 +24,6 @@ tags:
 
 当研究室では，IEEE ICC Workshop on Optical Wireless Communications (OWC)をサポートしています．
 
-- [OWC'18](http://yamazato.ilas.nagoya-u.ac.jp/owc/)
-- [OWC'20](http://yamazato.ilas.nagoya-u.ac.jp/owc-2020)
-- [OWC'22](http://yamazato.ilas.nagoya-u.ac.jp/owc2022)
+- [OWC'18](http://yamazato.nuee.nagoya-u.ac.jp/owc2018/)
+- [OWC'20](http://yamazato.nuee.nagoya-u.ac.jp/owc2020)
+- [OWC'22](http://yamazato.nuee.nagoya-u.ac.jp/owc2022)
