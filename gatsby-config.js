@@ -2,7 +2,7 @@ module.exports = {
   // flags: {
   //   DEV_SSR: true
   // },
-  pathPrefix: `~yamazato`, //チェック用
+  // pathPrefix: `~yamazato`, //チェック用
   siteMetadata: {
     title: "Yamazato Laboratory, Nagoya University",
     description: "Welcome to Nagoya University Yamazato Laboratory Homepage.",
