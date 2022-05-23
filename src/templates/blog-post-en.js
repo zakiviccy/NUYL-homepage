@@ -1,20 +1,23 @@
-import * as React from "react";
-import { Link, graphql } from "gatsby";
+import * as React from 'react'
+import { Link, graphql } from 'gatsby'
 // import PropTypes from 'prop-types'
-import { kebabCase } from "lodash";
+import { kebabCase } from 'lodash'
 // import { Helmet } from 'react-helmet'
-import Layout from "../components/LayoutEnWhite";
-import SeO from "../components/seo";
+import Layout from '../components/LayoutEnWhite'
+import SeO from '../components/seo'
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
   // const { previous, next } = data
-  const tags = post.frontmatter.tags;
+  const tags = post.frontmatter.tags
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SeO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <SeO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
       <section className="section">
         <header>
           <title>{post.frontmatter.title}</title>
@@ -24,9 +27,14 @@ const BlogPostTemplate = ({ data, location }) => {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               {post.frontmatter.date}
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{post.frontmatter.title}</h1>
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                {post.frontmatter.title}
+              </h1>
               <p>{post.frontmatter.description}</p>
-              <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+              <section
+                dangerouslySetInnerHTML={{ __html: post.html }}
+                itemProp="articleBody"
+              />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
                   <h4>Tags</h4>
@@ -44,13 +52,17 @@ const BlogPostTemplate = ({ data, location }) => {
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogPostTemplate;
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlugEn($id: String!, $previousPostId: String, $nextPostId: String) {
+  query BlogPostBySlugEn(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
     site {
       siteMetadata {
         title
@@ -85,4 +97,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

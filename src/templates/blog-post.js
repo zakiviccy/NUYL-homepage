@@ -47,12 +47,10 @@ const BlogPostTemplate = ({ data, location }) => {
                   </ul>
                 </div>
               ) : null}
-
             </div>
           </div>
         </div>
       </section>
-
     </Layout>
   )
 }

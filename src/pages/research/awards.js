@@ -1,7 +1,7 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import SeO from "../../components/seo";
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Layout from '../../components/Layout'
+import SeO from '../../components/seo'
 
 export default function Award() {
   const data = useStaticQuery(graphql`
@@ -22,20 +22,25 @@ export default function Award() {
         }
       }
     }
-  `);
+  `)
 
   // const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
     <Layout>
-      <SeO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+      <SeO
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+      />
       <section className="section section--gradient">
         <div className="container content">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">受賞一覧</h2>
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  受賞一覧
+                </h2>
                 <ul>
                   {data.allAwardsCsv.nodes.map((node) => (
                     <li key={node.id}>
@@ -54,5 +59,5 @@ export default function Award() {
         </div>
       </section>
     </Layout>
-  );
+  )
 }
