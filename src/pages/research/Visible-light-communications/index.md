@@ -52,7 +52,7 @@ LED は半導体デバイスであるため、人の目には見えないほど�
 - [Fourth](https://icc2018.ieee-icc.org/workshop/4th-workshop-optical-wireless-communications-owc) held at Kansas City, USA, May 20, 2018
 - [Fifth](https://icc2019.ieee-icc.org/workshop/w23-5th-workshop-optical-wireless-communications) held at Shanghai, China, May 24, 2019
 - [Sixth](https://icc2020.ieee-icc.org/workshop/ws-17-workshop-optical-wireless-communications) held at Dublin, Ireland, June 7, 2020
-- **<span style="color: red; ">[Seventh](http://yamazato.nuee.nagoya-u.ac.jp/owc2022/index.html) will be held at ICC 2022, Seoul, Korea.</span>**
+- **<span style="color: red; ">[Seventh](http://yamazato.nuee.nagoya-u.ac.jp/owc2022/index.html) will be held at ICC 2022, Seoul, Korea, May 20, 2022</span>**
 
 ### Globecom Workshops
 
