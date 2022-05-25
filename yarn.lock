@@ -5861,6 +5861,13 @@ gatsby-parcel-config@^0.6.0:
     "@parcel/transformer-raw" "2.5.0"
     "@parcel/transformer-react-refresh-wrap" "2.5.0"
 
+gatsby-plugin-canonical-urls@^4.15.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-4.15.0.tgz#58d5da1c0569d33c57a1a7e6025eb83755efda8b"
+  integrity sha512-/QutRMsGUAbDAm0QtdouGGHwCIxqRmYtbW5k+R+B8t2IidY9ZjVomCjmZ8ezvgQS84lQ7zkVFuezy8PpfKiy8g==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 gatsby-plugin-google-gtag@^4.15.0:
   version "4.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-4.15.0.tgz#f19137fbd1e09f63fe93ff0d548313983f7ffc37"

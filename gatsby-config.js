@@ -124,6 +124,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp`,
+        stripQueryString: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
