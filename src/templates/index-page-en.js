@@ -330,7 +330,6 @@ export const pageQuery = graphql`
         templateKey
         lang
         title
-        subtitle
         heading
         description
       }

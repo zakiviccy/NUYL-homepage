@@ -43,6 +43,7 @@
     "build": "gatsby clean && gatsby build",
     "build-prefix-path": "gatsby clean && gatsby build --prefix-paths",
     "develop": "gatsby clean && gatsby develop",
+    "serve": "gatsby clean && gatsby build && gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

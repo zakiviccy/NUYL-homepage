@@ -38,13 +38,13 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav className="navbar is-info" role="navigation" aria-label="main-navigation">
-        <div className="container" aria-label="Hamburger menu" role="Hamburger menu">
-          <div className="navbar-brand" aria-label="Hamburger menu" role="Hamburger menu">
+        <div className="container">
+          <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="NUYL" style={{ width: "88px" }} />
             </Link>
             {/* Hamburger menu */}
-            <button aria-label="Hamburger menu" role="menuitem" className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()} tabIndex={0}>
+            <button aria-label="menuitem" role="menuitem" className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()} tabIndex={0}>
               <span />
               <span />
               <span />
