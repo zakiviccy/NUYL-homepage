@@ -4,7 +4,7 @@ import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
 import logo from "../img/NUYL-logo.svg";
-// import "./all.sass";
+import "./all.sass";
 
 const Navbar = class extends React.Component {
   constructor(props) {
