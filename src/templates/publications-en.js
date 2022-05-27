@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 // import Layout from '../components/LayoutEN-white'
 import Layout from "../components/LayoutEnWhite";
 import SeO from "../components/seo";
+import ExtLink from "../components/ExtLink";
 
 export default function PublicationsEn() {
   const data = useStaticQuery(graphql`
@@ -14,6 +15,7 @@ export default function PublicationsEn() {
           field3
           field4
           field5
+          field6
           id
         }
       }
@@ -93,7 +95,10 @@ export default function PublicationsEn() {
                         <li>{node.field1}</li>
                         <li>{node.field3}</li>
                         <li>{node.field5}</li>
-                        <li className="nodot">{node.field6}</li>
+                        <li className="nodot">
+                          {" "}
+                          <ExtLink to={node.field6} />
+                        </li>
                         <li className="nodot">{node.field4}</li>
                       </ul>
                     </li>
