@@ -27,10 +27,10 @@ const PagesTemplateEnWhite = ({ data, location }) => {
               <h1 className="is-size-2 has-text-weight-bold is-bold-light">{post.frontmatter.title}</h1>
               <p>{post.frontmatter.description}</p>
               <hr />
-              <section className="has-text-white-ter" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+              <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
-                  <h4 className="has-text-white-ter">Tags</h4>
+                  <h2 className="is-size-2">Tags</h2>
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
                       <li key={tag + `tag`}>

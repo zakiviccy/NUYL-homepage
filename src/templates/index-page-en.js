@@ -22,7 +22,6 @@ const IndexPageTemplateEN = ({ data }) => (
     <div className="hero-body">
       <div className="container has-text-centered">
         <StaticImage src="../img/logo.png" width={width} alt="Nagoya University Yamazato Laboratory" placeholder="blurred" />
-        {/* <h2 className="subtitle">Nagoya University</h2> */}
       </div>
     </div>
     <section className="blog-posts">

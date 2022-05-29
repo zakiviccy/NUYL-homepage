@@ -90,7 +90,7 @@ export default function PublicationsEn() {
                 <ul>
                   {data.allResearchEnCsv.nodes.map((node) => (
                     <li key={node.id}>
-                      <h5>{node.field2}</h5>
+                      <h3 className="is-size-4">{node.field2}</h3>
                       <ul>
                         <li>{node.field1}</li>
                         <li>{node.field3}</li>

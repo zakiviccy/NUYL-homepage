@@ -20,17 +20,17 @@ const PagesTemplate = ({ data, location }) => {
           <title>{post.frontmatter.title}</title>
           <meta name="description" content={post.frontmatter.description} />
         </header>
-        <div className="container">
+        <div className="container content">
           <div className="columns">
-            <div className="column is-10 is-offset-1 post">
-              <h3 className="heading has-text-white-ter">{post.frontmatter.date}</h3>
-              <h1 className="title has-text-white-ter">{post.frontmatter.title}</h1>
+            <div className="column is-10 mx-2">
+              <h1 className="is-size-5 has-text-white-ter">{post.frontmatter.date}</h1>
+              <h2 className="has-text-white-ter">{post.frontmatter.title}</h2>
               <p className="has-text-white-ter">{post.frontmatter.description}</p>
               <hr />
               <section className="has-text-white-ter" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
-                  <h4 className="subtitle post-subtitle">Tags</h4>
+                  <h4 className="subtitle post-subtitle has-text-white-ter">Tags</h4>
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
                       <li key={tag + `tag`}>

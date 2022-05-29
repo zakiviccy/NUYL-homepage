@@ -8,6 +8,7 @@
 // 水色：#3B94D0
 $kaldi-red: #5e0303
 $kaldi-red-invert: #fff
+$nuyl-gold: #be9c3d
 
 $primary: $kaldi-red
 $info: #251e1c
@@ -15,7 +16,7 @@ $info: #251e1c
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 // $black: #333436
-$link: #aa915b
+$link: $nuyl-gold
 
 
 $font-famiry-sans-serif: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default
@@ -162,8 +163,6 @@ body
      font-feature-settings: "palt" 1
      line-height: 1.7
 
-.title .subtitle .post-title
-  color: #FD461E
 
 .va
   display: flex
@@ -177,7 +176,7 @@ a
 a:hover
   text-decoration: underline
   /* color: #cc0000 */
-  color: #5e0303
+  color: $kaldi-red
 
 
 hr
@@ -203,7 +202,7 @@ h2
   line-height: 100px
   border-radius: 50%
   margin-bottom: 50px
-  background-color: #bca159
+  background-color: $nuyl-gold
   color: #fff
 
 .gold-circle
@@ -214,7 +213,7 @@ h2
   display: flex
   align-items: center
   justify-content: center
-  background-color: #bca159
+  background-color: $nuyl-gold
   color: #fff
   line-height: 1.5
 
@@ -238,7 +237,7 @@ h2
   display: flex
   align-items: center
   justify-content: center
-  background-color: #6a3805
+  background-color: $kaldi-red
   color: #fff
   line-height: 1.5
 
@@ -266,26 +265,26 @@ h2
 
 
 .navbar .navbar-item.is-active
-  color: #bca159
+  color: $nuyl-gold
   font-weight: 700
 
 
 .navbar .navbar-item:hover
-  background: #5e0303
-  color: #bca159
+  background: $kaldi-red
+  color: $nuyl-gold
 
 .navbar .navbar-item a
   margin-left: 1rem
   color: #e4e2ff
 
 .navbar-toggler
-  border-color: #5e0303
-  background-color: #5e0303
+  border-color: $kaldi-red
+  background-color: $kaldi-red
 
 
 .navbar-burger
-  border-color: #bca159
-  background-color: #5e0303
+  border-color: $nuyl-gold
+  background-color: $kaldi-red
   color: rgb(250, 249, 235)
 
 
@@ -322,11 +321,9 @@ h2
   color: #cbcfcf
   font-feature-settings: "palt" 1
 
-.j-title .subtitle .post-title
-  color: #fd461e
 
 .button
-  background: #bca159
+  background: $nuyl-gold
   color: white
 
 .pagetop
@@ -341,7 +338,7 @@ h2
   appearance: none
   padding: 0.75em 1em
   background: #fff
-  color: #bca159
+  color: $nuyl-gold
   font-size: 1.2rem
 
 
@@ -352,7 +349,7 @@ h2
   appearance: none
   padding: 0.75em 1em
   background: #251e1c
-  color: #bca159
+  color: $nuyl-gold
   font-size: 1.2rem
 
 
@@ -365,4 +362,4 @@ h2
   font-size: 3rem
   z-index: 1
   cursor: pointer
-  color: #bca159
+  color: $nuyl-gold

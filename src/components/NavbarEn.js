@@ -37,20 +37,19 @@ const NavbarEn = class extends React.Component {
 
   render() {
     return (
+      
       <section className="hero is-medium">
         <div className="hero-head">
           <div className="container">
-            <nav className="navbar" role="navigation" aria-label="main navigation">
-              <div className="container">
-                <div className="navbar-brand" role="menuitem" aria-label="menuitem">
+            <nav className="navbar">
+              {/* <div className="container"> */}
+                <div className="navbar-brand" aria-label="brand">
                   <Link to="/en/" className="navbar-item" title="Logo">
                     <img src={logo} alt="NUYL" style={{ width: "88px" }} />
                   </Link>
                   {/* Hamburger menu */}
-                  <button aria-label="Hamburger menu" className={`navbar-burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()} role="menuitem" tabIndex={0}>
-                    <span />
-                    <span />
-                    <span />
+                  <button className={`navbar-burger ${this.state.navBarActiveClass}`} aria-label="Nav button" data-target="navMenu" onClick={() => this.toggleHamburger()} role="menuitem" tabIndex={0}>
+                  <span></span><span></span><span></span>
                   </button>
                 </div>
                 <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
@@ -81,7 +80,7 @@ const NavbarEn = class extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              {/* </div> */}
             </nav>
           </div>
         </div>
