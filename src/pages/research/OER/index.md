@@ -39,3 +39,7 @@ tags:
 <br />
 
 名大の授業（NUOCW）は学生スタッフによってサイトのデザイン，システム構築が行われています．
+
+<br />
+
+[流体力学問題集](/OER/Fluid-Mechanics-Problems/)
