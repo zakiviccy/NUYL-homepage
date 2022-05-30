@@ -7,7 +7,7 @@ featuredpost: true
 featuredimage: /img/coffee.png
 tags:
   - 受賞
-  - 電気電子・情報工学科合同卒業研究発表会(片山研，武田研，長谷川研，藤井研，山里研)第3位
+  - 電気電子・情報工学科合同卒業研究発表会
 ---
 
 おめでとうございます！
