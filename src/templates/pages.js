@@ -5,6 +5,7 @@ import { kebabCase } from "lodash";
 // import { Helmet } from 'react-helmet'
 import Layout from "../components/Layout";
 import SeO from "../components/seo";
+import "katex/dist/katex.min.css";
 
 const PagesTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
