@@ -30,7 +30,7 @@ const PagesTemplate = ({ data, location }) => {
               <section className="has-text-white-ter" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
-                  <h4 className="subtitle post-subtitle has-text-white-ter">Tags</h4>
+                  <h3 className="subtitle post-subtitle has-text-white-ter">Tags</h3>
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
                       <li key={tag + `tag`}>
