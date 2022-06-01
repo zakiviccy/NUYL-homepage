@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1001.4 551.1" style="enable-background:new 0 0 1001.4 551.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D1D3D4;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st1{font-family:'Helvetica';}
+	.st2{font-size:60px;}
+	.st3{fill:#FF4100;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+	.st6{font-family:'ToppanBunkyuMidashiGothicStdN-ExtraBold-83pv-RKSJ-H';}
+</style>
+<polygon class="st0" points="263,273.9 227,309.9 83,309.9 47,273.9 83,237.9 227,237.9 "/>
+<polygon class="st0" points="263,506.7 227,542.7 83,542.7 47,506.7 83,470.7 227,470.7 "/>
+<polygon class="st0" points="272,281.9 308,317.9 308,461.9 272,497.9 236,461.9 236,317.9 "/>
+<polygon class="st0" points="38,281.9 74,317.9 74,461.9 38,497.9 2,461.9 2,317.9 "/>
+<polygon class="st0" points="263,41.2 227,77.2 83,77.2 47,41.2 83,5.2 227,5.2 "/>
+<polygon class="st0" points="272,50.4 308,86.4 308,230.4 272,266.4 236,230.4 236,86.4 "/>
+<polygon class="st0" points="38,50.4 74,86.4 74,230.4 38,266.4 2,230.4 2,86.4 "/>
+<text transform="matrix(1 0 0 1 135.329 57.9393)" class="st1 st2">a</text>
+<text transform="matrix(1 0 0 1 253.5991 170.8039)" class="st1 st2">b</text>
+<text transform="matrix(1 0 0 1 253.5992 407.4529)" class="st1 st2">c</text>
+<text transform="matrix(1 0 0 1 144.8924 522.2209)" class="st1 st2">d</text>
+<text transform="matrix(1 0 0 1 23.7274 407.4534)" class="st1 st2">e</text>
+<text transform="matrix(1 0 0 1 23.7275 170.8044)" class="st1 st2">f</text>
+<text transform="matrix(1 0 0 1 144.8925 285.7704)" class="st1 st2">g</text>
+<polygon class="st3" points="954.4,272.7 918.4,308.7 774.4,308.7 738.4,272.7 774.4,236.7 918.4,236.7 "/>
+<polygon class="st0" points="954.4,505.5 918.4,541.5 774.4,541.5 738.4,505.5 774.4,469.5 918.4,469.5 "/>
+<polygon class="st0" points="963.4,280.7 999.4,316.7 999.4,460.7 963.4,496.7 927.4,460.7 927.4,316.7 "/>
+<polygon class="st3" points="729.4,280.7 765.4,316.7 765.4,460.7 729.4,496.7 693.4,460.7 693.4,316.7 "/>
+<polygon class="st3" points="954.4,40 918.4,76 774.4,76 738.4,40 774.4,4 918.4,4 "/>
+<polygon class="st0" points="963.4,49.2 999.4,85.2 999.4,229.2 963.4,265.2 927.4,229.2 927.4,85.2 "/>
+<polygon class="st3" points="729.4,49.2 765.4,85.2 765.4,229.2 729.4,265.2 693.4,229.2 693.4,85.2 "/>
+<text transform="matrix(1 0 0 1 826.7611 56.7402)" class="st4 st1 st2">a</text>
+<text transform="matrix(1 0 0 1 945.0327 169.6047)" class="st1 st2">b</text>
+<text transform="matrix(1 0 0 1 945.0328 406.2538)" class="st1 st2">c</text>
+<text transform="matrix(1 0 0 1 836.3245 521.0219)" class="st1 st2">d</text>
+<text transform="matrix(1 0 0 1 715.1595 406.2543)" class="st4 st1 st2">e</text>
+<text transform="matrix(1 0 0 1 715.1597 169.6052)" class="st4 st1 st2">f</text>
+<text transform="matrix(1 0 0 1 836.3246 284.5712)" class="st4 st1 st2">g</text>
+<g>
+	<g>
+		<line class="st5" x1="348.2" y1="266.4" x2="600" y2="266.4"/>
+		<g>
+			<path d="M648.2,266.4c-22.7,8.4-50.9,22.8-68.4,38l13.8-38l-13.8-38C597.3,243.6,625.5,257.9,648.2,266.4z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 372.242 167.6047)"><tspan x="0" y="0" class="st6 st2">a, f, g, e</tspan><tspan x="0" y="72" class="st6 st2">を点滅</tspan></text>
+</svg>

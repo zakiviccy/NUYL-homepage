@@ -31,7 +31,7 @@ const PagesTemplate = ({ data, location }) => {
               <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
+                  <h2 className="is-size-4">Tags</h2>
                   <ul className="taglist">
                     {post.frontmatter.tags.map((tag) => (
                       <li key={tag + `tag`}>
