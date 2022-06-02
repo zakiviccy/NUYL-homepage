@@ -20,6 +20,7 @@ tags:
 > - コラボの利⽤には [Google アカウント](https://support.google.com/accounts/answer/27441?hl=ja)が必要です．事前に取得しておいてください．
 > - コラボは PC のブラウザから利⽤できます．⾃宅からでも OK︕
 > - ブラウザは何でも良いと思います．もし，うまくいかないようであれば [Google Chrome](https://www.google.co.jp/chrome/) をダウンロードしてご利⽤ください．
+> - コラボの使い方は[こちら](https://sites.google.com/a.ipsj.or.jp/mooc/list/How2)を参照してください．
 
 ---
 
