@@ -158,6 +158,7 @@ $x$座標は変わりません．
 ### [7 セグメントディスプレイ](https://ja.wikipedia.org/wiki/7%E3%82%BB%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4)
 
 ![7-segment Indicator](7-segments_Indicator.gif)
+[図：ウィキペディアより引用](https://commons.wikimedia.org/wiki/File:7-segments_Indicator.gif)
 
 驚くかもしれませんが，亀さんを上下左右に動かすことで数字の 0〜9，そしてアルファベットの
 A, C, E, F, G, H, J, L, O, P, S, U
@@ -249,6 +250,7 @@ $$
 ### [14 セグメントディスプレイ](https://en.wikipedia.org/wiki/Fourteen-segment_display)
 
 ![14セグメントディスプレイ](Latin_alphabet_on_a_14_segement_display.gif)
+[図：ウィキペディアより引用](https://commons.wikimedia.org/wiki/File:Latin_alphabet_on_a_14_segement_display.gif)
 
 7 セグメントディスプレイでは，一部のアルファベットしか表示できませんでした．
 そこで，7 セグメントディスプレイに斜めと間のセグメントを追加して，全ての数字とアルファベットを表示できるようにしたのが[14 セグメントディスプレイ](https://en.wikipedia.org/wiki/Fourteen-segment_display)です．
@@ -322,13 +324,14 @@ $$
 
 <a id="余弦定理"></a>
 
-### 余弦定理
+### [余弦定理](https://ja.wikipedia.org/wiki/%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86)
 
 直角三角形の場合，先にみたようにピタゴラスの定理が成り立ちますので，一辺の長さを求めることができました．
-これを拡張して直角三角形で無い場合でも一辺の長さを求めることができるのが余弦定理です．
+これを拡張して直角三角形で無い場合でも一辺の長さを求めることができるのが[余弦定理](https://ja.wikipedia.org/wiki/%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86)です．
 一般化されたピタゴラスの定理ともいえます．
 
 ![三角形の角と辺の関係](Triangle_with_notations_2.svg)
+[図：ウィキペディアより引用](https://en.wikipedia.org/wiki/Law_of_cosines#/media/File:Triangle_with_notations_2.svg)
 
 上の図のように $\triangle ABC$ において、$a = BC$, $b = CA$, $c = AB$, $\alpha = \angle CAB$, $\beta = \angle ABC$, $\gamma = \angle BCA$ としたとき
 
@@ -432,7 +435,7 @@ $x=a$ のとき関数 $f(x)$ の値を $f(a)$ で表します．
 
 <a id="漸化式"></a>
 
-## 漸化式
+## [漸化式](https://ja.wikipedia.org/wiki/%E6%BC%B8%E5%8C%96%E5%BC%8F)
 
 漸化式とは，ある数列 $\{ a_n \}$があるとき，数列の各項を，前の項を用いて求めることができる式のことをいいます．
 
@@ -466,9 +469,11 @@ $$
 
 以下，簡単に階乗とフィボナッチ数について説明します．
 
+<!-- 具体的には，階乗とフィボナッチ数が漸化式で表すことができることを示します． -->
+
 <a id="階乗"></a>
 
-### 階乗
+### [階乗](https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
 
 $n$ の階乗 $n!$ は，$1$ から $n$ までの全ての整数の積です．つまり，
 
