@@ -25,10 +25,10 @@ const PagesTemplate = ({ data, location }) => {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               {post.frontmatter.date}
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{post.frontmatter.title}</h1>
+              <h1 className="is-size-2 has-text-weight-bold">{post.frontmatter.title}</h1>
               <p>{post.frontmatter.description}</p>
               <hr />
-              <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+              <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" className="content" />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
                   <h2 className="is-size-4">Tags</h2>
