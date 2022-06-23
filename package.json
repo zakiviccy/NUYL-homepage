@@ -9,11 +9,11 @@
     "gatsby": "^4.16.0",
     "gatsby-plugin-canonical-urls": "^4.16.0",
     "gatsby-plugin-google-gtag": "^4.16.0",
-    "gatsby-plugin-image": "^2.16.0",
+    "gatsby-plugin-image": "^2.16.1",
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.16.0",
     "gatsby-plugin-sass": "^5.16.0",
-    "gatsby-plugin-sharp": "^4.16.0",
+    "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-plugin-sitemap": "^5.16.0",
     "gatsby-remark-copy-linked-files": "^5.16.0",
     "gatsby-remark-images": "^6.16.0",
@@ -31,7 +31,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.7",
-    "sass": "^1.52.2",
+    "sass": "^1.52.3",
     "uuid": "^8.3.2"
   },
   "keywords": [
