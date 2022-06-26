@@ -1,5 +1,5 @@
 ---
-templateKey: pages-en
+templateKey: pages-en-white
 lang: en
 title: Sub-threshold signal detection using stochastic resonance
 description: Stochastic resonance (SR) is a nonlinear phenomenon in which a system response is enhanced by additional noise. SR has received considerable attention as it can detect a signal that is too weak to be detected by a sensor. By adding noise (usually with a much broader bandwidth than the original signal) to the signal, the original signal’s frequency will resonate with that of the noise signal, amplifying the original signal while not amplifying the noise. As a result, the signal, which could not be detected by the sensor, evolves, and becomes detectable.

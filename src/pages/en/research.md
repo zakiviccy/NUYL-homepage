@@ -14,13 +14,18 @@ tags:
 
 Such as communication that dares to use noise (stochastic resonance), communication that uses visible light instead of radio waves (visible light communication), communication that utilizes machine learning, and the application of ultrasonic waves.
 
-## [Stochastic resonace (SR) for communication](/en/Sub-threshold-signal-detection-using-stochastic-resonance/)
+## Stochastic resonace (SR) for communication
 
 Stochastic resonance (SR) is a nonlinear phenomenon in which a system response is enhanced by additional noise. 
 
-## [Visible light communications (VLC)](/en/Image-sensor-communication/)
+- [Sub-threshold signal detection using stochastic resonance](/en/Sub-threshold-signal-detection-using-stochastic-resonance/)
+
+## Visible light communications (VLC)
 
 Visible light communication (VLC) uses LEDs not only to provide light but also to broadcast data. 
+
+- [Image Sensor Communications (ISC)](/en/Image-sensor-communication/)
+- [Optical Wireless Communications (OWC) Workshop](/en/Optical-Wireless-Communications-OWC-Workshop/)
 
 ## [Open educational resources (OERs)](/en/OER/)
 
@@ -30,3 +35,4 @@ We are currently focusing on developing OERs and their related technologies.
 
 We also manage [Nagoya University’s OpenCourseWare (NUOCW)](https://ocw.nagoya-u.jp/en "Nagoya University’s OpenCourseWare (NUOCW)") site, which provides teaching materials used in selected courses available free of charge over the Internet to the public.
 
+- [Nagoya University’s OpenCourseWare (NUOCW)](https://ocw.nagoya-u.jp/en "Nagoya University’s OpenCourseWare (NUOCW)") 

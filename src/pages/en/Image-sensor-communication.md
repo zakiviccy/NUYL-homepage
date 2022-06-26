@@ -1,5 +1,5 @@
 ---
-templateKey: pages-en
+templateKey: pages-en-white
 lang: en
 title: Image sensor communication
 description: We conduct research on image-sensor communication (ISC), one of the visible light communication (VLC) system.
@@ -8,6 +8,7 @@ tags:
   - Research
   - Visible light communication
   - Image sensor communciation
+  - Optical Wireless Communications
 ---
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/631908435?h=ebe66dc0ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IV21_Nagoya_University_Yamazato"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -50,19 +51,14 @@ A suitable reception device for the VLC signal in an outdoor mobile environment 
 A particular advantage of complementary metal-oxide-semiconductor image-sensor usage is, owing to the massive number of pixels available, its ability to spatially separate sources. Here the sources include both noise sources, such as sunlight, streetlights, and other ambient lights and LED transmission sources.
 The ability to spatially separate sources also provides an additional feature to VLC, in particular, the ability to receive and process multiple transmitting sources.
 
-<br /><br />
 
-## Toward the widespread use of visible light communication and optical wireless communication technology
+## Toward the widespread use of visible light communication and [optical wireless communication](/en/Optical-Wireless-Communications-OWC-Workshop/) technology
 
-<br />
-Yamazato Laboratory provides technical support for the Optical Wireless Communication (OWC) Workshop held at the Global Communications Conference (Globecom) and the International Conference on Communications (ICC) organized by the Institute of Electrical and Electronics Engineers (IEEE). The OWC Workshops contribute to research on optical wireless communication and visible light communication.
-<br /><br />
-We have hosted the OWC Workshop web page in red.
-<br /><br />
+Yamazato Laboratory provides technical support for the OWC Workshops held at the Global Communications Conference (Globecom) and the International Conference on Communications (ICC) organized by the Institute of Electrical and Electronics Engineers (IEEE). The OWC Workshops contribute to optical wireless and visible light communication research.
+
+We have hosted the [OWC Workshop](/en/Optical-Wireless-Communications-OWC-Workshop/) web page in red.
 
 ### ICC Workshops
-
-<br />
 
 - [First](https://icc2015.ieee-icc.org/content/workshops.html) held at London, UK, June. 8, 2015.
 - [Second](https://icc2016.ieee-icc.org/content/workshops.html#W02) held at Kuala Lumpur, Malaysia, May 23, 2016
@@ -71,11 +67,8 @@ We have hosted the OWC Workshop web page in red.
 - [Fifth](https://icc2019.ieee-icc.org/workshop/w23-5th-workshop-optical-wireless-communications) held at Shanghai, China, May 24, 2019
 - [Sixth](https://icc2020.ieee-icc.org/workshop/ws-17-workshop-optical-wireless-communications) held at Dublin, Ireland, June 7, 2020
 - **<span style="color: red; ">[Seventh](http://yamazato.nuee.nagoya-u.ac.jp/owc2022/index.html) held at ICC 2022, Seoul, Korea, May 20, 2022</span>**
-  <br /><br />
 
 ### Globecom Workshops
-
-<br />
 
 - [First](https://globecom2010.ieee-globecom.org/WORKSHOPS.html) held at Globecom 2010, Miami, USA, 6 – 10 December 2010
 - [Second](https://globecom2011.ieee-globecom.org/workshops.html) held at Globecom 2011, Houston TX, USA, 5 December 2011

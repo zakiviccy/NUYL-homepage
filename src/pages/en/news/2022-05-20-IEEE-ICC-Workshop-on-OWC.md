@@ -24,7 +24,7 @@ Thank you, Prof. Arai.
   - Z. Tang,T. Yamazato, S. Arai
   - IEEE ICC Workshop on Optical Wireless Communications (OWC), Seoul, South Korea
 
-Our laboratory supports IEEE ICC Workshop on Optical Wireless Communications (OWC).
+Our laboratory supports IEEE ICC Workshop on [Optical Wireless Communications (OWC)](/en/Optical-Wireless-Communications-OWC-Workshop/).
 
 - [OWC'18](http://yamazato.nuee.nagoya-u.ac.jp/owc2018/)
 - [OWC'20](http://yamazato.nuee.nagoya-u.ac.jp/owc2020)

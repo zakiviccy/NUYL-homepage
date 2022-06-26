@@ -1,5 +1,5 @@
 ---
-templateKey: pages-en
+templateKey: pages-en-white
 lang: en
 title: Open educational resources (OERs)
 description: Open educational resources (OERs) are teaching, learning, or research materials that are available in the public domain or released with an intellectual property license that allows for free use, adaptation, and distribution. We are currently focusing on developing OERs and their related technologies.
@@ -16,7 +16,6 @@ We also manage [Nagoya University’s OpenCourseWare (NUOCW)](https://ocw.nagoya
 
 For detail of NUOCW, please visit [here](https://ocw.nagoya-u.jp/en/about "About NUOCW").
 
-<br /><br />
 Here are some intereting courses:
 
 <br />
