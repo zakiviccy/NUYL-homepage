@@ -52,7 +52,7 @@ A particular advantage of complementary metal-oxide-semiconductor image-sensor u
 The ability to spatially separate sources also provides an additional feature to VLC, in particular, the ability to receive and process multiple transmitting sources.
 
 
-## Toward the widespread use of visible light communication and [optical wireless communication](/en/Optical-Wireless-Communications-OWC-Workshop/) technology
+## Toward the widespread use of visible light communication and [optical wireless communication](/en/Optical-Wireless-Communications-OWC-Workshop/) technologies
 
 Yamazato Laboratory provides technical support for the OWC Workshops held at the Global Communications Conference (Globecom) and the International Conference on Communications (ICC) organized by the Institute of Electrical and Electronics Engineers (IEEE). The OWC Workshops contribute to optical wireless and visible light communication research.
 
