@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 唐 正強くんと神谷 峻輝くんがIEEE ICC Workshop on OWCで発表します
+title: 唐 正強くんとが電子情報通信学会
 date: 2022-05-20T10:05:39.789Z
 description: >-
   米国電気電子学会（IEEE）が主催する国際通信会議（International Conference on Communication: ICC）は，世界通信会議（Global Communication Conference: Globecom）と並び，通信分野で最も権威のある国際会議です．
