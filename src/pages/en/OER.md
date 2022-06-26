@@ -12,13 +12,11 @@ tags:
 
 We also manage [Nagoya University’s OpenCourseWare (NUOCW)](https://ocw.nagoya-u.jp/en "Nagoya University’s OpenCourseWare (NUOCW)") site, which provides teaching materials used in selected courses available free of charge over the Internet to the public.
 
-<br />
 
 For detail of NUOCW, please visit [here](https://ocw.nagoya-u.jp/en/about "About NUOCW").
 
 Here are some intereting courses:
 
-<br />
 
 - [Studium Generale 2021 Fall](https://ocw.nagoya-u.jp/en/courses/838-studium-generale-2021-fall-2022-1/ "Studium Generale 2021 Fall")
 
@@ -30,6 +28,5 @@ Here are some intereting courses:
 
 - [Academic English (Advanced)](https://ocw.nagoya-u.jp/en/courses/867-academic-english-advanced-2022/ "Academic English (Advanced)")
 
-<br />
 
-NUOCW site is organized and maintained by NUOCW student staff.
+[NUOCW](https://ocw.nagoya-u.jp) site is organized and maintained by NUOCW student staff.
