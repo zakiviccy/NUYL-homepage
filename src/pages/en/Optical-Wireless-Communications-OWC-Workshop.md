@@ -20,8 +20,6 @@ We have hosted the OWC Workshops web page in red.
 
 ### ICC Workshops
 
-<br />
-
 - [First](https://icc2015.ieee-icc.org/content/workshops.html) held at London, UK, June. 8, 2015.
 - [Second](https://icc2016.ieee-icc.org/content/workshops.html#W02) held at Kuala Lumpur, Malaysia, May 23, 2016
 - [Third](https://icc2017.ieee-icc.org/workshop/3rd-workshop-optical-wireless-communications-owc.html) held at Paris, France, May 21, 2017
@@ -29,11 +27,8 @@ We have hosted the OWC Workshops web page in red.
 - [Fifth](https://icc2019.ieee-icc.org/workshop/w23-5th-workshop-optical-wireless-communications) held at Shanghai, China, May 24, 2019
 - [Sixth](https://icc2020.ieee-icc.org/workshop/ws-17-workshop-optical-wireless-communications) held at Dublin, Ireland, June 7, 2020
 - **<span style="color: red; ">[Seventh](http://yamazato.nuee.nagoya-u.ac.jp/owc2022/index.html) held at ICC 2022, Seoul, Korea, May 20, 2022</span>**
-  <br /><br />
 
 ### Globecom Workshops
-
-<br />
 
 - [First](https://globecom2010.ieee-globecom.org/WORKSHOPS.html) held at Globecom 2010, Miami, USA, 6 – 10 December 2010
 - [Second](https://globecom2011.ieee-globecom.org/workshops.html) held at Globecom 2011, Houston TX, USA, 5 December 2011
@@ -44,10 +39,11 @@ We have hosted the OWC Workshops web page in red.
 - [Seventh](https://globecom2017.ieee-globecom.org/workshop/ws-11-7th-ieee-globecom-workshop-optical-wireless-communications-owc%e2%80%9917) held at Globecom 2017, Singapore, Singapore, Dec 8, 2017
 - **<span style="color: red; ">[Eighth](http://yamazato.nuee.nagoya-u.ac.jp/owc2018/index.html) held at Globecom 2018, Abu Dhabi, UAE, Dec 9, 2018</span>**
 - **<span style="color: red; ">[Ninth](http://yamazato.nuee.nagoya-u.ac.jp/owc2020/) held at Globecom 2020, Taipei, Taiwan, [Monday, Dec 7, 2020](https://globecom2020.ieee-globecom.org/workshop/ws-01-workshop-optical-wireless-communications-owc)</span>**
-  <br /><br />
+
 
 ### ICEVLC2018
 
   In addition, we have hosted the 2nd ICEVLC organized by the Visible Light Communications Association of Japan (now the Visible Light Communications Subcommittee of the Photonics Council of Japan).
-  <br /><br />
+
+
 - [2nd International Conference and Exhibition on Visible Light Communications 2018 (ICEVLC 2018)](http://yamazato.nuee.nagoya-u.ac.jp/icevlc2018)
