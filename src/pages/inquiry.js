@@ -85,7 +85,8 @@ const returnPrefectures = () => {
 const Contact = ({ className }) => {
   const [modal, setModal] = useState();
   const [modalOpen, setModalOpen] = useState(false);
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  // const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const question1 = returnQuestion1();
   const question2 = returnQuestion2();
   const prefectures = returnPrefectures();
@@ -100,8 +101,9 @@ const Contact = ({ className }) => {
               入力内容の確認
             </div>
             <div
+              aria-hidden="true"
               className="button delete"
-              aria-label="close"
+              aria-label="close_button"
               onClick={() => setModalOpen(false)}
             ></div>
           </header>
@@ -172,6 +174,7 @@ const Contact = ({ className }) => {
             </form>
             <div
               className="button"
+              aria-hidden="true"
               onClick={() => setModalOpen(false)}
             >
               閉じる
