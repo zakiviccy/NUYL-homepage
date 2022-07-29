@@ -50,8 +50,8 @@ const Contact = ({ className }) => {
           <section className="modal-card-body">
             <h5>1. ご意見・ご質問の種類を１つ選んでください：</h5>
             <p>{data.Question}</p>
-            <h5>2. 件名をご記入下さい：</h5>
-            <p>{data.Subject}</p>
+            {/* <h5>2. 件名をご記入下さい：</h5>
+            <p>{data.Subject}</p> */}
             <h5>3. 内容を具体的にご記入下さい：</h5>
             <p>{data.Content}</p>
             <h5>4. お名前：</h5>
@@ -70,11 +70,11 @@ const Contact = ({ className }) => {
                 name="ご意見・ご質問の種類"
                 value={data.Question}
               />
-             <input
+             {/* <input
                 type="hidden"
                 name="件名"
                 value={data.Subject}
-              />
+              /> */}
               <input
                 type="hidden"
                 name="内容"
@@ -122,7 +122,7 @@ const Contact = ({ className }) => {
             {question.map(e => (
               <div>
                 <label className="radio">
-                  <input {...register("Question", { required: true })} type="radio" value={e.value} />
+                  <input {...register("Question", { required: true })} type="radio" value={e.value} required/>
                     {e.value}
                 </label>
               </div>
@@ -131,7 +131,7 @@ const Contact = ({ className }) => {
           {errors.Question && <span className="has-text-danger">この項目は選択必須です。</span>}
         </div>
 
-        <div className="question-and-form">
+        {/* <div className="question-and-form">
           <h3>2. 件名をご記入下さい：</h3>
           <p>
             （例：□□の研究について詳しく知りたい、△△の教材も公開してほしい、など）
@@ -144,18 +144,18 @@ const Contact = ({ className }) => {
             </div>
           </div>
           {errors.Subject && <span className="has-text-danger">この項目は入力必須です。</span>}
-        </div>
+        </div> */}
 
         <div className="question-and-form">
           <h3>3. 内容を具体的にご記入下さい：</h3>
           <div className="control columns">
             <div className="column is-half">
               <label className="label">
-                {/* <textarea {...register("Content", {required: true})} className="textarea" /> */}
-                <textarea
+                <textarea id="message" name="message" {...register("Content", {required: true})} className="textarea" required/>
+                {/* <textarea
         id="message"
         name="message"
-      />
+      /> */}
               </label>
             </div>
           </div>
@@ -167,7 +167,7 @@ const Contact = ({ className }) => {
           <div className="control columns">
             <div className="column is-one-third">
               <label className="label">
-                <input {...register("Name", {required: true})} className="input" />
+                <input {...register("Name", {required: true})} className="input" required/>
               </label>
             </div>
           </div>
@@ -185,7 +185,7 @@ const Contact = ({ className }) => {
         type="email" 
         name="email"
         {...register("Email", {required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})}
-      />
+      required/>
             {/* <ValidationError 
         prefix="Email" 
         field="email"

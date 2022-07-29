@@ -1,89 +1,127 @@
 // Make sure to run npm install @formspree/react
 // For more help visit https://formspr.ee/react-help
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+// import React from 'react';
 
-const returnQuestion = () => {
-  const question = [{ value: "山里研で行っている研究について" }, { value: "公開している教材について" }, { value: "共同研究，取材のお申し込みについて" }, { value: "その他" }];
-  return question;
-};
-
-// const [state, submit] = useForm("{your-form-id}", {
+import { useForm, ValidationError } from '@formspree/react';
+import React, { useState } from "react";
+import Layout from "../components/Layout";
+import { Link } from 'gatsby'
+// const [state, handleSubmit] = useForm('xjvlnelr', {
 //   data: {
-//     subject: "Someone joined the newsletter",
-//     pageTitle: function () {
+//     subject: 'Someone joined the newsletter',
+//     pageTitle: function() {
 //       // This function will be evaluated at submission time
 //       return document.title;
-//     },
-//   },
+//     }
+//   }
 // });
 
+
+
 function ContactForm() {
-  // const { register, handleSubmit, formState: { errors } } = useForm();
-  // const [modal, setModal] = useState();
-  // const [modalOpen, setModalOpen] = useState(false);
-  const question = returnQuestion();
-  const [state, data, register, handleSubmit] = useForm("xjvlnelr");
-  if (state.submitting) {
-    return (
-      <div className="modal is-active">
-        <div className="modal-background"></div>
-        <div className="modal-card">
-          <header className="modal-card-head">
-            <div className="modal-card-title" style={{ fontSize: "1.5rem" }}>
-              入力内容の確認
-            </div>
-            {/* <div aria-hidden="true" className="button delete" aria-label="close_button" onClick={() => setModalOpen(false)}></div> */}
-          </header>
-          <section className="modal-card-body">
-            {/* <h5>1. ご意見・ご質問の種類を１つ選んでください：</h5>
-            <p>{data.Question}</p>
-            <h5>2. 件名をご記入下さい：</h5>
-            <p>{data.Subject}</p>
-            <h5>3. 内容を具体的にご記入下さい：</h5>
-            <p>{data.Content}</p>
-            <h5>4. お名前：</h5>
-            <p>{data.Name}</p> */}
-            <h5>5. 連絡可能なメールアドレス：</h5>
-            <p>{data.email}</p>
-          </section>
-          <footer className="modal-card-foot">
-            <form name="contact" action="https://formspree.io/xjvlnelr" method="POST">
-              {/* <input type="hidden" name="ご意見・ご質問の種類" value={data.Question} />
-              <input type="hidden" name="件名" value={data.Subject} />
-              <input type="hidden" name="内容" value={data.Content} />
-              <input type="hidden" name="お名前" value={data.Name} /> */}
-              {/* <input type="hidden" name="メールアドレス" value={data.Email} /> */}
-              <div style={{ marginRight: "0.5rem" }}>
-                <input type="submit" className="button is-success" value="送信" />
-              </div>
-            </form>
-            {/* <div className="button" aria-hidden="true" onClick={() => setModalOpen(false)}>
+  const [state, handleSubmit] = useForm("xjvlnelr");
+  /* ↓state変数を定義 */
+  const [text, setText] = useState("");
+  const [modal, setModal] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+  // const [state, handleSubmit] = useForm('xjvlnelr', {
+  //   data: {
+  //     subject: 'Someone joined the newsletter',
+  //     pageTitle: function() {
+  //       // This function will be evaluated at submission time
+  //       return document.title;
+  //     }
+  //   }
+  // });
+
+
+  if (state.succeeded) {
+    if (setModal){
+      <p> hello </p>
+    }
+      return (
+            <div className="modal is-active">
+      <div className="modal-background"></div>
+      <div className="modal-card">
+      <section className="modal-card-body">
+      <p>Thanks {text} for your submission!</p>
+      <p>{modal}</p>
+      </section>
+      <div
+              className="button"
+              aria-hidden="true"
+              onClick={() => setModalOpen(false)}
+            >
+              <Link to="/forms/">
               閉じる
-            </div> */}
-          </footer>
+              </Link>
+            </div>
+      </div>
+      </div>
+      )
+
+  }
+  // if (state.submitting) {
+  //   return (
+
+  //     {/* <button type="submit" disabled={state.submitting}>
+  //       Submit
+  //     </button> */}
+  //   </form>
+  // );
+  //  }
+
+  return (
+
+    <form onSubmit={handleSubmit}>
+   
+    <div className="question-and-form">
+      <h3>4. お名前：</h3>
+      <div className="control columns">
+        <div className="column is-one-third">
+          <label className="label">
+            <input className="input" id="name" name="name" value={text} onChange={(event) => setText(event.target.value)} required/>
+            
+  <ValidationError 
+    prefix="name" 
+    field="text"
+    name="name"
+    errors={state.errors}
+    className="has-text-danger"
+  />
+          </label>
         </div>
       </div>
-    );
-  }
-  if (state.succeeded) {
-    return <p>State succeeded</p>;
-  }
-  return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
-      {/* <input className="input" id="email" type="email" name="email" {...register("Email", { required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ })} /> */}
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <textarea id="message" name="message" />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
+
+    </div>
+
+
+    <div className="has-text-centered" style={{ paddingTop : "1rem"}}>
+      <input type="submit" className="button is-primary is-large modal-button" onClick={() => setModalOpen(true)} value="入力内容の確認"/>
+    </div>
     </form>
   );
 }
-function App() {
-  return <ContactForm />;
-}
-export default App;
+
+
+const FormPage = () => {
+  return (
+    <Layout>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="content">
+            <h1 className="has-text-weight-bold is-size-1 header-title">
+          お問い合わせ
+        </h1>
+
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default FormPage;
