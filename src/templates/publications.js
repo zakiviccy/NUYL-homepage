@@ -1,8 +1,8 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../components/Layout";
-import SeO from "../components/seo";
-import ExtLink from "../components/ExtLink";
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import SeO from '../components/seo'
+import ExtLink from '../components/ExtLink'
 
 export default function Publications() {
   const data = useStaticQuery(graphql`
@@ -37,23 +37,34 @@ export default function Publications() {
         }
       }
     }
-  `);
+  `)
 
-  const post = data.markdownRemark.frontmatter;
+  const post = data.markdownRemark.frontmatter
 
   return (
     <Layout>
-      <SeO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+      <SeO
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section content">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{post.title}</h2>
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {post.title}
+                </h2>
                 <p>
-                  {post.date}現在，{post.journal + post.conference + post.oral} の業績があります.
+                  {post.date}現在，{post.journal + post.conference + post.oral}{' '}
+                  の業績があります.
                   <br />
-                  <a href="https://www.katayama.nuee.nagoya-u.ac.jp/dbase/show.php" target="_blank" rel="noopener noreferrer" title="片山研究室／山里研究室 研究業績">
+                  <a
+                    href="https://www.katayama.nuee.nagoya-u.ac.jp/dbase/show.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="片山研究室／山里研究室 研究業績"
+                  >
                     片山研究室／山里研究室 研究業績
                   </a>
                   のページもご参照ください．
@@ -62,24 +73,36 @@ export default function Publications() {
                   <div className="column">
                     <div className="gold-circle">
                       <div>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.journal}</div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">論文</div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">
+                          {post.journal}
+                        </div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">
+                          論文
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="column">
                     <div className="silver-circle">
                       <div>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.conference}</div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">国際会議</div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">
+                          {post.conference}
+                        </div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">
+                          国際会議
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="column">
                     <div className="bronze-circle">
                       <div>
-                        <div className="is-size-1 has-text-weight-bold has-text-centered">{post.oral}</div>
-                        <div className="is-size-6 has-text-weight-bold has-text-centered">口頭発表</div>
+                        <div className="is-size-1 has-text-weight-bold has-text-centered">
+                          {post.oral}
+                        </div>
+                        <div className="is-size-6 has-text-weight-bold has-text-centered">
+                          口頭発表
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -107,5 +130,5 @@ export default function Publications() {
         </div>
       </section>
     </Layout>
-  );
+  )
 }

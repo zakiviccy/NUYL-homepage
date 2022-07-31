@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Link } from "gatsby";
+import * as React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import ContactForm from "../components/contact-form";
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import ContactForm from '../components/contact-form'
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +19,6 @@ const IndexPage = () => (
       <Link to="/page-2/">Go to page 2</Link> <br />
     </p>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
