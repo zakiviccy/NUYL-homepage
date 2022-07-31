@@ -282,12 +282,25 @@ const IndexPageTemplate = ({ data }) => (
             <div className="column post is-12">
               <h1 id="contact">お問い合わせ</h1>
               <p className="is-size-5">
-                名古屋大学大学院工学研究科 情報・通信工学専攻 山里研究室
+                山里研究室へお問い合わせは以下のフォームからお願いします．
                 <br />
+                <br />
+                <Link
+                  className="button has-text-weight-bold is-size-4"
+                  to="/inquiry"
+                >
+                  お問い合わせフォーム
+                </Link>
               </p>
-              <p className="is-size-5">
+              <br />
+              <h2>
                 <FaEnvelope />
-                &nbsp; &nbsp;〒464-8603 名古屋市千種区不老町1
+                &nbsp; &nbsp;住所
+              </h2>
+              <p className="is-size-5">
+                〒464-8603 名古屋市千種区不老町1
+                <br />
+                名古屋大学大学院工学研究科 情報・通信工学専攻 山里研究室
                 <br />
                 研究室（学生）：IB電子情報館5F&nbsp; &nbsp;
                 <FaPhoneAlt />
