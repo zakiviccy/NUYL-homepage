@@ -88,7 +88,7 @@ const IndexPageTemplate = ({ data }) => (
                       <h2 className="is-size-3">可視光通信</h2>
                       <div className="content px-2">
                         可視光通信とはLEDを人の目には見えないほど高速に点滅することでデータ伝送を行う通信方式です．
-                        私たちは，受信機にカメラを用いるイメージセンサ通信について研究しています．
+                        私たちは，受信機にカメラを使うイメージセンサ通信について研究しています．
                       </div>
                       <Link
                         className="button"

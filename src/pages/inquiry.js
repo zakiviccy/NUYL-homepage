@@ -1,23 +1,11 @@
 // Make sure to run npm install @formspree/react
 // For more help visit https://formspr.ee/react-help
-// import React from 'react';
-
 import { useForm, ValidationError } from '@formspree/react'
 import React, { useState } from 'react'
 import Layout from '../components/Layout'
 // import { Link } from 'gatsby'
 import { FaPhoneAlt } from '@react-icons/all-files/fa/FaPhoneAlt'
 import { FaEnvelope } from '@react-icons/all-files/fa/FaEnvelope'
-
-// const [state, handleSubmit] = useForm('xjvlnelr', {
-//   data: {
-//     subject: 'Someone joined the newsletter',
-//     pageTitle: function() {
-//       // This function will be evaluated at submission time
-//       return document.title;
-//     }
-//   }
-// });
 
 const returnQuestion = () => {
   const question = [
@@ -38,20 +26,10 @@ function ContactForm() {
   // const [modal, setModal] = useState('')
   // const [modalOpen, setModalOpen] = useState(false)
   const question = returnQuestion()
-  // const [state, handleSubmit] = useForm('xjvlnelr', {
-  //   data: {
-  //     subject: 'Someone joined the newsletter',
-  //     pageTitle: function() {
-  //       // This function will be evaluated at submission time
-  //       return document.title;
-  //     }
-  //   }
-  // });
+
 
   if (state.succeeded) {
-    // if (setModal) {
-    //   ;<p> hello </p>
-    // }
+
     return (
       <section>
         <p>
