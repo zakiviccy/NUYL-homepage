@@ -9,3 +9,4 @@ static/admin/*.bundle.*
 .DS_Store
 .env.*
 yarn-error.log
+temporary-exclude-files
