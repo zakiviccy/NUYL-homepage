@@ -28,7 +28,7 @@ class BlogRollEn extends React.Component {
                   {post.frontmatter.description}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  <Link className="btn" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
                 </p>

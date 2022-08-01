@@ -85,7 +85,11 @@ const IndexPageTemplateEN = ({ data }) => (
                       </p>
                       <br />
                       <Link
+<<<<<<< HEAD
                         className="button"
+=======
+                        className="btn"
+>>>>>>> main
                         to="/en/Sub-threshold-signal-detection-using-stochastic-resonance/"
                       >
                         Read more
@@ -125,7 +129,7 @@ const IndexPageTemplateEN = ({ data }) => (
                         slow-moving vehicles.
                       </p>
                       <br />
-                      <Link to="/en/research/" className="button">
+                      <Link to="/en/research/" className="btn">
                         Read More
                       </Link>
                     </div>
@@ -154,10 +158,14 @@ const IndexPageTemplateEN = ({ data }) => (
                       effect by a rotary LED transmitter.
                     </p>
                     <br />
+<<<<<<< HEAD
                     <Link
                       to="/en/Image-sensor-communication/"
                       className="button"
                     >
+=======
+                    <Link to="/en/Image-sensor-communication/" className="btn">
+>>>>>>> main
                       Read More
                     </Link>
                   </div>
@@ -186,7 +194,7 @@ const IndexPageTemplateEN = ({ data }) => (
                       related technologies.
                     </p>
                     <br />
-                    <Link to="/en/OER/" className="button">
+                    <Link to="/en/OER/" className="btn">
                       Read More
                     </Link>
                   </div>
@@ -200,7 +208,7 @@ const IndexPageTemplateEN = ({ data }) => (
               <div className="column post is-12">
                 <BlogRoll />
                 <div className="column is-12 has-text-centered">
-                  <Link className="button" to="/news">
+                  <Link className="btn" to="/news">
                     Read more "News and Updates" →
                   </Link>
                 </div>

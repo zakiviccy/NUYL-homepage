@@ -1,7 +1,7 @@
 {
   "name": "nagoya-university-yamazato-laboratory-homepage",
   "description": "Nagoya University Yamazato Laboratory Homepage",
-  "version": "1.1.3",
+  "version": "1.1.5",
   "author": "Takaya Yamazato",
   "dependencies": {
     "@formspree/react": "^2.3.0",

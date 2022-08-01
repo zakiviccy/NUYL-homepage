@@ -164,7 +164,7 @@ const IndexPageTemplate = ({ data }) => (
                         </a>
                         」の管理・運用に係わっています。
                       </div>
-                      <Link className="button" to="/research/OER/">
+                      <Link className="btn" to="/research/OER/">
                         Read more
                       </Link>
                     </div>
@@ -179,7 +179,7 @@ const IndexPageTemplate = ({ data }) => (
               <div className="column post is-12">
                 <BlogRoll />
                 <div className="column is-12 has-text-centered">
-                  <Link className="button" to="/news">
+                  <Link className="btn" to="/news">
                     Read more "News and Updates" →
                   </Link>
                 </div>
