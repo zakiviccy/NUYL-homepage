@@ -43,12 +43,12 @@ Unfortunately, our lab does not provide financial support for students. Therefor
 
 For admission to Nagoya University, please refer to the following.
 
-- https://en.nagoya-u.ac.jp/admissions/index.html
+https://en.nagoya-u.ac.jp/admissions/index.html
 
 Also, please refer to the following for the admission guide for the Graduate School of Engineering.
 
-- https://www.engg.nagoya-u.ac.jp/prospective/?lang=en
+https://www.engg.nagoya-u.ac.jp/prospective/?lang=en
 
 There is also a lot of helpful information on this site.
 
-- https://www.studyinjapan.go.jp/en/
+https://www.studyinjapan.go.jp/en/

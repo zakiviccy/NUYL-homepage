@@ -58,7 +58,7 @@ const IndexPageTemplateEN = ({ data }) => (
                       </p>
                       <br />
                       <Link
-                        className="btn"
+                        className="button"
                         to="/en/Image-sensor-communication/"
                       >
                         Read More
@@ -85,7 +85,11 @@ const IndexPageTemplateEN = ({ data }) => (
                       </p>
                       <br />
                       <Link
+<<<<<<< HEAD
+                        className="button"
+=======
                         className="btn"
+>>>>>>> main
                         to="/en/Sub-threshold-signal-detection-using-stochastic-resonance/"
                       >
                         Read more
@@ -154,7 +158,14 @@ const IndexPageTemplateEN = ({ data }) => (
                       effect by a rotary LED transmitter.
                     </p>
                     <br />
+<<<<<<< HEAD
+                    <Link
+                      to="/en/Image-sensor-communication/"
+                      className="button"
+                    >
+=======
                     <Link to="/en/Image-sensor-communication/" className="btn">
+>>>>>>> main
                       Read More
                     </Link>
                   </div>

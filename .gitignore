@@ -3,10 +3,11 @@
 .DS_Store
 node_modules
 .cache/
+.env.*
 # Build directory
 public
 static/admin/*.bundle.*
 .DS_Store
 .env.*
 yarn-error.log
-temporary-exclude-files
+temporary-exclude-files/
