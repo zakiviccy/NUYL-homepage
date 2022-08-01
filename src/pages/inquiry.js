@@ -27,9 +27,7 @@ function ContactForm() {
   // const [modalOpen, setModalOpen] = useState(false)
   const question = returnQuestion()
 
-
   if (state.succeeded) {
-
     return (
       <section>
         <p>
@@ -183,7 +181,7 @@ function ContactForm() {
                 required
               />
               <ValidationError
-                prefix="Email"
+                prefix="email"
                 field="email"
                 className="has-text-danger"
                 errors={state.errors}
