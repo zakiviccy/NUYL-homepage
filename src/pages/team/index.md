@@ -11,7 +11,7 @@ tags:
 
 ### 教授
 
-- [山里敬也](/team/Takaya-Yamazato/)
+- [山里敬也](/en/team/Takaya-Yamazato/)
 
 ### 秘書
 
