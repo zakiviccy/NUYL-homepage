@@ -21,4 +21,5 @@ tags:
     - 講義場所：教育学部附属中・高等学校　交流ホール
   - この講義の教材は[こちら](/research/OER/wwl/)です．
 
--
+- [流体力学問題集](/research/OER/Fluid-Mechanics-Problems/)
+  - 僕では無く，僕の親父が作った問題集です．
