@@ -45,3 +45,5 @@ tags:
 以下，オープン教材として公開している[教材リスト](/research/OER/list/)です．
 
 - [Python でフラクタルを描画しよう](/research/OER/wwl/)
+
+- [流体力学問題集](/research/OER/Fluid-Mechanics-Problems/)
