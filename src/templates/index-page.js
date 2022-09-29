@@ -161,7 +161,7 @@ const IndexPageTemplate = ({ data }) => (
                     <p className="is-size-5">
                       教授 <br />
                       &nbsp; &nbsp;
-                      <Link to="/en/team/Takaya-Yamazato/">山里敬也</Link>
+                      <Link to="/team/Takaya-Yamazato/">山里敬也</Link>
                       <br />
                       <br />
                       秘書 <br />
