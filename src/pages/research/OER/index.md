@@ -40,6 +40,8 @@ tags:
 
 名大の授業（NUOCW）は学生スタッフによってサイトのデザイン，システム構築が行われています．
 
-<br />
+<hr>
 
-[流体力学問題集](/OER/Fluid-Mechanics-Problems/)
+以下，オープン教材として公開している[教材リスト](/research/OER/list/)です．
+
+- [Python でフラクタルを描画しよう](/research/OER/wwl/)
