@@ -188,6 +188,10 @@ const IndexPageTemplate = ({ data }) => (
                       &nbsp; &nbsp;黄 瑞怡
                       <br />
                       &nbsp; &nbsp;唐 正強
+                      <br />
+                      <br />
+                      D1 <br />
+                      &nbsp; &nbsp;表 英毅
                     </p>
                   </div>
                 </article>
