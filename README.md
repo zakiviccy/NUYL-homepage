@@ -150,7 +150,7 @@ Github Actions の設定ファイルは `.github/workflows/manual.yml` です．
 コンテンツデータは，src/pages に入っているマークダウンファイルです．
 
 ```
-o$ tree
+$ tree
 .
 ├── 404.js
 ├── App.tsx
@@ -162,7 +162,7 @@ o$ tree
 │   ├── Sub-threshold-signal-detection-using-stochastic-resonance.md
 │   ├── index.md
 │   ├── news
-│   │   ├── 2022-02-22-Fumiya-OJIKA-received-.md
+│   │   ├── 2022-02-22-Fumiya-OJIKA-won-3rd-place-at-Graduation-Research-Presentation.md
 │   │   ├── 2022-03-04-Jinxing-ZHENG-received-the-Encouragement-Award.md
 │   │   ├── 2022-05-20-IEEE-ICC-Workshop-on-OWC.md
 │   │   ├── 2022-06-20-Zhengqiang-TANG-received-2021-IEICE-Tokai-Branch-Student-Research-Encouragement-Award.md
@@ -178,7 +178,7 @@ o$ tree
 ├── index.md
 ├── inquiry.js
 ├── news
-│   ├── 2022-02-22-Fumiya-OJIKA-received-.md
+│   ├── 2022-02-22-Fumiya-OJIKA-won-3rd-place-at-Graduation-Research-Presentation.md
 │   ├── 2022-03-04-Jinxing-ZHENG-received-the-Encouragement-Award.md
 │   ├── 2022-05-20-IEEE-ICC-Workshop-on-OWC.md
 │   ├── 2022-06-20-Zhengqiang-TANG-received-2021-IEICE-Tokai-Branch-Student-Research-Encouragement-Award.md
@@ -187,6 +187,7 @@ o$ tree
 │   ├── 2022-08-13-WWL-seminar-will-be-held-today.md
 │   ├── 20220930−Hideki-Omote-joined-our-group.md
 │   └── index.js
+├── research
 ．．．
 ```
 
@@ -287,10 +288,13 @@ src/pages/research/OER/wwl/index.md
 
 # Github でのデータの追加・修正・削除
 
-このサイトは Github Actions を設定してあります．
-Github の main branch に push すると自動でスクリプトが走り，公開ファイルを転送します．
+Github 上では編集内容が問題無いことの確認ができません．
+できれば，自身の PC で `gatsby develop` で問題無いことを確認の上，Github へ push することをお勧めします．
 
-従って，データ修正は main branch では行わず，branch をきってからデータ修正を行ってください．
-データ修正後は `gatsby develop` で問題無いことを確認の上，pull request を行い，main branch へマージしてください．
+その場合，データ修正は main branch では行わず，branch をきってからデータ修正を行ってください．
+データ修正後は pull request を行い，main branch へマージしてください．
 
 面倒ですが，main branch とは異なる branch で作業することで，思わぬミスを防ぐことができますので安全です．
+
+なお，このサイトは Github Actions を設定してあります．
+Github の main branch に push すると自動でスクリプトが走り，html 公開ファイルを山里研ホームページへ転送します．
