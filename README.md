@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Nagoya University Yamazato Laboratory Homepage
+  Nagoya University Yamazato Laboratory (NUYL) Homepage
 </h1>
 
 このサイトは [Gatsby](https://www.gatsbyjs.com/) を使って作成しています．
