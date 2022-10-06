@@ -45,5 +45,6 @@ tags:
 以下，オープン教材として公開している[教材リスト](/research/OER/list/)です．
 
 - [Python でフラクタルを描画しよう](/research/OER/wwl/)
+- [授業目的公衆送信補償金制度の概要](research/OER/../../PDF/授業目的公衆送信補償金制度の概要.pdf)
 
 - [流体力学問題集](/research/OER/Fluid-Mechanics-Problems/)
