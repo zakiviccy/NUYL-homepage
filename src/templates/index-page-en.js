@@ -248,7 +248,7 @@ const IndexPageTemplateEN = ({ data }) => (
                 YAMAZATO Laboratory,
                 <br />
                 Department of Information and Communication Engineering, <br />
-                School of Engineering, Nagoya University
+                Graduate School of Engineering, Nagoya University
               </p>
               <p className="post-excerpt">
                 <FaEnvelope />
