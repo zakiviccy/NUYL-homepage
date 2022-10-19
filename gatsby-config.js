@@ -4,10 +4,10 @@ module.exports = {
   // },
   // pathPrefix: `~yamazato`, //チェック用
   siteMetadata: {
-    title: 'Yamazato Laboratory, Nagoya University',
-    description: 'Welcome to Nagoya University Yamazato Laboratory Homepage.',
+    title: "Yamazato Laboratory, Nagoya University",
+    description: "Welcome to Nagoya University Yamazato Laboratory (NUYL) Homepage.",
     siteUrl: `https://yamazato.nuee.nagoya-u.ac.jp/`,
-    author: 'Takaya Yamazato',
+    author: "Takaya Yamazato",
     social: {
       twitter: `nuyl`,
     },
@@ -19,7 +19,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          'G-TJRPNVNCNF', // Google Analytics / GA
+          "G-TJRPNVNCNF", // Google Analytics / GA
           // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -49,21 +49,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,
-        name: 'uploads',
+        name: "uploads",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/img`,
-        name: 'images',
+        name: "images",
       },
     },
     {
@@ -103,7 +103,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
@@ -118,7 +118,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              destinationDir: 'static',
+              destinationDir: "static",
             },
           },
           {
@@ -148,4 +148,4 @@ module.exports = {
     //   },
     // }, // must be after other CSS plugins
   ],
-}
+};
