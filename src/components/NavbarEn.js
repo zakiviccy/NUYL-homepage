@@ -76,13 +76,13 @@ const NavbarEn = class extends React.Component {
                   <Link className="navbar-item" to="/" title="go to Japanese page">
                     Japanese
                   </Link>
-                  <Link className="navbar-item" to="/#team" title="Team">
+                  <Link className="navbar-item" to="/en/#team" title="Team">
                     <FaUserFriends />
                   </Link>
-                  <Link className="navbar-item" to="/#contact" title="Contact">
+                  <Link className="navbar-item" to="/en/#contact" title="Contact">
                     <FaEnvelope />
                   </Link>
-                  <Link className="navbar-item" to="/#access" title="Access">
+                  <Link className="navbar-item" to="/en/#access" title="Access">
                     <FaSubway />
                   </Link>
                   <div className="navbar-item">
