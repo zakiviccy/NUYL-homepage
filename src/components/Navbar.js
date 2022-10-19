@@ -1,18 +1,21 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { FaUserFriends } from '@react-icons/all-files/fa/FaUserFriends'
-import { FaEnvelope } from '@react-icons/all-files/fa/FaEnvelope'
-import { FaSubway } from '@react-icons/all-files/fa/FaSubway'
-import logo from '../img/NUYL-logo.svg'
-import './all.sass'
+import React from "react";
+import { Link } from "gatsby";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import logo from "../img/NUYL-logo.svg";
+import "./all.sass";
+// google カスタム検索用
+import Search from "../components/GoogleCustomSearch";
+import ClientOnly from "../components/ClientOnly";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -26,35 +29,25 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
-      <nav
-        className="navbar is-info"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <nav className="navbar is-info" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="NUYL" style={{ width: '88px' }} />
+              <img src={logo} alt="NUYL" style={{ width: "88px" }} />
             </Link>
             {/* Hamburger menu */}
-            <button
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              aria-label="Nav button"
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-              tabIndex={0}
-            >
+            <button className={`navbar-burger burger ${this.state.navBarActiveClass}`} aria-label="Nav button" data-target="navMenu" onClick={() => this.toggleHamburger()} tabIndex={0}>
               <span></span>
               <span></span>
               <span></span>
@@ -74,10 +67,7 @@ const Navbar = class extends React.Component {
 </div>
 </nav> */}
 
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+          <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start">
               <Link className="navbar-item" to="/news/" title="News">
                 ニュース
@@ -85,49 +75,40 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/research/" title="Reseach">
                 研究
               </Link>
-              <Link
-                className="navbar-item"
-                to="/research/publications/"
-                title="Publications"
-              >
+              <Link className="navbar-item" to="/research/publications/" title="Publications">
                 業績
               </Link>
-              <Link
-                className="navbar-item"
-                to="/research/awards/"
-                title="Awards"
-              >
+              <Link className="navbar-item" to="/research/awards/" title="Awards">
                 受賞
               </Link>
-              <Link
-                className="navbar-item"
-                to="/research/OER/list/"
-                title="Open Educational Resources"
-              >
+              <Link className="navbar-item" to="/research/OER/list/" title="Open Educational Resources">
                 教材
               </Link>
             </div>
             <div className="navbar-end">
+              <Link className="navbar-item" to="/en/" title="go to English page">
+                English
+              </Link>
+              <Link className="navbar-item" to="/#team" title="Team">
+                <FaUserFriends />
+              </Link>
+              <Link className="navbar-item" to="/#contact" title="Contact">
+                <FaEnvelope />
+              </Link>
+              <Link className="navbar-item" to="/#access" title="Access">
+                <FaSubway />
+              </Link>
               <div className="navbar-item">
-                <Link to="/en/" title="go to English page">
-                  English
-                </Link>
-                <Link to="/#team" title="Team">
-                  <FaUserFriends />
-                </Link>
-                <Link to="/#contact" title="Contact">
-                  <FaEnvelope />
-                </Link>
-                <Link to="/#access" title="Access">
-                  <FaSubway />
-                </Link>
+                <ClientOnly>
+                  <Search />
+                </ClientOnly>
               </div>
             </div>
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;

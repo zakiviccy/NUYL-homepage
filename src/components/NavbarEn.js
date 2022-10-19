@@ -1,18 +1,21 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { FaUserFriends } from '@react-icons/all-files/fa/FaUserFriends'
-import { FaEnvelope } from '@react-icons/all-files/fa/FaEnvelope'
-import { FaSubway } from '@react-icons/all-files/fa/FaSubway'
-import logo from '../img/NUYL-logo.svg'
-import './all.sass'
+import React from "react";
+import { Link } from "gatsby";
+import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaSubway } from "@react-icons/all-files/fa/FaSubway";
+import logo from "../img/NUYL-logo.svg";
+import "./all.sass";
+// google カスタム検索用
+import Search from "../components/GoogleCustomSearch";
+import ClientOnly from "../components/ClientOnly";
 
 const NavbarEn = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -26,14 +29,14 @@ const NavbarEn = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
@@ -44,26 +47,16 @@ const NavbarEn = class extends React.Component {
               {/* <div className="container"> */}
               <div className="navbar-brand" aria-label="brand">
                 <Link to="/en/" className="navbar-item" title="Logo">
-                  <img src={logo} alt="NUYL" style={{ width: '88px' }} />
+                  <img src={logo} alt="NUYL" style={{ width: "88px" }} />
                 </Link>
                 {/* Hamburger menu */}
-                <button
-                  className={`navbar-burger ${this.state.navBarActiveClass}`}
-                  aria-label="Nav button"
-                  data-target="navMenu"
-                  onClick={() => this.toggleHamburger()}
-                  role="menuitem"
-                  tabIndex={0}
-                >
+                <button className={`navbar-burger ${this.state.navBarActiveClass}`} aria-label="Nav button" data-target="navMenu" onClick={() => this.toggleHamburger()} role="menuitem" tabIndex={0}>
                   <span></span>
                   <span></span>
                   <span></span>
                 </button>
               </div>
-              <div
-                id="navMenu"
-                className={`navbar-menu ${this.state.navBarActiveClass}`}
-              >
+              <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                 {/* <div id="navbarBasicExample" className="navbar-menu"> */}
                 <div className="navbar-start">
                   <Link className="navbar-item" to="/en/news/">
@@ -80,27 +73,31 @@ const NavbarEn = class extends React.Component {
                   </Link>
                 </div>
                 <div className="navbar-end">
+                  <Link className="navbar-item" to="/" title="go to Japanese page">
+                    Japanese
+                  </Link>
+                  <Link className="navbar-item" to="/#team" title="Team">
+                    <FaUserFriends />
+                  </Link>
+                  <Link className="navbar-item" to="/#contact" title="Contact">
+                    <FaEnvelope />
+                  </Link>
+                  <Link className="navbar-item" to="/#access" title="Access">
+                    <FaSubway />
+                  </Link>
                   <div className="navbar-item">
-                    <Link to="/">Japanese</Link>
-                    <Link to="/en/#team" title="Team">
-                      <FaUserFriends />
-                    </Link>
-                    <Link to="/en/#contact" title="Contact">
-                      <FaEnvelope />
-                    </Link>
-                    <Link to="/en/#access" title="Access">
-                      <FaSubway />
-                    </Link>
+                    <ClientOnly>
+                      <Search />
+                    </ClientOnly>
                   </div>
                 </div>
               </div>
-              {/* </div> */}
             </nav>
           </div>
         </div>
       </section>
-    )
+    );
   }
-}
+};
 
-export default NavbarEn
+export default NavbarEn;
