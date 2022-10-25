@@ -4,7 +4,7 @@ title: 中村君がCS研究会で発表しました．
 date: 2022-07-17T01:39:55.096Z
 description: 屋久島で開催されたCS研究会で，中村君が対面で発表してきました．
 featuredpost: true
-featuredimage: /img/20220717－Kento-Nakamura-presented-at-CS.jpg
+featuredimage: /img/coffee.png
 ---
 
 山里研の中村です．
