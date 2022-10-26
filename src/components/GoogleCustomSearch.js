@@ -1,9 +1,7 @@
 import React from 'react'
 
-
 /* <script async src="https://cse.google.com/cse.js?cx=2cca6b64d8673a1e0"></script>
 <div class="gcse-search"></div>*/
-
 
 const search = () => {
   const cx = '2cca6b64d8673a1e0' //ここに貼り付け用コードの?cx=以下を入力
