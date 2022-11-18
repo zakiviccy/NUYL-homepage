@@ -28,4 +28,4 @@ tags:
     <br /><br />
 
 - [流体力学問題集](/research/OER/Fluid-Mechanics-Problems/)
-  - 僕では無く，僕の親父が作った問題集です．
+  - 僕の父が作った問題集です．
