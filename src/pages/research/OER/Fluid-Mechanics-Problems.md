@@ -2,7 +2,7 @@
 templateKey: pages
 lang: ja
 title: 流体力学問題集
-description: 流体力学の問題集です．うちの親父が作ったものです．
+description: 流体力学の問題集です．僕の父が作ったものです．
 date: 2021-04-01T07:57:21.383Z
 tags:
   - オープン教材
