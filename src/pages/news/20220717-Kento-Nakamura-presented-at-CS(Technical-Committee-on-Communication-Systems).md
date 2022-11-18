@@ -17,4 +17,4 @@ featuredimage: /img/coffee.png
 空き時間には有名な屋久杉を見るために１人で山を登りました．
 観光もできるのが学会参加の良いところですね．
 
-![屋久島観光](Sightseeing-in-Yakushima.jpg)
+![屋久島観光](20220717-Sightseeing-in-Yakushima.jpg)

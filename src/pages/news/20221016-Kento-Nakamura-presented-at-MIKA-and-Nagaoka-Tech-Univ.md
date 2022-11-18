@@ -16,4 +16,4 @@ featuredimage: /img/coffee.png
 長岡技科大では，様々な実験設備を見学させていただき，
 非常に研究意欲が刺激されました．
 
-![MIKA](presented-in-MIKA.png)
+![MIKA](20221016-presented-in-MIKA.png)
