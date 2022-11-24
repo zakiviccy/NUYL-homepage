@@ -55,8 +55,8 @@ export const tagPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      sort: {frontmatter: {date: DESC}}
-      filter: {frontmatter: {tags: {in: [$tag]}}}
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
