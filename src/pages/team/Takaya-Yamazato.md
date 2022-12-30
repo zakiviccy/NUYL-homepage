@@ -54,7 +54,7 @@ IEEE ICC 2009 の Wireless Communication Symposia の co-chair を務め、IEEE 
 ### [電子情報通信学会](https://www.ieice.org/)
 
 - 東海支部・支部長 2022/06/09〜2023/06/07
-- 通信ソサイエティ執行委員会・特別委員 2022/07/08〜2023/06/07
+- 通信ソサイエティ執行委員会・特別委員（Xplore担当） 2022/07/08〜2023/06/07
 - 代議員会・代議員 2022/04/01〜2023/03/31
 - 通信ソサイエティ編集会議・ソサイエティ編集長 2020/06/04〜2022/06/08
 - 通信ソサイエティ執行委員会・ソサイエティ編集長 2020/06/04〜2022/06/08
@@ -65,9 +65,9 @@ IEEE ICC 2009 の Wireless Communication Symposia の co-chair を務め、IEEE 
 - 代議員会・代議員 2021/04/01〜2022/03/31
 - 知的環境とセンサネットワーク研究専門委員会・顧問 2013/04/01〜2019/06/05
 - 無線通信システム研究専門委員会・専門委員 2011/05/28〜2017/05/31
-- Ｉ－Ｓｃｏｖｅｒプロジェクト・サブリーダー 2013/02/18〜2017/05/31
+- I-Scover プロジェクト・サブリーダー 2013/02/18〜2017/05/31
 - 東海支部・支部委員 2015/06/04〜2017/05/31
-- ＩＴＳ研究専門委員会・副委員長 2012/05/26〜2015/06/03
+- ITS研究専門委員会・副委員長 2012/05/26〜2015/06/03
 - 副委員長会・役職無し 2012/05/26〜2015/06/03
 - 編集顧問会・編集顧問 2013/05/25〜2014/06/04
 - 通信ソサイエティ編集会議・ソサイエティ副編集長 2011/05/28〜2013/05/24
@@ -75,7 +75,7 @@ IEEE ICC 2009 の Wireless Communication Symposia の co-chair を務め、IEEE 
 - 編集連絡会・ソサイエティ副編集長 2011/05/28〜2013/05/24
 - 編集顧問会・編集顧問 2011/05/28〜2013/05/24
 - ユビキタス・センサネットワーク研究専門委員会・顧問 2012/05/26〜2013/05/24
-- ＩＴＳ研究専門委員会・専門委員 1999/04/01〜2012/05/25
+- ITS研究専門委員会・専門委員 1999/04/01〜2012/05/25
 - ユビキタス・センサネットワーク研究専門委員会・委員長 2011/05/28〜2012/05/25
 - 委員長会・役職無し 2011/05/28〜2012/05/25
 - 英文論文誌Ｂ編集委員会・英文アドバイザリィ 2011/05/28〜2012/05/25
@@ -101,7 +101,7 @@ IEEE ICC 2009 の Wireless Communication Symposia の co-chair を務め、IEEE 
   <br /><br />
 
 - ソサイエティ論文誌編集委員会・査読委員 2005/10/11〜
-- ＩＴＳ研究専門委員会・顧問 2015/06/04〜
+- ITS研究専門委員会・顧問 2015/06/04〜
 - センサネットワークとモバイルインテリジェンス研究専門委員会・顧問 2019/04/01〜
 
 ### [Institute of Electrical and Electronics Engineers (IEEE)](https://www.ieee.org/)
@@ -146,3 +146,8 @@ IEEE ICC 2009 の Wireless Communication Symposia の co-chair を務め、IEEE 
 - [Co-chair, 9th IEEE GLOBECOM Workshop on Optical Wireless Communications (OWC’20)](https://yamazato.nuee.nagoya-u.ac.jp/owc2020/committee)
 - [Co-chair, 7TH IEEE GLOBECOM Workshop on Optical Wireless Communicaitons (OWC’17)](https://globecom2017.ieee-globecom.org/workshop/ws-11-7th-ieee-globecom-workshop-optical-wireless-communications-owc%e2%80%9917)
 - [Co-chair, 8th IEEE GLOBECOM Workshop on Optical Wireless Communications (OWC’18)](https://yamazato.nuee.nagoya-u.ac.jp/owc2018/organizers.html)
+
+### [日本フォトニクス協議会（JPC）](https://j-photonics.org/)
+
+#### [JPC 可視光通信分科会](https://j-photonics.org/vlca/)[委員長](https://j-photonics.org/aboutwork/vlca/)　2022/6/29 - 
+#### [JPC 理事](https://j-photonics.org/aboutjpc/officer/) 2022/6/29 -
