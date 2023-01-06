@@ -5,6 +5,8 @@ date: 2022-10-16T01:39:55.096Z
 description: 新潟で開催されたMIKAで，中村君がポスター発表をしてきました．
 featuredpost: true
 featuredimage: /img/coffee.png
+tags:
+  - MIKA
 ---
 
 山里研の中村です．
