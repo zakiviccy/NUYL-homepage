@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 // import { graphql } from "gatsby"
-import Layout from "../components/Layout";
+import Layout from '../components/Layout'
 
 const NotFoundPage = () => (
   <Layout>
@@ -17,6 +17,6 @@ const NotFoundPage = () => (
       </div>
     </section>
   </Layout>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage
