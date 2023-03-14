@@ -42,9 +42,9 @@ jobs:
 
       # rsync の設定
       - name: rsync deployments
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@5.2.1
         with:
-          switches: -avzr --delete --exclude=owc2018/ icevlc2018/ owc2020/ owc2022/ owc2023/
+          switches: -avzr --delete --exclude="owc2018/ icevlc2018/ owc2020/ owc2022/ owc2023/"
           path: public/
           remote_path: ${{ secrets.REMOTE_PATH }}
           remote_host: ${{ secrets.REMOTE_HOST }}
