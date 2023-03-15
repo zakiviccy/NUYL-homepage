@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "19.x"
-          cache: "yarn"
+          # cache: "yarn"
       # Node の実行（npm install, npm run build）
       - name: Build Project
         run: |
