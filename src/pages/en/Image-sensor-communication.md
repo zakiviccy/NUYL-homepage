@@ -52,7 +52,7 @@ We have hosted the [OWC Workshop](/en/Optical-Wireless-Communications-OWC-Worksh
 
 ### ISCC Workshop
 
-- **<span style="color: red; ">[First](http://yamazato.nuee.nagoya-u.ac.jp/owc2023/index.html) will be held in conjunction with [IEEE ISCC 2023](https://2023.ieee-iscc.org/) at Tunis, Tunisia, on 9 July, 2023.</span>**
+- **<span style="color: red; ">[First](http://yamazato.nuee.nagoya-u.ac.jp/owc2023/index.html) will be held at Tunis, Tunisia, on 9 July, 2023, in conjunction with [IEEE ISCC 2023](https://2023.ieee-iscc.org/) .</span>**
 
 ### ICC Workshops
 
