@@ -9,5 +9,5 @@ tags:
   - Member
 ---
 
-Welcome onboard!
+Welcome aboard!
 We are looking forward to working with you from now on.

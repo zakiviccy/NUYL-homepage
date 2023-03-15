@@ -21,9 +21,7 @@ The 2014 Nobel Prize in Physics has been awarded for the invention of blue light
 
 Visible light communication (VLC) uses LEDs not only to provide light but also to broadcast data. Because LEDs are solid-state lighting devices, they can be modulated at a high speed that cannot be detected by the human eye. In fact, LED traffic lights in Japan blink at a rate that is twice the rate of the AC line, 100 Hz in eastern Japan and 120 Hz in western Japan. The LED headlights in the new Lexus cars also blink at the rate of several hundred Hertz. If LEDs already blink at a fast rate, why not send information by controlling the blinking pattern according to the data to be transmitted?
 
-
 ## VLC and its application to intelligent transport systems
-
 
 The widespread use of LEDs in traffic applications and the growing interest in intelligent transport systems (ITS) present many opportunities for VLC applications. Data transmission using LED traffic and brake lights is a typical application. Previous studies have documented the effectiveness of vehicle-to-infrastructure (V2I) and vehicle-to-vehicle (V2V) communication using radio technology for improving automotive safety. These communication systems are called V2X.
 
@@ -46,12 +44,15 @@ A suitable reception device for the VLC signal in an outdoor mobile environment 
 A particular advantage of complementary metal-oxide-semiconductor image-sensor usage is, owing to the massive number of pixels available, its ability to spatially separate sources. Here the sources include both noise sources, such as sunlight, streetlights, and other ambient lights and LED transmission sources.
 The ability to spatially separate sources also provides an additional feature to VLC, in particular, the ability to receive and process multiple transmitting sources.
 
-
 ## Toward the widespread use of visible light communication and [optical wireless communication](/en/Optical-Wireless-Communications-OWC-Workshop/) technologies
 
 Yamazato Laboratory provides technical support for the OWC Workshops held at the Global Communications Conference (Globecom) and the International Conference on Communications (ICC) organized by the Institute of Electrical and Electronics Engineers (IEEE). The OWC Workshops contribute to optical wireless and visible light communication research.
 
 We have hosted the [OWC Workshop](/en/Optical-Wireless-Communications-OWC-Workshop/) web page in red.
+
+### ISCC Workshop
+
+- **<span style="color: red; ">[First](http://yamazato.nuee.nagoya-u.ac.jp/owc2023/index.html) will be held in conjunction with [IEEE ISCC 2023](https://2023.ieee-iscc.org/) at Tunis, Tunisia, on 9 July, 2023.</span>**
 
 ### ICC Workshops
 
@@ -77,6 +78,6 @@ We have hosted the [OWC Workshop](/en/Optical-Wireless-Communications-OWC-Worksh
 
 ### IECVLC2018
 
-  In addition, we have hosted the 2nd ICEVLC organized by the Visible Light Communications Association of Japan (now the Visible Light Communications Subcommittee of the Photonics Council of Japan).
+In addition, we have hosted the 2nd ICEVLC organized by the Visible Light Communications Association of Japan (now the Visible Light Communications Subcommittee of the Photonics Council of Japan).
 
 - [2nd International Conference and Exhibition on Visible Light Communications 2018 (ICEVLC 2018)](http://yamazato.nuee.nagoya-u.ac.jp/icevlc2018)

@@ -44,6 +44,10 @@ LED は半導体デバイスであるため、人の目には見えないほど�
 
 これまで，赤字の OWC Workshop の Web page のホスティングを行ってきました．
 
+### ISCC Workshop
+
+- **<span style="color: red; ">[First](http://yamazato.nuee.nagoya-u.ac.jp/owc2023/index.html) will be held in conjunction with [IEEE ISCC 2023](https://2023.ieee-iscc.org/) at Tunis, Tunisia, on 9 July, 2023.</span>**
+
 ### ICC Workshops
 
 - [First](https://icc2015.ieee-icc.org/content/workshops.html) held at London, UK, June. 8, 2015.
