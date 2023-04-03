@@ -2,7 +2,7 @@
 templateKey: pages
 lang: ja
 title: チーム
-description: 2022年度山里研究室メンバー
+description: 2023年度山里研究室メンバー
 date: 2023-04-01T07:57:21.383Z
 tags:
   - チーム

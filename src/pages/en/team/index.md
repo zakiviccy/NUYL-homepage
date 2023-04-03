@@ -1,11 +1,11 @@
 ---
 templateKey: pages-en-white
 lang: en
-title: 2022 team
+title: 2023 team
 description: Our team at Yamazato Lab.
-date: 2021-08-01T07:57:21.383Z
+date: 2023-04-01T07:57:21.383Z
 tags:
-  - Team 2022
+  - Team 2023
   - Team
 ---
 
