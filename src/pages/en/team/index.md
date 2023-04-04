@@ -1,7 +1,7 @@
 ---
 templateKey: pages-en-white
 lang: en
-title: 2023 team
+title: 2023 Team
 description: Our team at Yamazato Lab.
 date: 2023-04-01T07:57:21.383Z
 tags:

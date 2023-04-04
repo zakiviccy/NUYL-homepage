@@ -234,6 +234,17 @@ const IndexPageTemplate = ({ data }) => (
                       &nbsp; &nbsp;永井 日菜
                       <br />
                       &nbsp; &nbsp;中野 幸亮
+                      <br />
+                      <br />
+                      OB/OG
+                      <ul>
+                        <li>
+                          &nbsp; &nbsp;<Link to="/team/2022/">2022</Link>
+                        </li>
+                        <li>
+                          &nbsp; &nbsp;<Link to="/team/2021/">2021</Link>
+                        </li>
+                      </ul>
                     </p>
                   </div>
                 </article>
