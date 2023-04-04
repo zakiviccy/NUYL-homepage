@@ -236,7 +236,7 @@ const IndexPageTemplate = ({ data }) => (
                       &nbsp; &nbsp;中野 幸亮
                       <br />
                       <br />
-                      OB/OG
+                      Alumni
                       <ul>
                         <li>
                           &nbsp; &nbsp;<Link to="/team/2022/">2022</Link>

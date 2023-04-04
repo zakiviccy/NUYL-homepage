@@ -46,3 +46,8 @@ Undergraduate Students
   - Ryota KONDO
   - Hina NAGAI
   - Kosuke NAKANO
+
+## Alumni
+
+- [2022](/en/team/2022/)
+- [2021](/en/team/2021/)
